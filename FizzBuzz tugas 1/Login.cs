@@ -16,5 +16,35 @@ namespace FizzBuzz_tugas_1
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            var FormPelanggan = new Pelanggan();
+            FormPelanggan.Show();
+         
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            txtUsername.Focus();
+            btnLogin.Enabled = false;
+
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtUsername.Text) && !String.IsNullOrEmpty(txtPassword.Text))
+            {
+                btnLogin.Enabled = true;
+            }
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(txtUsername.Text) && !String.IsNullOrEmpty(txtPassword.Text))
+            {
+                btnLogin.Enabled = true;
+            }
+        }
     }
 }
