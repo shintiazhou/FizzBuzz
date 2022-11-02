@@ -19,9 +19,10 @@ namespace FizzBuzz_tugas_1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            var FormPelanggan = new Pelanggan();
-            FormPelanggan.Show();
-         
+            this.Hide();
+            Pelanggan frm = new Pelanggan();
+            frm.ShowDialog();
+            this.Close();
         }
 
         private void Login_Load(object sender, EventArgs e)

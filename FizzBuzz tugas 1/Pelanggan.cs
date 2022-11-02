@@ -19,7 +19,19 @@ namespace FizzBuzz_tugas_1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Close();
+            string message = "Keluar dari form pesanan?";
+            string title = "Keluar";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                Login frm = new Login();
+                frm.ShowDialog();
+                this.Close();
+            }
+
         }
     }
 }
