@@ -17,26 +17,38 @@ namespace FizzBuzz_tugas_1
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLoginCustomer_Click(object sender, EventArgs e)
         {
             this.Hide();
             Pelanggan frm = new Pelanggan();
             frm.ShowDialog();
             this.Close();
         }
-
+        private void btnLoginPegawai_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Pegawai frm = new Pegawai();
+            frm.ShowDialog();
+            this.Close();
+        }
         private void Login_Load(object sender, EventArgs e)
         {
             txtUsername.Focus();
-            btnLogin.Enabled = false;
-
+            btnLoginCustomer.Enabled = false;
+            btnLoginPegawai.Enabled = false;
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
             if (!String.IsNullOrEmpty(txtUsername.Text) && !String.IsNullOrEmpty(txtPassword.Text))
             {
-                btnLogin.Enabled = true;
+                btnLoginCustomer.Enabled = true;
+                btnLoginPegawai.Enabled = true;
+            }
+            else
+            {
+                btnLoginCustomer.Enabled = false;
+                btnLoginPegawai.Enabled = false;
             }
         }
 
@@ -44,7 +56,13 @@ namespace FizzBuzz_tugas_1
         {
             if (!String.IsNullOrEmpty(txtUsername.Text) && !String.IsNullOrEmpty(txtPassword.Text))
             {
-                btnLogin.Enabled = true;
+                btnLoginCustomer.Enabled = true;
+                btnLoginPegawai.Enabled = true;
+            }
+            else
+            {
+                btnLoginCustomer.Enabled = false;
+                btnLoginPegawai.Enabled = false;
             }
         }
     }

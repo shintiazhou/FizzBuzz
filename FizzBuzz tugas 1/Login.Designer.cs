@@ -30,24 +30,26 @@ namespace FizzBuzz_tugas_1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnLoginCustomer = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnLoginPegawai = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnLogin
+            // btnLoginCustomer
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(312, 437);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(252, 29);
-            this.btnLogin.TabIndex = 14;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLoginCustomer.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLoginCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLoginCustomer.ForeColor = System.Drawing.Color.White;
+            this.btnLoginCustomer.Location = new System.Drawing.Point(312, 428);
+            this.btnLoginCustomer.Name = "btnLoginCustomer";
+            this.btnLoginCustomer.Size = new System.Drawing.Size(252, 27);
+            this.btnLoginCustomer.TabIndex = 14;
+            this.btnLoginCustomer.Text = "Login Customer";
+            this.btnLoginCustomer.UseVisualStyleBackColor = false;
+            this.btnLoginCustomer.Click += new System.EventHandler(this.btnLoginCustomer_Click);
             // 
             // txtPassword
             // 
@@ -77,7 +79,7 @@ namespace FizzBuzz_tugas_1
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(312, 306);
+            this.label1.Location = new System.Drawing.Point(308, 306);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 19);
             this.label1.TabIndex = 15;
@@ -88,11 +90,24 @@ namespace FizzBuzz_tugas_1
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(312, 370);
+            this.label2.Location = new System.Drawing.Point(308, 370);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 19);
             this.label2.TabIndex = 16;
             this.label2.Text = "Password";
+            // 
+            // btnLoginPegawai
+            // 
+            this.btnLoginPegawai.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnLoginPegawai.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLoginPegawai.ForeColor = System.Drawing.Color.Navy;
+            this.btnLoginPegawai.Location = new System.Drawing.Point(312, 466);
+            this.btnLoginPegawai.Name = "btnLoginPegawai";
+            this.btnLoginPegawai.Size = new System.Drawing.Size(252, 27);
+            this.btnLoginPegawai.TabIndex = 17;
+            this.btnLoginPegawai.Text = "Login Pegawai";
+            this.btnLoginPegawai.UseVisualStyleBackColor = false;
+            this.btnLoginPegawai.Click += new System.EventHandler(this.btnLoginPegawai_Click);
             // 
             // Login
             // 
@@ -101,13 +116,15 @@ namespace FizzBuzz_tugas_1
             this.BackColor = System.Drawing.Color.Lavender;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(860, 568);
+            this.ClientSize = new System.Drawing.Size(860, 590);
+            this.Controls.Add(this.btnLoginPegawai);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnLoginCustomer);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Login";
             this.Text = "Login - Clean Laundry";
@@ -119,11 +136,12 @@ namespace FizzBuzz_tugas_1
 
         #endregion
 
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnLoginCustomer;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnLoginPegawai;
     }
 }
 

@@ -16,10 +16,22 @@ namespace FizzBuzz_tugas_1
         {
             InitializeComponent();
         }
-
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void Pelanggan_Load(object sender, EventArgs e)
         {
-            string message = "Keluar dari form pesanan?";
+            tabControl.SelectTab(1);
+        }
+        private void lblHome_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectTab(1);
+        }
+        private void lblPesanan_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectTab(5);
+        }
+
+        private void btnKeluar_Click(object sender, EventArgs e)
+        {
+            string message = "Keluar dari aplikasi?";
             string title = "Keluar";
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
             DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
@@ -32,6 +44,20 @@ namespace FizzBuzz_tugas_1
                 this.Close();
             }
 
+        }
+
+        private void btnSelanjutnya_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectTab(tabControl.SelectedIndex + 1);
+        }
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectTab(tabControl.SelectedIndex - 1);
+        }
+
+        private void btnAkun_Click(object sender, EventArgs e)
+        {
+            tabControl.SelectTab(0);
         }
     }
 }
