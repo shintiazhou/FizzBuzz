@@ -1,5 +1,5 @@
 ﻿
-namespace FizzBuzz_tugas_1
+namespace Tugas_FizzBuzz
 {
     partial class Login
     {

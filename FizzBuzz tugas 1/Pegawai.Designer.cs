@@ -1,5 +1,5 @@
 ﻿
-namespace FizzBuzz_tugas_1
+namespace Tugas_FizzBuzz
 {
     partial class Pegawai
     {
@@ -35,10 +35,8 @@ namespace FizzBuzz_tugas_1
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tabInformasiAkun = new System.Windows.Forms.TabPage();
-            this.tabPengiriman = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -50,14 +48,16 @@ namespace FizzBuzz_tugas_1
             this.label29 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.tabPengiriman = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabInformasiAkun.SuspendLayout();
-            this.tabPengiriman.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.tabPengiriman.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -138,49 +138,25 @@ namespace FizzBuzz_tugas_1
             this.tabInformasiAkun.TabIndex = 0;
             this.tabInformasiAkun.Text = "Informasi Akun";
             // 
-            // tabPengiriman
+            // label2
             // 
-            this.tabPengiriman.BackColor = System.Drawing.Color.Transparent;
-            this.tabPengiriman.Controls.Add(this.button2);
-            this.tabPengiriman.Controls.Add(this.button1);
-            this.tabPengiriman.Controls.Add(this.listBox1);
-            this.tabPengiriman.Location = new System.Drawing.Point(4, 25);
-            this.tabPengiriman.Name = "tabPengiriman";
-            this.tabPengiriman.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPengiriman.Size = new System.Drawing.Size(764, 455);
-            this.tabPengiriman.TabIndex = 1;
-            this.tabPengiriman.Text = "Pengiriman";
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Location = new System.Drawing.Point(16, 141);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(258, 26);
+            this.label2.TabIndex = 90;
+            this.label2.Text = "Kurir";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // listBox1
+            // label3
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(6, 3);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(752, 372);
-            this.listBox1.TabIndex = 11;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightGreen;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(620, 383);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 29);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Telah Dikirim";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(479, 383);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 29);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Telah Diambil";
-            this.button2.UseVisualStyleBackColor = false;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 16);
+            this.label3.TabIndex = 89;
+            this.label3.Text = "Pekerjaan";
             // 
             // label34
             // 
@@ -295,25 +271,49 @@ namespace FizzBuzz_tugas_1
             this.label18.TabIndex = 80;
             this.label18.Text = "Username";
             // 
-            // label2
+            // tabPengiriman
             // 
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(16, 141);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(258, 26);
-            this.label2.TabIndex = 90;
-            this.label2.Text = "Kurir";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tabPengiriman.BackColor = System.Drawing.Color.Transparent;
+            this.tabPengiriman.Controls.Add(this.button2);
+            this.tabPengiriman.Controls.Add(this.button1);
+            this.tabPengiriman.Controls.Add(this.listBox1);
+            this.tabPengiriman.Location = new System.Drawing.Point(4, 25);
+            this.tabPengiriman.Name = "tabPengiriman";
+            this.tabPengiriman.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPengiriman.Size = new System.Drawing.Size(764, 455);
+            this.tabPengiriman.TabIndex = 1;
+            this.tabPengiriman.Text = "Pengiriman";
             // 
-            // label3
+            // button2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 119);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 16);
-            this.label3.TabIndex = 89;
-            this.label3.Text = "Pekerjaan";
+            this.button2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(479, 383);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(135, 29);
+            this.button2.TabIndex = 27;
+            this.button2.Text = "Telah Diambil";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightGreen;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(620, 383);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 29);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Telah Dikirim";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(6, 3);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(752, 372);
+            this.listBox1.TabIndex = 11;
             // 
             // Pegawai
             // 
@@ -324,15 +324,16 @@ namespace FizzBuzz_tugas_1
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Pegawai";
             this.Text = "Pegawai - Clean Laundry";
+            this.Load += new System.EventHandler(this.Pegawai_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabHome.ResumeLayout(false);
             this.tabHome.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabInformasiAkun.ResumeLayout(false);
             this.tabInformasiAkun.PerformLayout();
-            this.tabPengiriman.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.tabPengiriman.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

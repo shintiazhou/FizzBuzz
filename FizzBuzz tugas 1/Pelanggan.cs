@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FizzBuzz_tugas_1
+namespace Tugas_FizzBuzz
 {
     public partial class Pelanggan : Form
     {

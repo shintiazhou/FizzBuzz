@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FizzBuzz_tugas_1
+namespace Tugas_FizzBuzz
 {
     static class Program
     {
