@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tugas_FizzBuzz
+namespace FizzBuzz_tugas_1
 {
     public partial class Pegawai : Form
     {
@@ -17,24 +17,12 @@ namespace Tugas_FizzBuzz
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void Pegawai_Load(object sender, EventArgs e)
         {
-            string message = "Keluar dari aplikasi?";
-            string title = "Keluar";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
-
-            if (result == DialogResult.Yes)
-            {
-                this.Hide();
-                Login frm = new Login();
-                frm.ShowDialog();
-                this.Close();
-            }
 
         }
 
-        private void Pegawai_Load(object sender, EventArgs e)
+        private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tugas_FizzBuzz
+namespace FizzBuzz_tugas_1
 {
     public partial class Login : Form
     {
@@ -17,7 +17,7 @@ namespace Tugas_FizzBuzz
             InitializeComponent();
         }
 
-        private void btnLoginCustomer_Click(object sender, EventArgs e)
+        private void btnLoginPelanggan_Click(object sender, EventArgs e)
         {
             this.Hide();
             Pelanggan frm = new Pelanggan();
@@ -34,7 +34,7 @@ namespace Tugas_FizzBuzz
         private void Login_Load(object sender, EventArgs e)
         {
             txtUsername.Focus();
-            btnLoginCustomer.Enabled = false;
+            btnLoginPelanggan.Enabled = false;
             btnLoginPegawai.Enabled = false;
         }
 
@@ -42,12 +42,12 @@ namespace Tugas_FizzBuzz
         {
             if (!String.IsNullOrEmpty(txtUsername.Text) && !String.IsNullOrEmpty(txtPassword.Text))
             {
-                btnLoginCustomer.Enabled = true;
+                btnLoginPelanggan.Enabled = true;
                 btnLoginPegawai.Enabled = true;
             }
             else
             {
-                btnLoginCustomer.Enabled = false;
+                btnLoginPelanggan.Enabled = false;
                 btnLoginPegawai.Enabled = false;
             }
         }
@@ -56,14 +56,24 @@ namespace Tugas_FizzBuzz
         {
             if (!String.IsNullOrEmpty(txtUsername.Text) && !String.IsNullOrEmpty(txtPassword.Text))
             {
-                btnLoginCustomer.Enabled = true;
+                btnLoginPelanggan.Enabled = true;
                 btnLoginPegawai.Enabled = true;
             }
             else
             {
-                btnLoginCustomer.Enabled = false;
+                btnLoginPelanggan.Enabled = false;
                 btnLoginPegawai.Enabled = false;
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Login_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

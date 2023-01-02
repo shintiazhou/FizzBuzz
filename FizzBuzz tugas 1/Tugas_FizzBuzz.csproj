@@ -33,6 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>..\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
       <HintPath>..\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
     </Reference>
@@ -59,17 +69,17 @@
     <Compile Include="Pegawai.Designer.cs">
       <DependentUpon>Pegawai.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pelanggan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pelanggan.Designer.cs">
-      <DependentUpon>Pelanggan.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pelanggan.Designer.cs">
+      <DependentUpon>Pelanggan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,7 +92,6 @@
     <EmbeddedResource Include="Pelanggan.resx">
       <DependentUpon>Pelanggan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -119,6 +128,9 @@
     <None Include="Resources\washing-machine.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\padlock.png" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\hidden.png" />
     <Content Include="Resources\landing_login-01.jpg" />
     <None Include="Resources\laundry_bg.png" />
     <None Include="Resources\user.png" />
