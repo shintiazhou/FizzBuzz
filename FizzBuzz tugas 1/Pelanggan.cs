@@ -17,7 +17,7 @@ namespace FizzBuzz_tugas_1
         {
             InitializeComponent();
         }
-        string name;
+        string pilihanLaundry;
         private void Pelanggan_Load(object sender, EventArgs e)
         {
         }
@@ -41,18 +41,18 @@ namespace FizzBuzz_tugas_1
             tpPesanan.PageIndex = 1;
 
             var button = sender as Button;
-             name = button.Name.Remove(0, 9).Replace('_', ' ');
+            pilihanLaundry = button.Name.Remove(0, 9).Replace('_', ' ');
 
             if (button.Name.Contains("Kiloan"))
             {
-                lblPilihanLaundry.Text = $"{name} Kiloan";
+                lblPilihanLaundry.Text = $"{pilihanLaundry} Kiloan";
                 lblPakaian.Text = "Berat Pakaian";
                 lblJumlahLaundry.Text = "1 Kg";
             }
             else
             {
-                lblPilihanLaundry.Text = $"Cuci {name}";
-                lblPakaian.Text = $"Jumlah {name}";
+                lblPilihanLaundry.Text = $"Cuci {pilihanLaundry}";
+                lblPakaian.Text = $"Jumlah {pilihanLaundry}";
                 lblJumlahLaundry.Text = "1 Pcs";
             }
                 
