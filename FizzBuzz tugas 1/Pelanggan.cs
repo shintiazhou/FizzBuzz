@@ -60,7 +60,7 @@ namespace FizzBuzz_tugas_1
 
         private void btnBuatPesanan_Click(object sender, EventArgs e)
         {
-            snackBarBuatPesanan.Show(this, "Pesanan berhasil dibuat");
+            snackBarBuatPesanan.Show(this, "Pesanan berhasil dibuat", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
             tabNavigasi.PageIndex = 1;
         }
 

@@ -38,8 +38,9 @@ namespace FizzBuzz_tugas_1
             txtUsername.Focus();
             btnLoginPelanggan.Enabled = false;
             btnLoginPegawai.Enabled = false;
+            noticeSnackbar.Show(this, "Notice: Jika terdapat build error\nsilahkan coba hapus file licenses.licx dalam folder properties pada project anda.\nTerima kasih!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 10000);
+           
 
-          
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)

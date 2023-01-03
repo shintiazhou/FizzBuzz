@@ -29,6 +29,7 @@ namespace FizzBuzz_tugas_1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -46,6 +47,7 @@ namespace FizzBuzz_tugas_1
             this.btnLoginPelanggan = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnLoginPegawai = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnClose = new System.Windows.Forms.Button();
+            this.noticeSnackbar = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.SuspendLayout();
             // 
             // txtUsername
@@ -430,6 +432,75 @@ namespace FizzBuzz_tugas_1
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // noticeSnackbar
+            // 
+            this.noticeSnackbar.AllowDragging = false;
+            this.noticeSnackbar.AllowMultipleViews = true;
+            this.noticeSnackbar.ClickToClose = true;
+            this.noticeSnackbar.DoubleClickToClose = true;
+            this.noticeSnackbar.DurationAfterIdle = 3000;
+            this.noticeSnackbar.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.noticeSnackbar.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.noticeSnackbar.ErrorOptions.ActionBorderRadius = 1;
+            this.noticeSnackbar.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.noticeSnackbar.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.noticeSnackbar.ErrorOptions.BackColor = System.Drawing.Color.White;
+            this.noticeSnackbar.ErrorOptions.BorderColor = System.Drawing.Color.White;
+            this.noticeSnackbar.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
+            this.noticeSnackbar.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.noticeSnackbar.ErrorOptions.ForeColor = System.Drawing.Color.Black;
+            this.noticeSnackbar.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
+            this.noticeSnackbar.ErrorOptions.IconLeftMargin = 12;
+            this.noticeSnackbar.FadeCloseIcon = false;
+            this.noticeSnackbar.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
+            this.noticeSnackbar.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.noticeSnackbar.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.noticeSnackbar.InformationOptions.ActionBorderRadius = 1;
+            this.noticeSnackbar.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.noticeSnackbar.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.noticeSnackbar.InformationOptions.BackColor = System.Drawing.Color.White;
+            this.noticeSnackbar.InformationOptions.BorderColor = System.Drawing.Color.White;
+            this.noticeSnackbar.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.noticeSnackbar.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.noticeSnackbar.InformationOptions.ForeColor = System.Drawing.Color.Black;
+            this.noticeSnackbar.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
+            this.noticeSnackbar.InformationOptions.IconLeftMargin = 12;
+            this.noticeSnackbar.Margin = 10;
+            this.noticeSnackbar.MaximumSize = new System.Drawing.Size(0, 0);
+            this.noticeSnackbar.MaximumViews = 7;
+            this.noticeSnackbar.MessageRightMargin = 15;
+            this.noticeSnackbar.MinimumSize = new System.Drawing.Size(0, 0);
+            this.noticeSnackbar.ShowBorders = false;
+            this.noticeSnackbar.ShowCloseIcon = false;
+            this.noticeSnackbar.ShowIcon = true;
+            this.noticeSnackbar.ShowShadows = true;
+            this.noticeSnackbar.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.noticeSnackbar.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.noticeSnackbar.SuccessOptions.ActionBorderRadius = 1;
+            this.noticeSnackbar.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.noticeSnackbar.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.noticeSnackbar.SuccessOptions.BackColor = System.Drawing.Color.White;
+            this.noticeSnackbar.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.noticeSnackbar.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.noticeSnackbar.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.noticeSnackbar.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.noticeSnackbar.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
+            this.noticeSnackbar.SuccessOptions.IconLeftMargin = 12;
+            this.noticeSnackbar.ViewsMargin = 7;
+            this.noticeSnackbar.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.noticeSnackbar.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.noticeSnackbar.WarningOptions.ActionBorderRadius = 1;
+            this.noticeSnackbar.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.noticeSnackbar.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.noticeSnackbar.WarningOptions.BackColor = System.Drawing.Color.White;
+            this.noticeSnackbar.WarningOptions.BorderColor = System.Drawing.Color.White;
+            this.noticeSnackbar.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
+            this.noticeSnackbar.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.noticeSnackbar.WarningOptions.ForeColor = System.Drawing.Color.Black;
+            this.noticeSnackbar.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
+            this.noticeSnackbar.WarningOptions.IconLeftMargin = 12;
+            this.noticeSnackbar.ZoomCloseIcon = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -461,6 +532,7 @@ namespace FizzBuzz_tugas_1
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLoginPelanggan;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLoginPegawai;
         private System.Windows.Forms.Button btnClose;
+        private Bunifu.UI.WinForms.BunifuSnackbar noticeSnackbar;
     }
 }
 
