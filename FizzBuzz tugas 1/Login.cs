@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +38,8 @@ namespace FizzBuzz_tugas_1
             txtUsername.Focus();
             btnLoginPelanggan.Enabled = false;
             btnLoginPegawai.Enabled = false;
+
+          
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
@@ -71,9 +75,5 @@ namespace FizzBuzz_tugas_1
             this.Close();
         }
 
-        private void Login_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

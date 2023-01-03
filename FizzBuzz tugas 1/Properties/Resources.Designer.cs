@@ -63,6 +63,16 @@ namespace FizzBuzz_tugas_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backpack {
+            get {
+                object obj = ResourceManager.GetObject("backpack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clean_laundry {
             get {
                 object obj = ResourceManager.GetObject("clean laundry", resourceCulture);
@@ -86,6 +96,16 @@ namespace FizzBuzz_tugas_1.Properties {
         internal static System.Drawing.Bitmap eye {
             get {
                 object obj = ResourceManager.GetObject("eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap helmet {
+            get {
+                object obj = ResourceManager.GetObject("helmet", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +143,16 @@ namespace FizzBuzz_tugas_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap laundry {
+            get {
+                object obj = ResourceManager.GetObject("laundry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap laundry_bg {
             get {
                 object obj = ResourceManager.GetObject("laundry_bg", resourceCulture);
@@ -143,6 +173,26 @@ namespace FizzBuzz_tugas_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap shoes {
+            get {
+                object obj = ResourceManager.GetObject("shoes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teddy_bear {
+            get {
+                object obj = ResourceManager.GetObject("teddy-bear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
@@ -156,6 +206,16 @@ namespace FizzBuzz_tugas_1.Properties {
         internal static System.Drawing.Bitmap washing_machine {
             get {
                 object obj = ResourceManager.GetObject("washing-machine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weight {
+            get {
+                object obj = ResourceManager.GetObject("weight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
