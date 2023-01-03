@@ -30,18 +30,22 @@ namespace FizzBuzz_tugas_1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation3 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pelanggan));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.tabNavigasi = new Bunifu.UI.WinForms.BunifuPages();
             this.tabPesanan = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
             this.tpPesanan = new Bunifu.UI.WinForms.BunifuPages();
             this.tabPilihLaundry = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
@@ -85,6 +89,8 @@ namespace FizzBuzz_tugas_1
             this.lblPakaian = new Bunifu.UI.WinForms.BunifuLabel();
             this.sliderJumlahLaundry = new Bunifu.UI.WinForms.BunifuHSlider();
             this.tabRiwayatPesanan = new System.Windows.Forms.TabPage();
+            this.dgvRiwayatPesanan = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.label15 = new System.Windows.Forms.Label();
             this.snackBarBuatPesanan = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.btnKeluar = new System.Windows.Forms.Button();
@@ -92,9 +98,7 @@ namespace FizzBuzz_tugas_1
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnAkun = new System.Windows.Forms.Button();
             this.btnRiwayatPesanan = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.tabNavigasi.SuspendLayout();
             this.tabPesanan.SuspendLayout();
             this.tpPesanan.SuspendLayout();
@@ -103,6 +107,7 @@ namespace FizzBuzz_tugas_1
             this.tabLaundryKiloan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabRiwayatPesanan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRiwayatPesanan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,22 +129,22 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.SelectedIndex = 0;
             this.tabNavigasi.Size = new System.Drawing.Size(817, 766);
             this.tabNavigasi.TabIndex = 0;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 1F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.tabNavigasi.Transition = animation2;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 1F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.tabNavigasi.Transition = animation3;
             this.tabNavigasi.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Leaf;
             // 
             // tabPesanan
@@ -154,6 +159,19 @@ namespace FizzBuzz_tugas_1
             this.tabPesanan.Size = new System.Drawing.Size(809, 737);
             this.tabPesanan.TabIndex = 0;
             this.tabPesanan.Text = "Pesanan";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(43, 30);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(205, 41);
+            this.label11.TabIndex = 64;
+            this.label11.Text = "Pesanan Baru";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tpPesanan
             // 
@@ -172,22 +190,22 @@ namespace FizzBuzz_tugas_1
             this.tpPesanan.SelectedIndex = 0;
             this.tpPesanan.Size = new System.Drawing.Size(788, 636);
             this.tpPesanan.TabIndex = 2;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.tpPesanan.Transition = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.tpPesanan.Transition = animation2;
             this.tpPesanan.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.HorizSlide;
             // 
             // tabPilihLaundry
@@ -612,11 +630,11 @@ namespace FizzBuzz_tugas_1
             this.btnBuatPesanan.ColorContrastOnClick = 45;
             this.btnBuatPesanan.ColorContrastOnHover = 45;
             this.btnBuatPesanan.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnBuatPesanan.CustomizableEdges = borderEdges1;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnBuatPesanan.CustomizableEdges = borderEdges4;
             this.btnBuatPesanan.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBuatPesanan.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuatPesanan.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -718,26 +736,26 @@ namespace FizzBuzz_tugas_1
             this.txtCatatanPesanan.Modified = false;
             this.txtCatatanPesanan.Multiline = true;
             this.txtCatatanPesanan.Name = "txtCatatanPesanan";
-            stateProperties1.BorderColor = System.Drawing.Color.MidnightBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtCatatanPesanan.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtCatatanPesanan.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.Lavender;
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtCatatanPesanan.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.MidnightBlue;
-            stateProperties4.FillColor = System.Drawing.Color.AliceBlue;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtCatatanPesanan.OnIdleState = stateProperties4;
+            stateProperties5.BorderColor = System.Drawing.Color.MidnightBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtCatatanPesanan.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtCatatanPesanan.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.Lavender;
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtCatatanPesanan.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.MidnightBlue;
+            stateProperties8.FillColor = System.Drawing.Color.AliceBlue;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtCatatanPesanan.OnIdleState = stateProperties8;
             this.txtCatatanPesanan.Padding = new System.Windows.Forms.Padding(4);
             this.txtCatatanPesanan.PasswordChar = '\0';
             this.txtCatatanPesanan.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -968,12 +986,89 @@ namespace FizzBuzz_tugas_1
             // tabRiwayatPesanan
             // 
             this.tabRiwayatPesanan.BackColor = System.Drawing.Color.Honeydew;
+            this.tabRiwayatPesanan.Controls.Add(this.dgvRiwayatPesanan);
             this.tabRiwayatPesanan.Controls.Add(this.label15);
             this.tabRiwayatPesanan.Location = new System.Drawing.Point(4, 4);
             this.tabRiwayatPesanan.Name = "tabRiwayatPesanan";
             this.tabRiwayatPesanan.Size = new System.Drawing.Size(809, 737);
             this.tabRiwayatPesanan.TabIndex = 1;
             this.tabRiwayatPesanan.Text = "tab Riwayat Pesanan";
+            // 
+            // dgvRiwayatPesanan
+            // 
+            this.dgvRiwayatPesanan.AllowCustomTheming = false;
+            this.dgvRiwayatPesanan.AllowUserToAddRows = false;
+            this.dgvRiwayatPesanan.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dgvRiwayatPesanan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvRiwayatPesanan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRiwayatPesanan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvRiwayatPesanan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvRiwayatPesanan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRiwayatPesanan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvRiwayatPesanan.ColumnHeadersHeight = 40;
+            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvRiwayatPesanan.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvRiwayatPesanan.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvRiwayatPesanan.CurrentTheme.Name = null;
+            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRiwayatPesanan.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvRiwayatPesanan.EnableHeadersVisualStyles = false;
+            this.dgvRiwayatPesanan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvRiwayatPesanan.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvRiwayatPesanan.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvRiwayatPesanan.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvRiwayatPesanan.Location = new System.Drawing.Point(36, 89);
+            this.dgvRiwayatPesanan.Name = "dgvRiwayatPesanan";
+            this.dgvRiwayatPesanan.ReadOnly = true;
+            this.dgvRiwayatPesanan.RowHeadersVisible = false;
+            this.dgvRiwayatPesanan.RowHeadersWidth = 51;
+            this.dgvRiwayatPesanan.RowTemplate.Height = 40;
+            this.dgvRiwayatPesanan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvRiwayatPesanan.Size = new System.Drawing.Size(739, 611);
+            this.dgvRiwayatPesanan.TabIndex = 66;
+            this.dgvRiwayatPesanan.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(29, 32);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(253, 41);
+            this.label15.TabIndex = 65;
+            this.label15.Text = "Riwayat Pesanan";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // snackBarBuatPesanan
             // 
@@ -1096,6 +1191,7 @@ namespace FizzBuzz_tugas_1
             this.btnKeluar.TabIndex = 64;
             this.btnKeluar.Text = "Keluar";
             this.btnKeluar.UseVisualStyleBackColor = false;
+            this.btnKeluar.Click += new System.EventHandler(this.btnKeluar_Click);
             // 
             // btnPesananBaru
             // 
@@ -1116,11 +1212,11 @@ namespace FizzBuzz_tugas_1
             this.btnPesananBaru.ColorContrastOnClick = 45;
             this.btnPesananBaru.ColorContrastOnHover = 45;
             this.btnPesananBaru.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnPesananBaru.CustomizableEdges = borderEdges3;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnPesananBaru.CustomizableEdges = borderEdges6;
             this.btnPesananBaru.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnPesananBaru.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPesananBaru.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1232,11 +1328,11 @@ namespace FizzBuzz_tugas_1
             this.btnRiwayatPesanan.ColorContrastOnClick = 45;
             this.btnRiwayatPesanan.ColorContrastOnHover = 45;
             this.btnRiwayatPesanan.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnRiwayatPesanan.CustomizableEdges = borderEdges2;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnRiwayatPesanan.CustomizableEdges = borderEdges5;
             this.btnRiwayatPesanan.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRiwayatPesanan.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRiwayatPesanan.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1304,19 +1400,6 @@ namespace FizzBuzz_tugas_1
             this.btnRiwayatPesanan.UseDefaultRadiusAndThickness = true;
             this.btnRiwayatPesanan.Click += new System.EventHandler(this.btnRiwayatPesanan_Click);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(43, 30);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(205, 41);
-            this.label11.TabIndex = 64;
-            this.label11.Text = "Pesanan Baru";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -1329,19 +1412,6 @@ namespace FizzBuzz_tugas_1
             this.label14.TabIndex = 65;
             this.label14.Text = "Username";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(29, 32);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(253, 41);
-            this.label15.TabIndex = 65;
-            this.label15.Text = "Riwayat Pesanan";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Pelanggan
             // 
@@ -1374,6 +1444,7 @@ namespace FizzBuzz_tugas_1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabRiwayatPesanan.ResumeLayout(false);
             this.tabRiwayatPesanan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRiwayatPesanan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1437,5 +1508,6 @@ namespace FizzBuzz_tugas_1
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private Bunifu.UI.WinForms.BunifuDataGridView dgvRiwayatPesanan;
     }
 }

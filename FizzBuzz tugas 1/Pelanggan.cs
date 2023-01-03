@@ -20,7 +20,6 @@ namespace FizzBuzz_tugas_1
         string name;
         private void Pelanggan_Load(object sender, EventArgs e)
         {
-
         }
         private void validatePesanan()
         {
@@ -73,6 +72,23 @@ namespace FizzBuzz_tugas_1
         private void btnRiwayatPesanan_Click(object sender, EventArgs e)
         {
             tabNavigasi.PageIndex = 1;
+        }
+
+        private void btnKeluar_Click(object sender, EventArgs e)
+        {
+            string message = "Keluar dari aplikasi?";
+            string title = "Keluar";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                Login frm = new Login();
+                frm.ShowDialog();
+                this.Close();
+            }
+
         }
     }
 }
