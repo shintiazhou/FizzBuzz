@@ -189,7 +189,7 @@ namespace FizzBuzz_tugas_1
             this.txtPassword.IconLeft = global::FizzBuzz_tugas_1.Properties.Resources.padlock;
             this.txtPassword.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.IconPadding = 10;
-            this.txtPassword.IconRight = global::FizzBuzz_tugas_1.Properties.Resources.eye;
+            this.txtPassword.IconRight = null;
             this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Lines = new string[0];
             this.txtPassword.Location = new System.Drawing.Point(304, 352);
