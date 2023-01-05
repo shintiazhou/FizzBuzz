@@ -90,5 +90,6 @@ namespace FizzBuzz_tugas_1
             }
 
         }
+
     }
 }
