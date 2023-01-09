@@ -38,11 +38,11 @@ namespace FizzBuzz_tugas_1
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.tabNavigasi = new Bunifu.UI.WinForms.BunifuPages();
             this.tabPesanan = new System.Windows.Forms.TabPage();
             this.label11 = new System.Windows.Forms.Label();
@@ -82,7 +82,6 @@ namespace FizzBuzz_tugas_1
             this.rdoNextDays = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.rdoHariKerja = new System.Windows.Forms.Label();
             this.bunifuRadioButton1 = new Bunifu.UI.WinForms.BunifuRadioButton();
-            this.timePengambilan = new System.Windows.Forms.DateTimePicker();
             this.datePengambilan = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -90,16 +89,36 @@ namespace FizzBuzz_tugas_1
             this.lblPakaian = new Bunifu.UI.WinForms.BunifuLabel();
             this.sliderJumlahLaundry = new Bunifu.UI.WinForms.BunifuHSlider();
             this.tabRiwayatPesanan = new System.Windows.Forms.TabPage();
-            this.dgvRiwayatPesanan = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.label15 = new System.Windows.Forms.Label();
             this.snackBarBuatPesanan = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.btnKeluar = new System.Windows.Forms.Button();
             this.btnPesananBaru = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnAkun = new System.Windows.Forms.Button();
             this.btnRiwayatPesanan = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.lblUsername = new System.Windows.Forms.Label();
+            this.btnProfile = new System.Windows.Forms.Button();
+            this.dgvRiwayatPesanan = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rdoFilterPending = new System.Windows.Forms.RadioButton();
+            this.rdoFilterSemua = new System.Windows.Forms.RadioButton();
+            this.rdoFilterDikirim = new System.Windows.Forms.RadioButton();
+            this.rdoFilterDiproses = new System.Windows.Forms.RadioButton();
+            this.rdoFilterSelesai = new System.Windows.Forms.RadioButton();
+            this.tabProfile = new System.Windows.Forms.TabPage();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lblEmployeeId = new System.Windows.Forms.Label();
+            this.chkShowPassword = new System.Windows.Forms.CheckBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.txtNama = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtNomorTelepon = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.tabNavigasi.SuspendLayout();
             this.tabPesanan.SuspendLayout();
             this.tpPesanan.SuspendLayout();
@@ -108,8 +127,11 @@ namespace FizzBuzz_tugas_1
             this.tabLaundryKiloan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabRiwayatPesanan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRiwayatPesanan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRiwayatPesanan)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.tabProfile.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabNavigasi
@@ -118,8 +140,9 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.AllowTransitions = true;
             this.tabNavigasi.Controls.Add(this.tabPesanan);
             this.tabNavigasi.Controls.Add(this.tabRiwayatPesanan);
+            this.tabNavigasi.Controls.Add(this.tabProfile);
             this.tabNavigasi.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tabNavigasi.Location = new System.Drawing.Point(200, 0);
+            this.tabNavigasi.Location = new System.Drawing.Point(211, 0);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
             this.tabNavigasi.Page = this.tabPesanan;
@@ -127,7 +150,7 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.PageName = "tabPesanan";
             this.tabNavigasi.PageTitle = "Pesanan";
             this.tabNavigasi.SelectedIndex = 0;
-            this.tabNavigasi.Size = new System.Drawing.Size(613, 622);
+            this.tabNavigasi.Size = new System.Drawing.Size(720, 631);
             this.tabNavigasi.TabIndex = 0;
             animation2.AnimateOnlyDifferences = true;
             animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
@@ -155,7 +178,7 @@ namespace FizzBuzz_tugas_1
             this.tabPesanan.Location = new System.Drawing.Point(4, 4);
             this.tabPesanan.Name = "tabPesanan";
             this.tabPesanan.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPesanan.Size = new System.Drawing.Size(605, 596);
+            this.tabPesanan.Size = new System.Drawing.Size(712, 605);
             this.tabPesanan.TabIndex = 0;
             this.tabPesanan.Text = "Pesanan";
             // 
@@ -185,7 +208,7 @@ namespace FizzBuzz_tugas_1
             this.tpPesanan.PageName = "tabLaundryKiloan";
             this.tpPesanan.PageTitle = "detail pesanan";
             this.tpPesanan.SelectedIndex = 0;
-            this.tpPesanan.Size = new System.Drawing.Size(591, 517);
+            this.tpPesanan.Size = new System.Drawing.Size(668, 517);
             this.tpPesanan.TabIndex = 2;
             animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -229,7 +252,7 @@ namespace FizzBuzz_tugas_1
             this.tabPilihLaundry.Location = new System.Drawing.Point(4, 4);
             this.tabPilihLaundry.Name = "tabPilihLaundry";
             this.tabPilihLaundry.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPilihLaundry.Size = new System.Drawing.Size(583, 491);
+            this.tabPilihLaundry.Size = new System.Drawing.Size(660, 491);
             this.tabPilihLaundry.TabIndex = 0;
             this.tabPilihLaundry.Text = "Pilih Laundry";
             // 
@@ -260,7 +283,7 @@ namespace FizzBuzz_tugas_1
             // pictureBox3
             // 
             this.pictureBox3.Image = global::FizzBuzz_tugas_1.Properties.Resources.laundry_bg;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 328);
+            this.pictureBox3.Location = new System.Drawing.Point(44, 323);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(714, 168);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -457,7 +480,6 @@ namespace FizzBuzz_tugas_1
             this.tabLaundryKiloan.Controls.Add(this.rdoNextDays);
             this.tabLaundryKiloan.Controls.Add(this.rdoHariKerja);
             this.tabLaundryKiloan.Controls.Add(this.bunifuRadioButton1);
-            this.tabLaundryKiloan.Controls.Add(this.timePengambilan);
             this.tabLaundryKiloan.Controls.Add(this.datePengambilan);
             this.tabLaundryKiloan.Controls.Add(this.label8);
             this.tabLaundryKiloan.Controls.Add(this.label13);
@@ -467,7 +489,7 @@ namespace FizzBuzz_tugas_1
             this.tabLaundryKiloan.Location = new System.Drawing.Point(4, 4);
             this.tabLaundryKiloan.Name = "tabLaundryKiloan";
             this.tabLaundryKiloan.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLaundryKiloan.Size = new System.Drawing.Size(583, 491);
+            this.tabLaundryKiloan.Size = new System.Drawing.Size(660, 491);
             this.tabLaundryKiloan.TabIndex = 1;
             this.tabLaundryKiloan.Text = "detail pesanan";
             // 
@@ -820,17 +842,6 @@ namespace FizzBuzz_tugas_1
             this.bunifuRadioButton1.TabIndex = 47;
             this.bunifuRadioButton1.Text = null;
             // 
-            // timePengambilan
-            // 
-            this.timePengambilan.CustomFormat = "HH:mm";
-            this.timePengambilan.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.timePengambilan.Location = new System.Drawing.Point(26, 244);
-            this.timePengambilan.Margin = new System.Windows.Forms.Padding(6);
-            this.timePengambilan.Name = "timePengambilan";
-            this.timePengambilan.ShowUpDown = true;
-            this.timePengambilan.Size = new System.Drawing.Size(84, 20);
-            this.timePengambilan.TabIndex = 45;
-            // 
             // datePengambilan
             // 
             this.datePengambilan.BackColor = System.Drawing.Color.Transparent;
@@ -961,78 +972,15 @@ namespace FizzBuzz_tugas_1
             // tabRiwayatPesanan
             // 
             this.tabRiwayatPesanan.BackColor = System.Drawing.Color.Honeydew;
+            this.tabRiwayatPesanan.Controls.Add(this.groupBox1);
             this.tabRiwayatPesanan.Controls.Add(this.dgvRiwayatPesanan);
             this.tabRiwayatPesanan.Controls.Add(this.label15);
             this.tabRiwayatPesanan.Location = new System.Drawing.Point(4, 4);
             this.tabRiwayatPesanan.Margin = new System.Windows.Forms.Padding(2);
             this.tabRiwayatPesanan.Name = "tabRiwayatPesanan";
-            this.tabRiwayatPesanan.Size = new System.Drawing.Size(605, 596);
+            this.tabRiwayatPesanan.Size = new System.Drawing.Size(712, 605);
             this.tabRiwayatPesanan.TabIndex = 1;
             this.tabRiwayatPesanan.Text = "tab Riwayat Pesanan";
-            // 
-            // dgvRiwayatPesanan
-            // 
-            this.dgvRiwayatPesanan.AllowCustomTheming = false;
-            this.dgvRiwayatPesanan.AllowUserToAddRows = false;
-            this.dgvRiwayatPesanan.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvRiwayatPesanan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvRiwayatPesanan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvRiwayatPesanan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvRiwayatPesanan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvRiwayatPesanan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRiwayatPesanan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvRiwayatPesanan.ColumnHeadersHeight = 40;
-            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvRiwayatPesanan.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.dgvRiwayatPesanan.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvRiwayatPesanan.CurrentTheme.Name = null;
-            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRiwayatPesanan.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvRiwayatPesanan.EnableHeadersVisualStyles = false;
-            this.dgvRiwayatPesanan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.dgvRiwayatPesanan.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.dgvRiwayatPesanan.HeaderBgColor = System.Drawing.Color.Empty;
-            this.dgvRiwayatPesanan.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvRiwayatPesanan.Location = new System.Drawing.Point(27, 72);
-            this.dgvRiwayatPesanan.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvRiwayatPesanan.Name = "dgvRiwayatPesanan";
-            this.dgvRiwayatPesanan.ReadOnly = true;
-            this.dgvRiwayatPesanan.RowHeadersVisible = false;
-            this.dgvRiwayatPesanan.RowHeadersWidth = 51;
-            this.dgvRiwayatPesanan.RowTemplate.Height = 40;
-            this.dgvRiwayatPesanan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRiwayatPesanan.Size = new System.Drawing.Size(554, 496);
-            this.dgvRiwayatPesanan.TabIndex = 66;
-            this.dgvRiwayatPesanan.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // label15
             // 
@@ -1268,19 +1216,6 @@ namespace FizzBuzz_tugas_1
             this.pictureBox2.TabIndex = 63;
             this.pictureBox2.TabStop = false;
             // 
-            // btnAkun
-            // 
-            this.btnAkun.BackColor = System.Drawing.Color.Transparent;
-            this.btnAkun.BackgroundImage = global::FizzBuzz_tugas_1.Properties.Resources.user;
-            this.btnAkun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAkun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAkun.ForeColor = System.Drawing.Color.White;
-            this.btnAkun.Location = new System.Drawing.Point(70, 26);
-            this.btnAkun.Name = "btnAkun";
-            this.btnAkun.Size = new System.Drawing.Size(70, 73);
-            this.btnAkun.TabIndex = 36;
-            this.btnAkun.UseVisualStyleBackColor = false;
-            // 
             // btnRiwayatPesanan
             // 
             this.btnRiwayatPesanan.AllowAnimations = true;
@@ -1371,35 +1306,344 @@ namespace FizzBuzz_tugas_1
             this.btnRiwayatPesanan.UseDefaultRadiusAndThickness = true;
             this.btnRiwayatPesanan.Click += new System.EventHandler(this.btnRiwayatPesanan_Click);
             // 
-            // lblUsername
+            // btnProfile
             // 
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(64, 102);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(83, 20);
-            this.lblUsername.TabIndex = 65;
-            this.lblUsername.Text = "Username";
-            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.Image = global::FizzBuzz_tugas_1.Properties.Resources.user;
+            this.btnProfile.Location = new System.Drawing.Point(48, 28);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(116, 94);
+            this.btnProfile.TabIndex = 74;
+            this.btnProfile.Text = "Username";
+            this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnProfile.UseVisualStyleBackColor = true;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            // 
+            // dgvRiwayatPesanan
+            // 
+            this.dgvRiwayatPesanan.AllowCustomTheming = false;
+            this.dgvRiwayatPesanan.AllowUserToAddRows = false;
+            this.dgvRiwayatPesanan.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvRiwayatPesanan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvRiwayatPesanan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRiwayatPesanan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvRiwayatPesanan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvRiwayatPesanan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRiwayatPesanan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvRiwayatPesanan.ColumnHeadersHeight = 40;
+            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvRiwayatPesanan.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvRiwayatPesanan.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dgvRiwayatPesanan.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dgvRiwayatPesanan.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvRiwayatPesanan.CurrentTheme.Name = null;
+            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dgvRiwayatPesanan.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRiwayatPesanan.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvRiwayatPesanan.EnableHeadersVisualStyles = false;
+            this.dgvRiwayatPesanan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dgvRiwayatPesanan.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dgvRiwayatPesanan.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dgvRiwayatPesanan.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvRiwayatPesanan.Location = new System.Drawing.Point(28, 141);
+            this.dgvRiwayatPesanan.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvRiwayatPesanan.Name = "dgvRiwayatPesanan";
+            this.dgvRiwayatPesanan.ReadOnly = true;
+            this.dgvRiwayatPesanan.RowHeadersVisible = false;
+            this.dgvRiwayatPesanan.RowHeadersWidth = 51;
+            this.dgvRiwayatPesanan.RowTemplate.Height = 40;
+            this.dgvRiwayatPesanan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvRiwayatPesanan.Size = new System.Drawing.Size(628, 417);
+            this.dgvRiwayatPesanan.TabIndex = 68;
+            this.dgvRiwayatPesanan.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdoFilterPending);
+            this.groupBox1.Controls.Add(this.rdoFilterSemua);
+            this.groupBox1.Controls.Add(this.rdoFilterDikirim);
+            this.groupBox1.Controls.Add(this.rdoFilterDiproses);
+            this.groupBox1.Controls.Add(this.rdoFilterSelesai);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(28, 71);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(628, 62);
+            this.groupBox1.TabIndex = 69;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Filter Pesanan";
+            // 
+            // rdoFilterPending
+            // 
+            this.rdoFilterPending.AutoSize = true;
+            this.rdoFilterPending.Enabled = false;
+            this.rdoFilterPending.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoFilterPending.Location = new System.Drawing.Point(116, 29);
+            this.rdoFilterPending.Name = "rdoFilterPending";
+            this.rdoFilterPending.Size = new System.Drawing.Size(85, 24);
+            this.rdoFilterPending.TabIndex = 85;
+            this.rdoFilterPending.TabStop = true;
+            this.rdoFilterPending.Text = "Pending";
+            this.rdoFilterPending.UseVisualStyleBackColor = true;
+            // 
+            // rdoFilterSemua
+            // 
+            this.rdoFilterSemua.AutoSize = true;
+            this.rdoFilterSemua.Enabled = false;
+            this.rdoFilterSemua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoFilterSemua.Location = new System.Drawing.Point(10, 29);
+            this.rdoFilterSemua.Name = "rdoFilterSemua";
+            this.rdoFilterSemua.Size = new System.Drawing.Size(78, 24);
+            this.rdoFilterSemua.TabIndex = 83;
+            this.rdoFilterSemua.TabStop = true;
+            this.rdoFilterSemua.Text = "Semua";
+            this.rdoFilterSemua.UseVisualStyleBackColor = true;
+            // 
+            // rdoFilterDikirim
+            // 
+            this.rdoFilterDikirim.AutoSize = true;
+            this.rdoFilterDikirim.Enabled = false;
+            this.rdoFilterDikirim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoFilterDikirim.Location = new System.Drawing.Point(347, 29);
+            this.rdoFilterDikirim.Name = "rdoFilterDikirim";
+            this.rdoFilterDikirim.Size = new System.Drawing.Size(74, 24);
+            this.rdoFilterDikirim.TabIndex = 82;
+            this.rdoFilterDikirim.TabStop = true;
+            this.rdoFilterDikirim.Text = "Dikirim";
+            this.rdoFilterDikirim.UseVisualStyleBackColor = true;
+            // 
+            // rdoFilterDiproses
+            // 
+            this.rdoFilterDiproses.AutoSize = true;
+            this.rdoFilterDiproses.Enabled = false;
+            this.rdoFilterDiproses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoFilterDiproses.Location = new System.Drawing.Point(229, 29);
+            this.rdoFilterDiproses.Name = "rdoFilterDiproses";
+            this.rdoFilterDiproses.Size = new System.Drawing.Size(90, 24);
+            this.rdoFilterDiproses.TabIndex = 81;
+            this.rdoFilterDiproses.TabStop = true;
+            this.rdoFilterDiproses.Text = "Diproses";
+            this.rdoFilterDiproses.UseVisualStyleBackColor = true;
+            // 
+            // rdoFilterSelesai
+            // 
+            this.rdoFilterSelesai.AutoSize = true;
+            this.rdoFilterSelesai.Enabled = false;
+            this.rdoFilterSelesai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoFilterSelesai.Location = new System.Drawing.Point(449, 29);
+            this.rdoFilterSelesai.Name = "rdoFilterSelesai";
+            this.rdoFilterSelesai.Size = new System.Drawing.Size(79, 24);
+            this.rdoFilterSelesai.TabIndex = 80;
+            this.rdoFilterSelesai.TabStop = true;
+            this.rdoFilterSelesai.Text = "Selesai";
+            this.rdoFilterSelesai.UseVisualStyleBackColor = true;
+            // 
+            // tabProfile
+            // 
+            this.tabProfile.Controls.Add(this.btnUpdate);
+            this.tabProfile.Controls.Add(this.groupBox2);
+            this.tabProfile.Controls.Add(this.label22);
+            this.tabProfile.Controls.Add(this.chkShowPassword);
+            this.tabProfile.Controls.Add(this.txtPassword);
+            this.tabProfile.Controls.Add(this.lblEmployeeId);
+            this.tabProfile.Controls.Add(this.label18);
+            this.tabProfile.Controls.Add(this.label17);
+            this.tabProfile.Location = new System.Drawing.Point(4, 4);
+            this.tabProfile.Name = "tabProfile";
+            this.tabProfile.Size = new System.Drawing.Size(712, 605);
+            this.tabProfile.TabIndex = 2;
+            this.tabProfile.Text = "tab profile";
+            this.tabProfile.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(23, 66);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(77, 18);
+            this.label17.TabIndex = 8;
+            this.label17.Text = "Username";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(19, 21);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(91, 32);
+            this.label18.TabIndex = 66;
+            this.label18.Text = "Profile";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblEmployeeId
+            // 
+            this.lblEmployeeId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEmployeeId.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeId.Location = new System.Drawing.Point(25, 89);
+            this.lblEmployeeId.Name = "lblEmployeeId";
+            this.lblEmployeeId.Size = new System.Drawing.Size(329, 23);
+            this.lblEmployeeId.TabIndex = 75;
+            this.lblEmployeeId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // chkShowPassword
+            // 
+            this.chkShowPassword.AutoSize = true;
+            this.chkShowPassword.Location = new System.Drawing.Point(251, 179);
+            this.chkShowPassword.Name = "chkShowPassword";
+            this.chkShowPassword.Size = new System.Drawing.Size(102, 17);
+            this.chkShowPassword.TabIndex = 83;
+            this.chkShowPassword.Text = "Show Password";
+            this.chkShowPassword.UseVisualStyleBackColor = true;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(26, 146);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(327, 20);
+            this.txtPassword.TabIndex = 82;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(26, 125);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(75, 18);
+            this.label22.TabIndex = 84;
+            this.label22.Text = "Password";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtNama);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.txtNomorTelepon);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Location = new System.Drawing.Point(25, 208);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(328, 277);
+            this.groupBox2.TabIndex = 85;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Informasi Akun";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(26, 507);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(327, 29);
+            this.btnUpdate.TabIndex = 88;
+            this.btnUpdate.Text = "Simpan Data";
+            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // txtNama
+            // 
+            this.txtNama.Location = new System.Drawing.Point(18, 50);
+            this.txtNama.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNama.Name = "txtNama";
+            this.txtNama.Size = new System.Drawing.Size(291, 20);
+            this.txtNama.TabIndex = 87;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(16, 25);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(108, 18);
+            this.label20.TabIndex = 86;
+            this.label20.Text = "Nama Lengkap";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(17, 164);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(291, 92);
+            this.textBox1.TabIndex = 85;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(15, 134);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(53, 18);
+            this.label19.TabIndex = 84;
+            this.label19.Text = "Alamat";
+            // 
+            // txtNomorTelepon
+            // 
+            this.txtNomorTelepon.Location = new System.Drawing.Point(17, 107);
+            this.txtNomorTelepon.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNomorTelepon.Name = "txtNomorTelepon";
+            this.txtNomorTelepon.Size = new System.Drawing.Size(291, 20);
+            this.txtNomorTelepon.TabIndex = 83;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(15, 82);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(112, 18);
+            this.label16.TabIndex = 82;
+            this.label16.Text = "Nomor Telepon";
             // 
             // Pelanggan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 622);
-            this.Controls.Add(this.lblUsername);
+            this.ClientSize = new System.Drawing.Size(931, 631);
+            this.Controls.Add(this.btnProfile);
             this.Controls.Add(this.btnRiwayatPesanan);
             this.Controls.Add(this.btnPesananBaru);
             this.Controls.Add(this.btnKeluar);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btnAkun);
             this.Controls.Add(this.tabNavigasi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pelanggan";
             this.Text = "Clean Laundry";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Pelanggan_FormClosing);
             this.Load += new System.EventHandler(this.Pelanggan_Load);
             this.tabNavigasi.ResumeLayout(false);
             this.tabPesanan.ResumeLayout(false);
@@ -1413,10 +1657,15 @@ namespace FizzBuzz_tugas_1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabRiwayatPesanan.ResumeLayout(false);
             this.tabRiwayatPesanan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRiwayatPesanan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRiwayatPesanan)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.tabProfile.ResumeLayout(false);
+            this.tabProfile.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1448,7 +1697,6 @@ namespace FizzBuzz_tugas_1
         private Bunifu.UI.WinForms.BunifuLabel lblPakaian;
         private Bunifu.UI.WinForms.BunifuHSlider sliderJumlahLaundry;
         private Bunifu.UI.WinForms.BunifuDatePicker datePengambilan;
-        private System.Windows.Forms.DateTimePicker timePengambilan;
         private System.Windows.Forms.Label nextDay;
         private Bunifu.UI.WinForms.BunifuRadioButton rdoNextDays;
         private System.Windows.Forms.Label rdoHariKerja;
@@ -1463,7 +1711,6 @@ namespace FizzBuzz_tugas_1
         private Bunifu.UI.WinForms.BunifuLabel lblHarga;
         private System.Windows.Forms.Label label21;
         private Bunifu.UI.WinForms.BunifuSnackbar snackBarBuatPesanan;
-        private System.Windows.Forms.Button btnAkun;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnPesananBaru;
         private System.Windows.Forms.Button btnKeluar;
@@ -1475,9 +1722,30 @@ namespace FizzBuzz_tugas_1
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnRiwayatPesanan;
         private System.Windows.Forms.TabPage tabRiwayatPesanan;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label label15;
-        private Bunifu.UI.WinForms.BunifuDataGridView dgvRiwayatPesanan;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnProfile;
+        private Bunifu.UI.WinForms.BunifuDataGridView dgvRiwayatPesanan;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rdoFilterPending;
+        private System.Windows.Forms.RadioButton rdoFilterSemua;
+        private System.Windows.Forms.RadioButton rdoFilterDikirim;
+        private System.Windows.Forms.RadioButton rdoFilterDiproses;
+        private System.Windows.Forms.RadioButton rdoFilterSelesai;
+        private System.Windows.Forms.TabPage tabProfile;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblEmployeeId;
+        private System.Windows.Forms.Label label22;
+        public System.Windows.Forms.CheckBox chkShowPassword;
+        public System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtNama;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtNomorTelepon;
+        private System.Windows.Forms.Label label16;
     }
 }

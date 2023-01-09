@@ -21,20 +21,6 @@ namespace FizzBuzz_tugas_1
         private void Pelanggan_Load(object sender, EventArgs e)
         {
         }
-        private void validatePesanan()
-        {
-            //validasi pesanan , button buat pesanan menjadi enabled 
-        }
-        private void Pelanggan_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-            string file = Application.StartupPath.Replace("\bin\\Debug", "\\Properties\\licenses.licx");
-
-            if (File.Exists(file))
-            {
-                File.Delete(file);
-            }
-        }
 
         private void btnPilihanLaundry_Click(object sender, EventArgs e)
         {
@@ -91,5 +77,9 @@ namespace FizzBuzz_tugas_1
 
         }
 
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            tabNavigasi.PageIndex = 2;
+        }
     }
 }

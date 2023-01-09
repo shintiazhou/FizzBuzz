@@ -48,6 +48,7 @@ namespace FizzBuzz_tugas_1
             this.btnLoginPegawai = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnClose = new System.Windows.Forms.Button();
             this.noticeSnackbar = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.btnAkunBaru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUsername
@@ -113,7 +114,7 @@ namespace FizzBuzz_tugas_1
             this.txtUsername.SelectionLength = 0;
             this.txtUsername.SelectionStart = 0;
             this.txtUsername.ShortcutsEnabled = true;
-            this.txtUsername.Size = new System.Drawing.Size(260, 41);
+            this.txtUsername.Size = new System.Drawing.Size(260, 37);
             this.txtUsername.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtUsername.TabIndex = 18;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -228,7 +229,7 @@ namespace FizzBuzz_tugas_1
             this.txtPassword.SelectionLength = 0;
             this.txtPassword.SelectionStart = 0;
             this.txtPassword.ShortcutsEnabled = true;
-            this.txtPassword.Size = new System.Drawing.Size(260, 41);
+            this.txtPassword.Size = new System.Drawing.Size(260, 37);
             this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPassword.TabIndex = 19;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -501,14 +502,28 @@ namespace FizzBuzz_tugas_1
             this.noticeSnackbar.WarningOptions.IconLeftMargin = 12;
             this.noticeSnackbar.ZoomCloseIcon = true;
             // 
+            // btnAkunBaru
+            // 
+            this.btnAkunBaru.BackColor = System.Drawing.Color.White;
+            this.btnAkunBaru.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAkunBaru.ForeColor = System.Drawing.Color.Maroon;
+            this.btnAkunBaru.Location = new System.Drawing.Point(712, 534);
+            this.btnAkunBaru.Name = "btnAkunBaru";
+            this.btnAkunBaru.Size = new System.Drawing.Size(136, 28);
+            this.btnAkunBaru.TabIndex = 71;
+            this.btnAkunBaru.Text = "Buat Akun Baru";
+            this.btnAkunBaru.UseVisualStyleBackColor = false;
+            this.btnAkunBaru.Click += new System.EventHandler(this.btnAkunBaru_Click);
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(860, 574);
+            this.Controls.Add(this.btnAkunBaru);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLoginPegawai);
             this.Controls.Add(this.btnLoginPelanggan);
@@ -533,6 +548,7 @@ namespace FizzBuzz_tugas_1
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLoginPegawai;
         private System.Windows.Forms.Button btnClose;
         private Bunifu.UI.WinForms.BunifuSnackbar noticeSnackbar;
+        private System.Windows.Forms.Button btnAkunBaru;
     }
 }
 

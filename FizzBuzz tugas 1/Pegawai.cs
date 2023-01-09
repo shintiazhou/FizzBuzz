@@ -39,6 +39,10 @@ namespace FizzBuzz_tugas_1
 
         }
 
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            tabNavigasi.PageIndex = 1;
+        }
     }
 }
 

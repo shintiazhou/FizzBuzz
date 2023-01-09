@@ -76,5 +76,12 @@ namespace FizzBuzz_tugas_1
             this.Close();
         }
 
+        private void btnAkunBaru_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AkunBaru frm = new AkunBaru();
+            frm.ShowDialog();
+            this.Close();
+        }
     }
 }
