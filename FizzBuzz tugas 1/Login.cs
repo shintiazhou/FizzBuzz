@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace FizzBuzz_tugas_1
 {
@@ -19,28 +20,100 @@ namespace FizzBuzz_tugas_1
             InitializeComponent();
         }
 
-        private void btnLoginPelanggan_Click(object sender, EventArgs e)
+        SqlConnection con;
+        string constr;
+        SqlDataAdapter da;
+        SqlCommand cmd;
+        string query;
+        DataSet ds;
+        SqlCommandBuilder cb;
+        DataRow dr;
+        DataColumn[] dc = new DataColumn[1];
+
+        private void koneksi()
         {
-            this.Hide();
-            Pelanggan frm = new Pelanggan();
-            frm.ShowDialog();
-            this.Close();
+            try
+            {
+                constr = "Data Source = localhost; Initial Catalog = CleanLaundryPAB; Integrated Security = true";
+                con = new SqlConnection(constr);
+                con.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
-        private void btnLoginPegawai_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Pegawai frm = new Pegawai();
-            frm.ShowDialog();
-            this.Close();
-        }
+
         private void Login_Load(object sender, EventArgs e)
         {
+            koneksi();
             txtUsername.Focus();
             btnLoginPelanggan.Enabled = false;
             btnLoginPegawai.Enabled = false;
             noticeSnackbar.Show(this, "Notice: Jika terdapat build error\nsilahkan coba hapus file licenses.licx dalam folder properties pada project anda.\nTerima kasih!", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Information, 5000);
-           
+        }
 
+        private void LoaddataEmployee()
+        {
+            ds = new DataSet();
+            query = "SELECT * FROM tblEmployees";
+            cmd = new SqlCommand(query, con);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds, "tblEmployees");
+            dc[0] = ds.Tables["tblEmployees"].Columns[0];
+            ds.Tables["tblEmployees"].PrimaryKey = dc;
+        }
+        private void LoaddataCustomer()
+        {
+            ds = new DataSet();
+            query = "SELECT * FROM tblCustomer";
+            cmd = new SqlCommand(query, con);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds, "tblCustomer");
+            dc[0] = ds.Tables["tblCustomer"].Columns[0];
+            ds.Tables["tblCustomer"].PrimaryKey = dc;
+        }
+
+        private void Kosong()
+        {
+
+        }
+
+        private void btnLoginPelanggan_Click(object sender, EventArgs e)
+        {
+            LoaddataCustomer();
+            dr = ds.Tables["tblCustomer"].Rows.Find(txtUsername.Text);
+            if (dr != null)
+            {
+                this.Hide();
+                Pelanggan frm = new Pelanggan();
+                frm.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Username " + txtUsername.Text + " Not Found", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Kosong();
+            }
+            
+        }
+        private void btnLoginPegawai_Click(object sender, EventArgs e)
+        {
+            LoaddataEmployee();
+            dr = ds.Tables["tblEmployees"].Rows.Find(txtUsername.Text);
+
+            if (dr != null)
+            {
+                this.Hide();
+                Pegawai frm = new Pegawai();
+                frm.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Username " + txtUsername.Text + " Not Found", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                Kosong();
+            }
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)

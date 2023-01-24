@@ -61,14 +61,12 @@ namespace FizzBuzz_tugas_1
             this.lblJumlahRecord = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvStatusPengiriman = new System.Windows.Forms.DataGridView();
-            this.bunifuFormDock2 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.btnProfile = new System.Windows.Forms.Button();
             this.tabProfile = new System.Windows.Forms.TabPage();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtNama = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAlamat = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.txtNomorTelepon = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -78,6 +76,8 @@ namespace FizzBuzz_tugas_1
             this.lblEmployeeId = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.bunifuFormDock2 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.btnProfile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabNavigasi.SuspendLayout();
             this.tabStatusPesanan.SuspendLayout();
@@ -174,7 +174,8 @@ namespace FizzBuzz_tugas_1
             this.btnPesananBaru.IdleIconLeftImage = null;
             this.btnPesananBaru.IdleIconRightImage = null;
             this.btnPesananBaru.IndicateFocus = false;
-            this.btnPesananBaru.Location = new System.Drawing.Point(-1, 141);
+            this.btnPesananBaru.Location = new System.Drawing.Point(-2, 217);
+            this.btnPesananBaru.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPesananBaru.Name = "btnPesananBaru";
             this.btnPesananBaru.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPesananBaru.OnDisabledState.BorderRadius = 30;
@@ -208,7 +209,7 @@ namespace FizzBuzz_tugas_1
             this.btnPesananBaru.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnPesananBaru.OnPressedState.IconLeftImage = null;
             this.btnPesananBaru.OnPressedState.IconRightImage = null;
-            this.btnPesananBaru.Size = new System.Drawing.Size(212, 52);
+            this.btnPesananBaru.Size = new System.Drawing.Size(318, 80);
             this.btnPesananBaru.TabIndex = 72;
             this.btnPesananBaru.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPesananBaru.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -221,9 +222,10 @@ namespace FizzBuzz_tugas_1
             this.btnKeluar.BackColor = System.Drawing.Color.Red;
             this.btnKeluar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKeluar.ForeColor = System.Drawing.Color.White;
-            this.btnKeluar.Location = new System.Drawing.Point(36, 561);
+            this.btnKeluar.Location = new System.Drawing.Point(54, 863);
+            this.btnKeluar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnKeluar.Name = "btnKeluar";
-            this.btnKeluar.Size = new System.Drawing.Size(136, 28);
+            this.btnKeluar.Size = new System.Drawing.Size(204, 43);
             this.btnKeluar.TabIndex = 70;
             this.btnKeluar.Text = "Keluar";
             this.btnKeluar.UseVisualStyleBackColor = false;
@@ -232,9 +234,10 @@ namespace FizzBuzz_tugas_1
             // pictureBox2
             // 
             this.pictureBox2.Image = global::FizzBuzz_tugas_1.Properties.Resources.clean_laundry;
-            this.pictureBox2.Location = new System.Drawing.Point(76, 476);
+            this.pictureBox2.Location = new System.Drawing.Point(114, 732);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(55, 79);
+            this.pictureBox2.Size = new System.Drawing.Size(82, 122);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 69;
             this.pictureBox2.TabStop = false;
@@ -246,7 +249,8 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.Controls.Add(this.tabStatusPesanan);
             this.tabNavigasi.Controls.Add(this.tabProfile);
             this.tabNavigasi.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tabNavigasi.Location = new System.Drawing.Point(209, 0);
+            this.tabNavigasi.Location = new System.Drawing.Point(313, 0);
+            this.tabNavigasi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
             this.tabNavigasi.Page = this.tabProfile;
@@ -254,7 +258,7 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.PageName = "tabProfile";
             this.tabNavigasi.PageTitle = "Tab Profile";
             this.tabNavigasi.SelectedIndex = 0;
-            this.tabNavigasi.Size = new System.Drawing.Size(613, 606);
+            this.tabNavigasi.Size = new System.Drawing.Size(920, 932);
             this.tabNavigasi.TabIndex = 67;
             animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -288,9 +292,10 @@ namespace FizzBuzz_tugas_1
             this.tabStatusPesanan.Controls.Add(this.label1);
             this.tabStatusPesanan.Controls.Add(this.dgvStatusPengiriman);
             this.tabStatusPesanan.Location = new System.Drawing.Point(4, 4);
+            this.tabStatusPesanan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabStatusPesanan.Name = "tabStatusPesanan";
-            this.tabStatusPesanan.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStatusPesanan.Size = new System.Drawing.Size(605, 580);
+            this.tabStatusPesanan.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabStatusPesanan.Size = new System.Drawing.Size(912, 899);
             this.tabStatusPesanan.TabIndex = 0;
             this.tabStatusPesanan.Text = "Status Pesanan";
             // 
@@ -303,9 +308,11 @@ namespace FizzBuzz_tugas_1
             this.groupBox1.Controls.Add(this.chkPesananPending);
             this.groupBox1.Controls.Add(this.btnCariPesanan);
             this.groupBox1.Controls.Add(this.txtCariPesanan);
-            this.groupBox1.Location = new System.Drawing.Point(25, 67);
+            this.groupBox1.Location = new System.Drawing.Point(38, 103);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(550, 134);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(825, 206);
             this.groupBox1.TabIndex = 76;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search";
@@ -313,9 +320,10 @@ namespace FizzBuzz_tugas_1
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(185, 64);
+            this.label3.Location = new System.Drawing.Point(278, 98);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 13);
+            this.label3.Size = new System.Drawing.Size(201, 20);
             this.label3.TabIndex = 82;
             this.label3.Text = "Tenggat Waktu Pengiriman";
             // 
@@ -339,10 +347,11 @@ namespace FizzBuzz_tugas_1
             this.dtpPengiriman.IconColor = System.Drawing.Color.Gray;
             this.dtpPengiriman.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dtpPengiriman.LeftTextMargin = 5;
-            this.dtpPengiriman.Location = new System.Drawing.Point(188, 86);
+            this.dtpPengiriman.Location = new System.Drawing.Point(282, 132);
+            this.dtpPengiriman.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpPengiriman.MinimumSize = new System.Drawing.Size(4, 32);
             this.dtpPengiriman.Name = "dtpPengiriman";
-            this.dtpPengiriman.Size = new System.Drawing.Size(149, 32);
+            this.dtpPengiriman.Size = new System.Drawing.Size(222, 32);
             this.dtpPengiriman.TabIndex = 81;
             this.dtpPengiriman.Value = new System.DateTime(2023, 1, 3, 10, 58, 0, 0);
             // 
@@ -366,28 +375,31 @@ namespace FizzBuzz_tugas_1
             this.dtpPengambilan.IconColor = System.Drawing.Color.Gray;
             this.dtpPengambilan.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.dtpPengambilan.LeftTextMargin = 5;
-            this.dtpPengambilan.Location = new System.Drawing.Point(16, 86);
+            this.dtpPengambilan.Location = new System.Drawing.Point(24, 132);
+            this.dtpPengambilan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpPengambilan.MinimumSize = new System.Drawing.Size(4, 32);
             this.dtpPengambilan.Name = "dtpPengambilan";
-            this.dtpPengambilan.Size = new System.Drawing.Size(149, 32);
+            this.dtpPengambilan.Size = new System.Drawing.Size(222, 32);
             this.dtpPengambilan.TabIndex = 80;
             this.dtpPengambilan.Value = new System.DateTime(2023, 1, 3, 10, 58, 0, 0);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 64);
+            this.label2.Location = new System.Drawing.Point(24, 98);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 13);
+            this.label2.Size = new System.Drawing.Size(214, 20);
             this.label2.TabIndex = 79;
             this.label2.Text = "Tenggat Waktu Pengambilan";
             // 
             // chkPesananPending
             // 
             this.chkPesananPending.AutoSize = true;
-            this.chkPesananPending.Location = new System.Drawing.Point(411, 99);
+            this.chkPesananPending.Location = new System.Drawing.Point(616, 152);
+            this.chkPesananPending.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chkPesananPending.Name = "chkPesananPending";
-            this.chkPesananPending.Size = new System.Drawing.Size(133, 17);
+            this.chkPesananPending.Size = new System.Drawing.Size(197, 24);
             this.chkPesananPending.TabIndex = 78;
             this.chkPesananPending.Text = "Filter pesanan pending";
             this.chkPesananPending.UseVisualStyleBackColor = true;
@@ -440,7 +452,8 @@ namespace FizzBuzz_tugas_1
             this.btnCariPesanan.IdleIconLeftImage = null;
             this.btnCariPesanan.IdleIconRightImage = null;
             this.btnCariPesanan.IndicateFocus = false;
-            this.btnCariPesanan.Location = new System.Drawing.Point(473, 20);
+            this.btnCariPesanan.Location = new System.Drawing.Point(710, 31);
+            this.btnCariPesanan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCariPesanan.Name = "btnCariPesanan";
             this.btnCariPesanan.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCariPesanan.OnDisabledState.BorderRadius = 20;
@@ -474,7 +487,7 @@ namespace FizzBuzz_tugas_1
             this.btnCariPesanan.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnCariPesanan.OnPressedState.IconLeftImage = null;
             this.btnCariPesanan.OnPressedState.IconRightImage = null;
-            this.btnCariPesanan.Size = new System.Drawing.Size(69, 27);
+            this.btnCariPesanan.Size = new System.Drawing.Size(104, 42);
             this.btnCariPesanan.TabIndex = 77;
             this.btnCariPesanan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCariPesanan.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -509,9 +522,10 @@ namespace FizzBuzz_tugas_1
             this.txtCariPesanan.IconRight = null;
             this.txtCariPesanan.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCariPesanan.Lines = new string[0];
-            this.txtCariPesanan.Location = new System.Drawing.Point(16, 20);
+            this.txtCariPesanan.Location = new System.Drawing.Point(24, 31);
+            this.txtCariPesanan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCariPesanan.MaxLength = 32767;
-            this.txtCariPesanan.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtCariPesanan.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtCariPesanan.Modified = false;
             this.txtCariPesanan.Multiline = false;
             this.txtCariPesanan.Name = "txtCariPesanan";
@@ -535,7 +549,7 @@ namespace FizzBuzz_tugas_1
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtCariPesanan.OnIdleState = stateProperties4;
-            this.txtCariPesanan.Padding = new System.Windows.Forms.Padding(3);
+            this.txtCariPesanan.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCariPesanan.PasswordChar = '\0';
             this.txtCariPesanan.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtCariPesanan.PlaceholderText = "Cari berdasarkan username";
@@ -545,7 +559,7 @@ namespace FizzBuzz_tugas_1
             this.txtCariPesanan.SelectionLength = 0;
             this.txtCariPesanan.SelectionStart = 0;
             this.txtCariPesanan.ShortcutsEnabled = true;
-            this.txtCariPesanan.Size = new System.Drawing.Size(439, 27);
+            this.txtCariPesanan.Size = new System.Drawing.Size(658, 42);
             this.txtCariPesanan.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtCariPesanan.TabIndex = 76;
             this.txtCariPesanan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -561,9 +575,10 @@ namespace FizzBuzz_tugas_1
             this.lblTransactionId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTransactionId.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTransactionId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTransactionId.Location = new System.Drawing.Point(27, 416);
+            this.lblTransactionId.Location = new System.Drawing.Point(40, 640);
+            this.lblTransactionId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTransactionId.Name = "lblTransactionId";
-            this.lblTransactionId.Size = new System.Drawing.Size(168, 20);
+            this.lblTransactionId.Size = new System.Drawing.Size(251, 30);
             this.lblTransactionId.TabIndex = 74;
             this.lblTransactionId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -571,9 +586,10 @@ namespace FizzBuzz_tugas_1
             // 
             this.rdoDikirim.AutoSize = true;
             this.rdoDikirim.Enabled = false;
-            this.rdoDikirim.Location = new System.Drawing.Point(25, 469);
+            this.rdoDikirim.Location = new System.Drawing.Point(38, 722);
+            this.rdoDikirim.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdoDikirim.Name = "rdoDikirim";
-            this.rdoDikirim.Size = new System.Drawing.Size(141, 17);
+            this.rdoDikirim.Size = new System.Drawing.Size(208, 24);
             this.rdoDikirim.TabIndex = 73;
             this.rdoDikirim.TabStop = true;
             this.rdoDikirim.Text = "Pesanan Sedang Dikirim";
@@ -583,9 +599,10 @@ namespace FizzBuzz_tugas_1
             // 
             this.rdoDiproses.AutoSize = true;
             this.rdoDiproses.Enabled = false;
-            this.rdoDiproses.Location = new System.Drawing.Point(25, 446);
+            this.rdoDiproses.Location = new System.Drawing.Point(38, 686);
+            this.rdoDiproses.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdoDiproses.Name = "rdoDiproses";
-            this.rdoDiproses.Size = new System.Drawing.Size(149, 17);
+            this.rdoDiproses.Size = new System.Drawing.Size(221, 24);
             this.rdoDiproses.TabIndex = 72;
             this.rdoDiproses.TabStop = true;
             this.rdoDiproses.Text = "Pesanan Sedang diproses";
@@ -595,9 +612,10 @@ namespace FizzBuzz_tugas_1
             // 
             this.rdoSelesai.AutoSize = true;
             this.rdoSelesai.Enabled = false;
-            this.rdoSelesai.Location = new System.Drawing.Point(25, 492);
+            this.rdoSelesai.Location = new System.Drawing.Point(38, 757);
+            this.rdoSelesai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdoSelesai.Name = "rdoSelesai";
-            this.rdoSelesai.Size = new System.Drawing.Size(104, 17);
+            this.rdoSelesai.Size = new System.Drawing.Size(153, 24);
             this.rdoSelesai.TabIndex = 71;
             this.rdoSelesai.TabStop = true;
             this.rdoSelesai.Text = "Pesanan Selesai";
@@ -651,7 +669,8 @@ namespace FizzBuzz_tugas_1
             this.btnUbahStatusPesanan.IdleIconLeftImage = null;
             this.btnUbahStatusPesanan.IdleIconRightImage = null;
             this.btnUbahStatusPesanan.IndicateFocus = false;
-            this.btnUbahStatusPesanan.Location = new System.Drawing.Point(25, 524);
+            this.btnUbahStatusPesanan.Location = new System.Drawing.Point(38, 806);
+            this.btnUbahStatusPesanan.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUbahStatusPesanan.Name = "btnUbahStatusPesanan";
             this.btnUbahStatusPesanan.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnUbahStatusPesanan.OnDisabledState.BorderRadius = 20;
@@ -685,7 +704,7 @@ namespace FizzBuzz_tugas_1
             this.btnUbahStatusPesanan.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnUbahStatusPesanan.OnPressedState.IconLeftImage = null;
             this.btnUbahStatusPesanan.OnPressedState.IconRightImage = null;
-            this.btnUbahStatusPesanan.Size = new System.Drawing.Size(178, 26);
+            this.btnUbahStatusPesanan.Size = new System.Drawing.Size(267, 40);
             this.btnUbahStatusPesanan.TabIndex = 70;
             this.btnUbahStatusPesanan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUbahStatusPesanan.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -698,9 +717,10 @@ namespace FizzBuzz_tugas_1
             this.label11.AutoSize = true;
             this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(25, 19);
+            this.label11.Location = new System.Drawing.Point(38, 29);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(185, 32);
+            this.label11.Size = new System.Drawing.Size(272, 48);
             this.label11.TabIndex = 65;
             this.label11.Text = "Status Pesanan";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -708,18 +728,20 @@ namespace FizzBuzz_tugas_1
             // lblJumlahRecord
             // 
             this.lblJumlahRecord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblJumlahRecord.Location = new System.Drawing.Point(522, 406);
+            this.lblJumlahRecord.Location = new System.Drawing.Point(783, 625);
+            this.lblJumlahRecord.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblJumlahRecord.Name = "lblJumlahRecord";
-            this.lblJumlahRecord.Size = new System.Drawing.Size(54, 26);
+            this.lblJumlahRecord.Size = new System.Drawing.Size(80, 39);
             this.lblJumlahRecord.TabIndex = 4;
             this.lblJumlahRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(429, 413);
+            this.label1.Location = new System.Drawing.Point(644, 635);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 13);
+            this.label1.Size = new System.Drawing.Size(127, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Jumlah Pesanan";
             // 
@@ -728,11 +750,178 @@ namespace FizzBuzz_tugas_1
             this.dgvStatusPengiriman.AllowUserToAddRows = false;
             this.dgvStatusPengiriman.AllowUserToDeleteRows = false;
             this.dgvStatusPengiriman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStatusPengiriman.Location = new System.Drawing.Point(25, 207);
+            this.dgvStatusPengiriman.Location = new System.Drawing.Point(38, 318);
+            this.dgvStatusPengiriman.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvStatusPengiriman.Name = "dgvStatusPengiriman";
             this.dgvStatusPengiriman.ReadOnly = true;
-            this.dgvStatusPengiriman.Size = new System.Drawing.Size(550, 190);
+            this.dgvStatusPengiriman.RowHeadersWidth = 62;
+            this.dgvStatusPengiriman.Size = new System.Drawing.Size(825, 292);
             this.dgvStatusPengiriman.TabIndex = 0;
+            // 
+            // tabProfile
+            // 
+            this.tabProfile.Controls.Add(this.btnUpdate);
+            this.tabProfile.Controls.Add(this.groupBox2);
+            this.tabProfile.Controls.Add(this.label22);
+            this.tabProfile.Controls.Add(this.chkShowPassword);
+            this.tabProfile.Controls.Add(this.txtPassword);
+            this.tabProfile.Controls.Add(this.lblEmployeeId);
+            this.tabProfile.Controls.Add(this.label18);
+            this.tabProfile.Controls.Add(this.label17);
+            this.tabProfile.Location = new System.Drawing.Point(4, 4);
+            this.tabProfile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabProfile.Name = "tabProfile";
+            this.tabProfile.Size = new System.Drawing.Size(912, 899);
+            this.tabProfile.TabIndex = 1;
+            this.tabProfile.Text = "Tab Profile";
+            this.tabProfile.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(34, 777);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(490, 45);
+            this.btnUpdate.TabIndex = 96;
+            this.btnUpdate.Text = "Simpan Data";
+            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtNama);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.txtAlamat);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.txtNomorTelepon);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Location = new System.Drawing.Point(33, 317);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Size = new System.Drawing.Size(492, 426);
+            this.groupBox2.TabIndex = 95;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Informasi Akun";
+            // 
+            // txtNama
+            // 
+            this.txtNama.Location = new System.Drawing.Point(27, 77);
+            this.txtNama.Name = "txtNama";
+            this.txtNama.Size = new System.Drawing.Size(434, 26);
+            this.txtNama.TabIndex = 87;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(24, 38);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(176, 29);
+            this.label20.TabIndex = 86;
+            this.label20.Text = "Nama Lengkap";
+            // 
+            // txtAlamat
+            // 
+            this.txtAlamat.Location = new System.Drawing.Point(26, 252);
+            this.txtAlamat.Multiline = true;
+            this.txtAlamat.Name = "txtAlamat";
+            this.txtAlamat.Size = new System.Drawing.Size(434, 139);
+            this.txtAlamat.TabIndex = 85;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(22, 206);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(86, 29);
+            this.label19.TabIndex = 84;
+            this.label19.Text = "Alamat";
+            // 
+            // txtNomorTelepon
+            // 
+            this.txtNomorTelepon.Location = new System.Drawing.Point(26, 165);
+            this.txtNomorTelepon.Name = "txtNomorTelepon";
+            this.txtNomorTelepon.Size = new System.Drawing.Size(434, 26);
+            this.txtNomorTelepon.TabIndex = 83;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(22, 126);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(184, 29);
+            this.label16.TabIndex = 82;
+            this.label16.Text = "Nomor Telepon";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(34, 189);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(120, 29);
+            this.label22.TabIndex = 94;
+            this.label22.Text = "Password";
+            // 
+            // chkShowPassword
+            // 
+            this.chkShowPassword.AutoSize = true;
+            this.chkShowPassword.Location = new System.Drawing.Point(372, 272);
+            this.chkShowPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkShowPassword.Name = "chkShowPassword";
+            this.chkShowPassword.Size = new System.Drawing.Size(148, 24);
+            this.chkShowPassword.TabIndex = 93;
+            this.chkShowPassword.Text = "Show Password";
+            this.chkShowPassword.UseVisualStyleBackColor = true;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(34, 222);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(488, 26);
+            this.txtPassword.TabIndex = 92;
+            // 
+            // lblEmployeeId
+            // 
+            this.lblEmployeeId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEmployeeId.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeId.Location = new System.Drawing.Point(33, 134);
+            this.lblEmployeeId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmployeeId.Name = "lblEmployeeId";
+            this.lblEmployeeId.Size = new System.Drawing.Size(492, 34);
+            this.lblEmployeeId.TabIndex = 91;
+            this.lblEmployeeId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(24, 29);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(130, 48);
+            this.label18.TabIndex = 90;
+            this.label18.Text = "Profile";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(30, 98);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(124, 29);
+            this.label17.TabIndex = 89;
+            this.label17.Text = "Username";
             // 
             // bunifuFormDock2
             // 
@@ -778,192 +967,28 @@ namespace FizzBuzz_tugas_1
             // 
             this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.Image = global::FizzBuzz_tugas_1.Properties.Resources.user;
-            this.btnProfile.Location = new System.Drawing.Point(52, 23);
+            this.btnProfile.Location = new System.Drawing.Point(78, 35);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(116, 94);
+            this.btnProfile.Size = new System.Drawing.Size(174, 145);
             this.btnProfile.TabIndex = 73;
             this.btnProfile.Text = "Username";
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProfile.UseVisualStyleBackColor = true;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
-            // tabProfile
-            // 
-            this.tabProfile.Controls.Add(this.btnUpdate);
-            this.tabProfile.Controls.Add(this.groupBox2);
-            this.tabProfile.Controls.Add(this.label22);
-            this.tabProfile.Controls.Add(this.chkShowPassword);
-            this.tabProfile.Controls.Add(this.txtPassword);
-            this.tabProfile.Controls.Add(this.lblEmployeeId);
-            this.tabProfile.Controls.Add(this.label18);
-            this.tabProfile.Controls.Add(this.label17);
-            this.tabProfile.Location = new System.Drawing.Point(4, 4);
-            this.tabProfile.Name = "tabProfile";
-            this.tabProfile.Size = new System.Drawing.Size(605, 580);
-            this.tabProfile.TabIndex = 1;
-            this.tabProfile.Text = "Tab Profile";
-            this.tabProfile.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(23, 505);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(327, 29);
-            this.btnUpdate.TabIndex = 96;
-            this.btnUpdate.Text = "Simpan Data";
-            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtNama);
-            this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.txtNomorTelepon);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Location = new System.Drawing.Point(22, 206);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(328, 277);
-            this.groupBox2.TabIndex = 95;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Informasi Akun";
-            // 
-            // txtNama
-            // 
-            this.txtNama.Location = new System.Drawing.Point(18, 50);
-            this.txtNama.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNama.Name = "txtNama";
-            this.txtNama.Size = new System.Drawing.Size(291, 20);
-            this.txtNama.TabIndex = 87;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(16, 25);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(108, 18);
-            this.label20.TabIndex = 86;
-            this.label20.Text = "Nama Lengkap";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(17, 164);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(291, 92);
-            this.textBox1.TabIndex = 85;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(15, 134);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 18);
-            this.label19.TabIndex = 84;
-            this.label19.Text = "Alamat";
-            // 
-            // txtNomorTelepon
-            // 
-            this.txtNomorTelepon.Location = new System.Drawing.Point(17, 107);
-            this.txtNomorTelepon.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNomorTelepon.Name = "txtNomorTelepon";
-            this.txtNomorTelepon.Size = new System.Drawing.Size(291, 20);
-            this.txtNomorTelepon.TabIndex = 83;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(15, 82);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(112, 18);
-            this.label16.TabIndex = 82;
-            this.label16.Text = "Nomor Telepon";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(23, 123);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(75, 18);
-            this.label22.TabIndex = 94;
-            this.label22.Text = "Password";
-            // 
-            // chkShowPassword
-            // 
-            this.chkShowPassword.AutoSize = true;
-            this.chkShowPassword.Location = new System.Drawing.Point(248, 177);
-            this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(102, 17);
-            this.chkShowPassword.TabIndex = 93;
-            this.chkShowPassword.Text = "Show Password";
-            this.chkShowPassword.UseVisualStyleBackColor = true;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(23, 144);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(327, 20);
-            this.txtPassword.TabIndex = 92;
-            // 
-            // lblEmployeeId
-            // 
-            this.lblEmployeeId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEmployeeId.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeId.Location = new System.Drawing.Point(22, 87);
-            this.lblEmployeeId.Name = "lblEmployeeId";
-            this.lblEmployeeId.Size = new System.Drawing.Size(329, 23);
-            this.lblEmployeeId.TabIndex = 91;
-            this.lblEmployeeId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(16, 19);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(91, 32);
-            this.label18.TabIndex = 90;
-            this.label18.Text = "Profile";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(20, 64);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 18);
-            this.label17.TabIndex = 89;
-            this.label17.Text = "Username";
-            // 
             // Pegawai
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 606);
+            this.ClientSize = new System.Drawing.Size(1233, 932);
             this.Controls.Add(this.btnProfile);
             this.Controls.Add(this.btnPesananBaru);
             this.Controls.Add(this.btnKeluar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.tabNavigasi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Pegawai";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Pegawai_Load);
@@ -1014,7 +1039,7 @@ namespace FizzBuzz_tugas_1
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtNama;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAlamat;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtNomorTelepon;
         private System.Windows.Forms.Label label16;
