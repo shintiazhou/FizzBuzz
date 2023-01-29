@@ -30,6 +30,8 @@ namespace FizzBuzz_tugas_1
         DataRow dr;
         DataColumn[] dc = new DataColumn[1];
 
+
+
         private void koneksi()
         {
             try
@@ -85,10 +87,15 @@ namespace FizzBuzz_tugas_1
             dr = ds.Tables["tblCustomer"].Rows.Find(txtUsername.Text);
             if (dr != null)
             {
-                this.Hide();
-                Pelanggan frm = new Pelanggan();
-                frm.ShowDialog();
-                this.Close();
+               if(dr[2].ToString() == txtPassword.Text.ToString())
+                {
+                    Pelanggan Pelanggan = new Pelanggan(this);
+                    Pelanggan.lblCustID.Text = dr[0].ToString();
+                    Pelanggan.ShowDialog();
+                }
+                else{
+                    MessageBox.Show("Password Salah!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
@@ -104,10 +111,17 @@ namespace FizzBuzz_tugas_1
 
             if (dr != null)
             {
-                this.Hide();
-                Pegawai frm = new Pegawai();
-                frm.ShowDialog();
-                this.Close();
+                if (dr[2].ToString() == txtPassword.Text.ToString())
+                {
+                    Pegawai Pegawai = new Pegawai(this);
+
+                    Pegawai.lblEmployeeId.Text = dr[0].ToString();
+                    Pegawai.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Password Salah!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {

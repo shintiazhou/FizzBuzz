@@ -30,6 +30,19 @@ namespace FizzBuzz_tugas_1
         DataRow dr;
         DataColumn[] dc = new DataColumn[1];
 
+        Login Login;
+        public Pelanggan(Login Login)
+        {
+            InitializeComponent();
+            this.Login = Login;
+            this.FormBorderStyle = FormBorderStyle.Sizable;
+        }
+        AkunBaru AkunBaru;
+        public Pelanggan(AkunBaru AkunBaru)
+        {
+            InitializeComponent();
+            this.AkunBaru = AkunBaru;
+        }
         private void koneksi()
         {
             try
@@ -47,7 +60,7 @@ namespace FizzBuzz_tugas_1
         private void Pelanggan_Load(object sender, EventArgs e)
         {
             koneksi();
-
+            tampilData();
             lblJumlahLaundry.Text = sliderJumlahLaundry.Value.ToString() + "Kg";
 
             dgvRiwayatPesanan.ColumnCount = 6;
@@ -79,12 +92,20 @@ namespace FizzBuzz_tugas_1
         }
         private void Kosong()
         {
-            lblCustID.Text = "";
             txtPassword.Text = "";
             txtNomorTelepon.Text = "";
             txtNama.Text = "";
             txtAlamat.Text = "";
             chkShowPassword.Checked = false;
+        }
+        private void tampilData()
+        {
+            LoadData();
+            dr = ds.Tables["tblCustomer"].Rows.Find(lblCustID.Text);
+            txtPassword.Text = dr[2].ToString();
+            txtNama.Text = dr[1].ToString();
+            txtAlamat.Text = dr[3].ToString();
+            txtNomorTelepon.Text = dr[4].ToString();
         }
 
         private void btnPilihanLaundry_Click(object sender, EventArgs e)
@@ -198,10 +219,6 @@ namespace FizzBuzz_tugas_1
             tabNavigasi.PageIndex = 2;
         }
 
-        private void tabProfile_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -216,14 +233,28 @@ namespace FizzBuzz_tugas_1
                 dr[4] = txtNomorTelepon.Text;
 
                 UpdateData();
-                MessageBox.Show("Username " + lblCustID.Text + " has been edited.", "Edit Username", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                snackbar.Show(this, "Profile information has been updated successfully", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000);
                 Kosong();
+                tampilData();
+            }
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkShowPassword.Checked == true)
+            {
+                txtPassword.PasswordChar = '\0';
             }
             else
             {
-                MessageBox.Show("Username " + lblCustID.Text + " not exist in database, register your account.", "Edit Username", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtPassword.PasswordChar = '*';
             }
         }
+
     }
 }
 

@@ -181,6 +181,7 @@
     <None Include="Resources\hidden.png" />
     <None Include="Resources\backpack.png" />
     <None Include="Resources\helmet.png" />
+    <None Include="Resources\clean laundry 1.png" />
     <Content Include="Resources\landing_login-01.jpg" />
     <None Include="Resources\laundry_bg.png" />
     <None Include="Resources\user.png" />

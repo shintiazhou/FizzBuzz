@@ -45,10 +45,6 @@ namespace FizzBuzz_tugas_1
         private void AkunBaru_Load(object sender, EventArgs e)
         {
             koneksi();
-            txtUsername.MaxLength = 10;
-            txtPassword.MaxLength = 10;
-            txtNama.MaxLength = 10;
-            txtNomorTelepon.MaxLength = 13;
 
             txtUsername.Focus();
             txtPassword.PasswordChar = '*';
@@ -129,12 +125,15 @@ namespace FizzBuzz_tugas_1
                     ds.Tables["tblEmployees"].Rows.Add(dr);
                     UpdateDataEmployee();
 
-                    MessageBox.Show("Username " + txtUsername.Text + " has been registered.", "Registered Account", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Kosong();
+                    snackbar.Show(this, $"Account created successfully", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000);
+                    Pegawai Pegawai = new Pegawai(this);
+                    Pegawai.lblEmployeeId.Text = dr[0].ToString();
+                    Pegawai.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Username " + txtUsername.Text + " already registered.", "Registered Account", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    snackbar.Show(this, $"Username {txtUsername.Text} has been taken", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000);
                 }
                 HalamanUtama();
             }
@@ -154,16 +153,31 @@ namespace FizzBuzz_tugas_1
                     ds.Tables["tblCustomer"].Rows.Add(dr);
                     UpdateDataCustomer();
 
-                    MessageBox.Show("Username " + txtUsername.Text + " has been registered.", "Registered Account", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Kosong();
+                    snackbar.Show(this, $"Account created successfully", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000);
+                    Pelanggan Pelanggan = new Pelanggan(this);
+                    Pelanggan.lblCustID.Text = dr[0].ToString();
+                    Pelanggan.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Username " + txtUsername.Text + " already registered.", "Registered Account", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    snackbar.Show(this, $"Username {txtUsername.Text} has been taken", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000);
                 }
                 HalamanUtama();
             }
             
+        }
+
+        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkShowPassword.Checked == true)
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                txtPassword.PasswordChar = '*';
+            }
         }
     }
 }

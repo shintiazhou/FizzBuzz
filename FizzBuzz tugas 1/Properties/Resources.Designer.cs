@@ -83,6 +83,16 @@ namespace FizzBuzz_tugas_1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clean_laundry_1 {
+            get {
+                object obj = ResourceManager.GetObject("clean laundry 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dry_cleaning {
             get {
                 object obj = ResourceManager.GetObject("dry-cleaning", resourceCulture);
