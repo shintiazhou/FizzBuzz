@@ -276,7 +276,6 @@ namespace FizzBuzz_tugas_1
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1131, 754);
             this.tableLayoutPanel1.TabIndex = 77;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tabNavigasi
             // 
@@ -289,10 +288,10 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.Location = new System.Drawing.Point(184, 3);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
-            this.tabNavigasi.Page = this.tabProfile;
-            this.tabNavigasi.PageIndex = 2;
-            this.tabNavigasi.PageName = "tabProfile";
-            this.tabNavigasi.PageTitle = "tab profile";
+            this.tabNavigasi.Page = this.tabRiwayatPesanan;
+            this.tabNavigasi.PageIndex = 1;
+            this.tabNavigasi.PageName = "tabRiwayatPesanan";
+            this.tabNavigasi.PageTitle = "tab Riwayat Pesanan";
             this.tabNavigasi.SelectedIndex = 0;
             this.tabNavigasi.Size = new System.Drawing.Size(944, 748);
             this.tabNavigasi.TabIndex = 79;
@@ -336,10 +335,10 @@ namespace FizzBuzz_tugas_1
             this.tpPesanan.Location = new System.Drawing.Point(3, 3);
             this.tpPesanan.Multiline = true;
             this.tpPesanan.Name = "tpPesanan";
-            this.tpPesanan.Page = this.tabPilihLaundry;
-            this.tpPesanan.PageIndex = 0;
-            this.tpPesanan.PageName = "tabPilihLaundry";
-            this.tpPesanan.PageTitle = "Pilih Laundry";
+            this.tpPesanan.Page = this.tabLaundryKiloan;
+            this.tpPesanan.PageIndex = 1;
+            this.tpPesanan.PageName = "tabLaundryKiloan";
+            this.tpPesanan.PageTitle = "detail pesanan";
             this.tpPesanan.SelectedIndex = 0;
             this.tpPesanan.Size = new System.Drawing.Size(930, 716);
             this.tpPesanan.TabIndex = 2;
@@ -717,7 +716,7 @@ namespace FizzBuzz_tugas_1
             this.lblJumlahLaundry.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblJumlahLaundry.Size = new System.Drawing.Size(58, 33);
             this.lblJumlahLaundry.TabIndex = 58;
-            this.lblJumlahLaundry.Text = "20kg";
+            this.lblJumlahLaundry.Text = "-";
             this.lblJumlahLaundry.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblJumlahLaundry.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -1114,6 +1113,7 @@ namespace FizzBuzz_tugas_1
             this.sliderJumlahLaundry.ThumbSize = Bunifu.UI.WinForms.BunifuHSlider.ThumbSizes.Medium;
             this.sliderJumlahLaundry.ThumbStyle = Bunifu.UI.WinForms.BunifuHSlider.ThumbStyles.Outline;
             this.sliderJumlahLaundry.Value = 1;
+            this.sliderJumlahLaundry.Scroll += new System.EventHandler<Utilities.BunifuSlider.BunifuHScrollBar.ScrollEventArgs>(this.sliderJumlahLaundry_Scroll);
             // 
             // tabRiwayatPesanan
             // 
@@ -1146,20 +1146,19 @@ namespace FizzBuzz_tugas_1
             // rdoFilterPending
             // 
             this.rdoFilterPending.AutoSize = true;
-            this.rdoFilterPending.Enabled = false;
             this.rdoFilterPending.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoFilterPending.Location = new System.Drawing.Point(116, 29);
             this.rdoFilterPending.Name = "rdoFilterPending";
             this.rdoFilterPending.Size = new System.Drawing.Size(85, 24);
             this.rdoFilterPending.TabIndex = 85;
-            this.rdoFilterPending.TabStop = true;
             this.rdoFilterPending.Text = "Pending";
             this.rdoFilterPending.UseVisualStyleBackColor = true;
+            this.rdoFilterPending.CheckedChanged += new System.EventHandler(this.rdoFilter_CheckedChanged);
             // 
             // rdoFilterSemua
             // 
             this.rdoFilterSemua.AutoSize = true;
-            this.rdoFilterSemua.Enabled = false;
+            this.rdoFilterSemua.Checked = true;
             this.rdoFilterSemua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoFilterSemua.Location = new System.Drawing.Point(10, 29);
             this.rdoFilterSemua.Name = "rdoFilterSemua";
@@ -1168,45 +1167,43 @@ namespace FizzBuzz_tugas_1
             this.rdoFilterSemua.TabStop = true;
             this.rdoFilterSemua.Text = "Semua";
             this.rdoFilterSemua.UseVisualStyleBackColor = true;
+            this.rdoFilterSemua.CheckedChanged += new System.EventHandler(this.rdoFilter_CheckedChanged);
             // 
             // rdoFilterDikirim
             // 
             this.rdoFilterDikirim.AutoSize = true;
-            this.rdoFilterDikirim.Enabled = false;
             this.rdoFilterDikirim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoFilterDikirim.Location = new System.Drawing.Point(346, 29);
             this.rdoFilterDikirim.Name = "rdoFilterDikirim";
             this.rdoFilterDikirim.Size = new System.Drawing.Size(74, 24);
             this.rdoFilterDikirim.TabIndex = 82;
-            this.rdoFilterDikirim.TabStop = true;
             this.rdoFilterDikirim.Text = "Dikirim";
             this.rdoFilterDikirim.UseVisualStyleBackColor = true;
+            this.rdoFilterDikirim.CheckedChanged += new System.EventHandler(this.rdoFilter_CheckedChanged);
             // 
             // rdoFilterDiproses
             // 
             this.rdoFilterDiproses.AutoSize = true;
-            this.rdoFilterDiproses.Enabled = false;
             this.rdoFilterDiproses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoFilterDiproses.Location = new System.Drawing.Point(230, 29);
             this.rdoFilterDiproses.Name = "rdoFilterDiproses";
             this.rdoFilterDiproses.Size = new System.Drawing.Size(90, 24);
             this.rdoFilterDiproses.TabIndex = 81;
-            this.rdoFilterDiproses.TabStop = true;
             this.rdoFilterDiproses.Text = "Diproses";
             this.rdoFilterDiproses.UseVisualStyleBackColor = true;
+            this.rdoFilterDiproses.CheckedChanged += new System.EventHandler(this.rdoFilter_CheckedChanged);
             // 
             // rdoFilterSelesai
             // 
             this.rdoFilterSelesai.AutoSize = true;
-            this.rdoFilterSelesai.Enabled = false;
             this.rdoFilterSelesai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoFilterSelesai.Location = new System.Drawing.Point(449, 29);
             this.rdoFilterSelesai.Name = "rdoFilterSelesai";
             this.rdoFilterSelesai.Size = new System.Drawing.Size(79, 24);
             this.rdoFilterSelesai.TabIndex = 80;
-            this.rdoFilterSelesai.TabStop = true;
             this.rdoFilterSelesai.Text = "Selesai";
             this.rdoFilterSelesai.UseVisualStyleBackColor = true;
+            this.rdoFilterSelesai.CheckedChanged += new System.EventHandler(this.rdoFilter_CheckedChanged);
             // 
             // dgvRiwayatPesanan
             // 
