@@ -288,10 +288,10 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.Location = new System.Drawing.Point(184, 3);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
-            this.tabNavigasi.Page = this.tabPesanan;
-            this.tabNavigasi.PageIndex = 0;
-            this.tabNavigasi.PageName = "tabPesanan";
-            this.tabNavigasi.PageTitle = "Pesanan";
+            this.tabNavigasi.Page = this.tabRiwayatPesanan;
+            this.tabNavigasi.PageIndex = 1;
+            this.tabNavigasi.PageName = "tabRiwayatPesanan";
+            this.tabNavigasi.PageTitle = "tab Riwayat Pesanan";
             this.tabNavigasi.SelectedIndex = 0;
             this.tabNavigasi.Size = new System.Drawing.Size(944, 748);
             this.tabNavigasi.TabIndex = 79;
@@ -335,10 +335,10 @@ namespace FizzBuzz_tugas_1
             this.tpPesanan.Location = new System.Drawing.Point(3, 3);
             this.tpPesanan.Multiline = true;
             this.tpPesanan.Name = "tpPesanan";
-            this.tpPesanan.Page = this.tabPilihLaundry;
-            this.tpPesanan.PageIndex = 0;
-            this.tpPesanan.PageName = "tabPilihLaundry";
-            this.tpPesanan.PageTitle = "Pilih Laundry";
+            this.tpPesanan.Page = this.tabLaundryKiloan;
+            this.tpPesanan.PageIndex = 1;
+            this.tpPesanan.PageName = "tabLaundryKiloan";
+            this.tpPesanan.PageTitle = "detail pesanan";
             this.tpPesanan.SelectedIndex = 0;
             this.tpPesanan.Size = new System.Drawing.Size(930, 716);
             this.tpPesanan.TabIndex = 2;
@@ -1210,10 +1210,12 @@ namespace FizzBuzz_tugas_1
             this.dgvRiwayatPesanan.AllowCustomTheming = false;
             this.dgvRiwayatPesanan.AllowUserToAddRows = false;
             this.dgvRiwayatPesanan.AllowUserToDeleteRows = false;
+            this.dgvRiwayatPesanan.AllowUserToResizeColumns = false;
+            this.dgvRiwayatPesanan.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.dgvRiwayatPesanan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvRiwayatPesanan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRiwayatPesanan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvRiwayatPesanan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRiwayatPesanan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvRiwayatPesanan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -1248,6 +1250,7 @@ namespace FizzBuzz_tugas_1
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(10);
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -1265,7 +1268,7 @@ namespace FizzBuzz_tugas_1
             this.dgvRiwayatPesanan.RowHeadersWidth = 51;
             this.dgvRiwayatPesanan.RowTemplate.Height = 40;
             this.dgvRiwayatPesanan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRiwayatPesanan.Size = new System.Drawing.Size(889, 499);
+            this.dgvRiwayatPesanan.Size = new System.Drawing.Size(658, 479);
             this.dgvRiwayatPesanan.TabIndex = 68;
             this.dgvRiwayatPesanan.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 

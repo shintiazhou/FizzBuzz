@@ -27,7 +27,6 @@ namespace FizzBuzz_tugas_1
         SqlCommandBuilder cb;
         DataRow dr;
         DataColumn[] dc = new DataColumn[1];
-        string username;
 
         Login Login;
         public Pegawai(Login Login)
@@ -57,7 +56,6 @@ namespace FizzBuzz_tugas_1
 
         private void Pegawai_Load(object sender, EventArgs e)
         {
-            btnCariPesanan.Enabled = true;
             btnRefresh.Enabled = true;
             koneksi();
             LoadDataEmployees();
@@ -66,8 +64,11 @@ namespace FizzBuzz_tugas_1
 
             txtPassword.PasswordChar = '*';
 
-            LoadDataDelivery();
-            TampilData();
+            SearchDataDelivery();
+            TampilDataDelivery();
+
+            LoadDataCustomer();
+            TampilCustomer();
         }
 
         private void LoadDataEmployees()
@@ -83,20 +84,40 @@ namespace FizzBuzz_tugas_1
         private void LoadDataDelivery()
         {
             ds = new DataSet();
-            query = "SELECT t.Customer_Id, d.Pickup_Date, d.Delivery_Date, d.Status, t.Transaction_Id FROM tbldelivery d INNER JOIN tblTransaction t ON d.Transaction_Id = t.Transaction_Id INNER JOIN tblEmployees e ON e.Employee_Id = d.Employee_Id INNER JOIN tblCustomer cust ON cust.Customer_Id = t.Customer_Id WHERE d.Employee_Id LIKE '%" + lblEmployeeId.Text + "%'";
-            cmd = new SqlCommand(query, con);
-            da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "JoinDTECust");
-        }
-        private void LoadDataStatus()
-        {
-            ds = new DataSet();
             query = "SELECT * FROM tbldelivery";
             cmd = new SqlCommand(query, con);
             da = new SqlDataAdapter(cmd);
             da.Fill(ds, "tbldelivery");
             dc[0] = ds.Tables["tbldelivery"].Columns[0];
             ds.Tables["tbldelivery"].PrimaryKey = dc;
+        }
+        private void SearchDataDelivery()
+        {
+            ds = new DataSet();
+            if (chkPesananPending.Checked)
+            {
+                query = $"SELECT T.Transaction_Id, T.Title, T.Total, T.Total_Price, D.Pickup_Date, D.Delivery_Date, D.Status FROM tblTransaction T INNER JOIN tbldelivery D ON T.Transaction_Id = D.Transaction_Id WHERE T.Customer_Id LIKE '%{cboPelanggan.SelectedItem}%' AND D.Status = 'Pending'";
+            }
+            else
+            {
+                query = $"SELECT T.Transaction_Id, T.Title, T.Total, T.Total_Price, D.Pickup_Date, D.Delivery_Date, D.Status FROM tblTransaction T INNER JOIN tbldelivery D ON T.Transaction_Id = D.Transaction_Id WHERE T.Customer_Id LIKE '%{cboPelanggan.SelectedItem}%' ";
+            }
+                
+            cmd = new SqlCommand(query, con);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds, "tbldelivery");
+            dc[0] = ds.Tables["tbldelivery"].Columns[0];
+            ds.Tables["tbldelivery"].PrimaryKey = dc;
+        }
+        private void LoadDataCustomer()
+        {
+            ds = new DataSet();
+            query = "SELECT * FROM tblCustomer";
+            cmd = new SqlCommand(query, con);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds, "tblCustomer");
+            dc[0] = ds.Tables["tblCustomer"].Columns[0];
+            ds.Tables["tblCustomer"].PrimaryKey = dc;
         }
         private void UpdateDataEmployees()
         {
@@ -110,24 +131,40 @@ namespace FizzBuzz_tugas_1
             da = cb.DataAdapter;
             da.Update(ds.Tables["tbldelivery"]);
         }
-        private void Kosong()
+        private void TampilDataDelivery()
         {
-            txtPassword.Text = "";
-            txtNomorTelepon.Text = "";
-            txtNama.Text = "";
-            txtAlamat.Text = "";
-            chkShowPassword.Checked = false;
-        }
-        private void TampilData()
-        {
-            dgvStatusPengiriman.DataSource = ds.Tables["JoinDTECust"];
-            dgvStatusPengiriman.Columns[0].HeaderText = "Name";
-            dgvStatusPengiriman.Columns[1].HeaderText = "Pickup Date";
-            dgvStatusPengiriman.Columns[2].HeaderText = "Delivery Date";
-            dgvStatusPengiriman.Columns[3].HeaderText = "Status";
-            dgvStatusPengiriman.Columns[4].HeaderText = "Transaction ID";
+            SearchDataDelivery();
+            dgvStatusPengiriman.DataSource = ds.Tables["tblDelivery"];
+            dgvStatusPengiriman.Columns[0].HeaderText = "ID";
+            dgvStatusPengiriman.Columns[1].HeaderText = "Title";
+            dgvStatusPengiriman.Columns[2].HeaderText = "Qty";
+            dgvStatusPengiriman.Columns[3].HeaderText = "Harga";
+            dgvStatusPengiriman.Columns[4].HeaderText = "Pick up";
+            dgvStatusPengiriman.Columns[5].HeaderText = "Delivery";
+            dgvStatusPengiriman.Columns[6].HeaderText = "Status";
             dgvStatusPengiriman.AllowUserToAddRows = false;
             dgvStatusPengiriman.ReadOnly = true;
+
+
+            foreach (DataGridViewRow row in dgvStatusPengiriman.Rows)
+            {         
+                if (row.Cells[6].Value.ToString() =="Pending")
+                {
+                    row.DefaultCellStyle.BackColor = Color.LightCoral;
+                }
+                else if  (row.Cells[6].Value.ToString() == "Selesai")
+                    {
+                    row.DefaultCellStyle.BackColor = Color.LightGreen;
+                }
+                else if (row.Cells[6].Value.ToString() == "Diproses")
+                {
+                    row.DefaultCellStyle.BackColor = Color.LemonChiffon;
+                }
+                else if (row.Cells[6].Value.ToString() == "Dikirim")
+                {
+                    row.DefaultCellStyle.BackColor = Color.SkyBlue;
+                }
+            }
             lblJumlahRecord.Text = dgvStatusPengiriman.RowCount.ToString();
         }
         private void TampilDataEmployee()
@@ -139,6 +176,19 @@ namespace FizzBuzz_tugas_1
             txtNama.Text = dr[1].ToString();
             txtAlamat.Text = dr[3].ToString();
             txtNomorTelepon.Text = dr[4].ToString();
+        }
+        private void TampilCustomer()
+        {
+            LoadDataCustomer();
+            cboPelanggan.Items.Clear();
+            for (int i = 0; i < ds.Tables["tblCustomer"].Rows.Count; i++)
+            {
+                if (i == 0)
+                {
+                    cboPelanggan.Items.Add("");
+                }
+                cboPelanggan.Items.Add(ds.Tables["tblCustomer"].Rows[i][0].ToString());
+            }
         }
         private void btnKeluar_Click(object sender, EventArgs e)
         {
@@ -159,13 +209,7 @@ namespace FizzBuzz_tugas_1
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            dtpPengambilan.CustomFormat = "dd MMMM yyyy";
-            dtpPengambilan.Format = DateTimePickerFormat.Custom;
-            dtpPengiriman.CustomFormat = "dd MMMM yyyy";
-            dtpPengiriman.Format = DateTimePickerFormat.Custom;
-
             tabNavigasi.PageIndex = 1;
-
             txtPassword.PasswordChar = '*';
         }
 
@@ -190,6 +234,14 @@ namespace FizzBuzz_tugas_1
                 TampilDataEmployee();
             }
         }
+        private void kosongDelivery()
+        {
+            dgvStatusPengiriman.ClearSelection();
+            rdoDikirim.Enabled = false;
+            rdoDiproses.Enabled = false;
+            rdoSelesai.Enabled = false;
+            lblTransactionId.Text = "";
+        }
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
@@ -203,69 +255,72 @@ namespace FizzBuzz_tugas_1
             }
         }
 
-        private void btnCariPesanan_Click(object sender, EventArgs e)
-        {
-            ds = new DataSet();
-            if (chkPesananPending.Checked)
-            {
-                query = "SELECT t.Customer_Id, d.Pickup_Date, d.Delivery_Date, d.Status, t.Transaction_Id FROM tbldelivery d INNER JOIN tblTransaction t ON d.Transaction_Id = t.Transaction_Id INNER JOIN tblEmployees e ON e.Employee_Id = d.Employee_Id INNER JOIN tblCustomer cust ON cust.Customer_Id = t.Customer_Id WHERE cust.Customer_Id LIKE '%" + txtCariPesanan.Text + "%' AND d.Pickup_Date = '" + dtpPengambilan.Value.ToString("yyyy-MM-dd") + "' AND d.Delivery_Date = '" + dtpPengiriman.Value.ToString("yyyy-MM-dd") + "' AND d.Status = 'Pending'";
-            }
-            else if(chkPesananPending.Checked == false)
-            {
-                query = "SELECT t.Customer_Id, d.Pickup_Date, d.Delivery_Date, d.Status, t.Transaction_Id FROM tbldelivery d INNER JOIN tblTransaction t ON d.Transaction_Id = t.Transaction_Id INNER JOIN tblEmployees e ON e.Employee_Id = d.Employee_Id INNER JOIN tblCustomer cust ON cust.Customer_Id = t.Customer_Id WHERE cust.Customer_Id LIKE '%" + txtCariPesanan.Text + "%' AND d.Pickup_Date = '" + dtpPengambilan.Value.ToString("yyyy-MM-dd") + "' AND d.Delivery_Date = '" + dtpPengiriman.Value.ToString("yyyy-MM-dd") + "'";
-            }
-            cmd = new SqlCommand(query, con);
-            da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "JoinDTECust");
-
-            TampilData();
-        }
-
-        private void dgvStatusPengiriman_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int baris = dgvStatusPengiriman.CurrentCell.RowIndex;
-            lblTransactionId.Text = dgvStatusPengiriman[4, baris].Value.ToString();
-            rdoDiproses.Enabled = true;
-            rdoDikirim.Enabled = true;
-            rdoSelesai.Enabled = true;
-            btnUbahStatusPesanan.Enabled = true;
-        }
 
         private void btnUbahStatusPesanan_Click(object sender, EventArgs e)
         {
-            LoadDataStatus();
+            LoadDataDelivery();
             dr = ds.Tables["tbldelivery"].Rows.Find(lblTransactionId.Text);
             if(dr != null)
             {
                 if (rdoDiproses.Checked)
                 {
-                    dr[4] = "Diproses";
+                    dr[3] = "Diproses";
                 }
                 else if (rdoDikirim.Checked)
                 {
-                    dr[4] = "Dikirim";
+                    dr[3] = "Dikirim";
                 }
                 else if (rdoSelesai.Checked)
                 {
-                    dr[4] = "Selesai";
+                    dr[3] = "Selesai";
                 }
+                
                 UpdateDataDelivery();
-                MessageBox.Show("Status Delivery has been updated.", "Update Status Delivery", MessageBoxButtons.OK, MessageBoxIcon.Information);             
-            }
-            else
-            {
-                MessageBox.Show("Status Delivery does not exists in database. Please Add the status before edit!", "Update Status Delivery", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                SearchDataDelivery();
+                TampilDataDelivery();
+                snackbar.Show(this, "Status has been updated", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
+                kosongDelivery();
             }
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             koneksi();
-            LoadDataDelivery();
-            TampilData();
-            txtCariPesanan.Clear();
+            SearchDataDelivery();
+            TampilDataDelivery();
             chkPesananPending.Checked = false;
-            txtCariPesanan.Focus();
+            cboPelanggan.SelectedIndex = 0;
+        }
+
+        private void cboPelanggan_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboPelanggan.SelectedIndex == 0)
+            {
+                LoadDataDelivery();
+                TampilDataDelivery();
+            }
+            else
+            {
+                SearchDataDelivery();
+                TampilDataDelivery();
+            }
+        }
+
+
+        private void dgvStatusPengiriman_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int baris = dgvStatusPengiriman.CurrentCell.RowIndex;
+            lblTransactionId.Text = dgvStatusPengiriman[0, baris].Value.ToString();
+            rdoDiproses.Enabled = true;
+            rdoDikirim.Enabled = true;
+            rdoSelesai.Enabled = true;
+            btnUbahStatusPesanan.Enabled = true;
+        }
+
+        private void chkPesananPending_CheckedChanged(object sender, EventArgs e)
+        {
+            SearchDataDelivery();
+            TampilDataDelivery();
         }
     }
 }

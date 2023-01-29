@@ -76,10 +76,6 @@ namespace FizzBuzz_tugas_1
             ds.Tables["tblCustomer"].PrimaryKey = dc;
         }
 
-        private void Kosong()
-        {
-
-        }
 
         private void btnLoginPelanggan_Click(object sender, EventArgs e)
         {
@@ -95,13 +91,12 @@ namespace FizzBuzz_tugas_1
                     Pelanggan.ShowDialog();
                 }
                 else{
-                    MessageBox.Show("Password Salah!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    snackbar.Show(this, "Wrong Password", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Username " + txtUsername.Text + " Not Found", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                Kosong();
+                snackbar.Show(this, "Username " + txtUsername.Text + " Not Found", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
             }
             
         }
@@ -121,13 +116,12 @@ namespace FizzBuzz_tugas_1
                 }
                 else
                 {
-                    MessageBox.Show("Password Salah!", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    snackbar.Show(this, "Wrong Password", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Username " + txtUsername.Text + " Not Found", "Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                Kosong();
+                snackbar.Show(this, "Username " + txtUsername.Text + " Not Found", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
             }
         }
 
