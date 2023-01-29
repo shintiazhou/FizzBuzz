@@ -686,6 +686,7 @@ namespace FizzBuzz_tugas_1
             this.Controls.Add(this.label17);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AkunBaru";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Akun Baru";
             this.Load += new System.EventHandler(this.AkunBaru_Load);
             this.groupBox1.ResumeLayout(false);

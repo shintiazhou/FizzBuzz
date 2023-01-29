@@ -303,7 +303,7 @@ namespace FizzBuzz_tugas_1
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(10);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvStatusPengiriman.DefaultCellStyle = dataGridViewCellStyle3;
@@ -1271,6 +1271,7 @@ namespace FizzBuzz_tugas_1
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pegawai";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pegawai Clean Laundry";
             this.Load += new System.EventHandler(this.Pegawai_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
