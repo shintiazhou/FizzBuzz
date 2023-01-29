@@ -91,6 +91,7 @@ namespace FizzBuzz_tugas_1
                 {
                     Pelanggan Pelanggan = new Pelanggan(this);
                     Pelanggan.lblCustID.Text = dr[0].ToString();
+                    Pelanggan.btnProfile.Text= dr[0].ToString();
                     Pelanggan.ShowDialog();
                 }
                 else{
@@ -114,7 +115,7 @@ namespace FizzBuzz_tugas_1
                 if (dr[2].ToString() == txtPassword.Text.ToString())
                 {
                     Pegawai Pegawai = new Pegawai(this);
-
+                    Pegawai.btnProfile.Text = dr[0].ToString();
                     Pegawai.lblEmployeeId.Text = dr[0].ToString();
                     Pegawai.ShowDialog();
                 }

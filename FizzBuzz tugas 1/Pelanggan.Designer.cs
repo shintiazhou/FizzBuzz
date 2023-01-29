@@ -288,10 +288,10 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.Location = new System.Drawing.Point(184, 3);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
-            this.tabNavigasi.Page = this.tabRiwayatPesanan;
-            this.tabNavigasi.PageIndex = 1;
-            this.tabNavigasi.PageName = "tabRiwayatPesanan";
-            this.tabNavigasi.PageTitle = "tab Riwayat Pesanan";
+            this.tabNavigasi.Page = this.tabPesanan;
+            this.tabNavigasi.PageIndex = 0;
+            this.tabNavigasi.PageName = "tabPesanan";
+            this.tabNavigasi.PageTitle = "Pesanan";
             this.tabNavigasi.SelectedIndex = 0;
             this.tabNavigasi.Size = new System.Drawing.Size(944, 748);
             this.tabNavigasi.TabIndex = 79;
@@ -335,10 +335,10 @@ namespace FizzBuzz_tugas_1
             this.tpPesanan.Location = new System.Drawing.Point(3, 3);
             this.tpPesanan.Multiline = true;
             this.tpPesanan.Name = "tpPesanan";
-            this.tpPesanan.Page = this.tabLaundryKiloan;
-            this.tpPesanan.PageIndex = 1;
-            this.tpPesanan.PageName = "tabLaundryKiloan";
-            this.tpPesanan.PageTitle = "detail pesanan";
+            this.tpPesanan.Page = this.tabPilihLaundry;
+            this.tpPesanan.PageIndex = 0;
+            this.tpPesanan.PageName = "tabPilihLaundry";
+            this.tpPesanan.PageTitle = "Pilih Laundry";
             this.tpPesanan.SelectedIndex = 0;
             this.tpPesanan.Size = new System.Drawing.Size(930, 716);
             this.tpPesanan.TabIndex = 2;
@@ -1901,13 +1901,6 @@ namespace FizzBuzz_tugas_1
         #endregion
         public Bunifu.UI.WinForms.BunifuSnackbar snackBarBuatPesanan;
         public Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.MenuStrip mnuMain;
-        private System.Windows.Forms.ToolStripMenuItem btnProfile;
-        private System.Windows.Forms.ToolStripMenuItem btnPesananBaru;
-        private System.Windows.Forms.ToolStripMenuItem btnRiwayatPesanan;
-        private System.Windows.Forms.ToolStripMenuItem keluarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         public Bunifu.UI.WinForms.BunifuPages tabNavigasi;
         public System.Windows.Forms.TabPage tabPesanan;
         public Bunifu.UI.WinForms.BunifuPages tpPesanan;
@@ -1963,20 +1956,27 @@ namespace FizzBuzz_tugas_1
         public Bunifu.UI.WinForms.BunifuDataGridView dgvRiwayatPesanan;
         public System.Windows.Forms.Label label15;
         public System.Windows.Forms.TabPage tabProfile;
-        private Bunifu.UI.WinForms.BunifuTextBox txtPassword;
         public System.Windows.Forms.Button btnUpdate;
         public System.Windows.Forms.GroupBox groupBox2;
         public System.Windows.Forms.Label label19;
-        private Bunifu.UI.WinForms.BunifuTextBox txtAlamat;
-        private Bunifu.UI.WinForms.BunifuTextBox txtNomorTelepon;
         public System.Windows.Forms.Label label20;
         public System.Windows.Forms.Label label16;
-        private Bunifu.UI.WinForms.BunifuTextBox txtNama;
         public System.Windows.Forms.Label label22;
         public System.Windows.Forms.CheckBox chkShowPassword;
         public System.Windows.Forms.Label lblCustID;
         public System.Windows.Forms.Label label18;
         public System.Windows.Forms.Label label17;
-        private Bunifu.UI.WinForms.BunifuSnackbar snackbar;
+        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        public System.Windows.Forms.MenuStrip mnuMain;
+        public System.Windows.Forms.ToolStripMenuItem btnProfile;
+        public System.Windows.Forms.ToolStripMenuItem btnPesananBaru;
+        public System.Windows.Forms.ToolStripMenuItem btnRiwayatPesanan;
+        public System.Windows.Forms.ToolStripMenuItem keluarToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        public Bunifu.UI.WinForms.BunifuTextBox txtPassword;
+        public Bunifu.UI.WinForms.BunifuTextBox txtAlamat;
+        public Bunifu.UI.WinForms.BunifuTextBox txtNomorTelepon;
+        public Bunifu.UI.WinForms.BunifuTextBox txtNama;
+        public Bunifu.UI.WinForms.BunifuSnackbar snackbar;
     }
 }

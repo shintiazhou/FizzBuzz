@@ -39,22 +39,22 @@ namespace FizzBuzz_tugas_1
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuFormDock2 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -79,35 +79,35 @@ namespace FizzBuzz_tugas_1
             this.label1 = new System.Windows.Forms.Label();
             this.dgvStatusPengiriman = new System.Windows.Forms.DataGridView();
             this.tabProfile = new System.Windows.Forms.TabPage();
+            this.txtPassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtAlamat = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txtNomorTelepon = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtNama = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
+            this.lblEmployeeId = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnProfile = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.keluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.snackbar = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
-            this.txtNama = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtNomorTelepon = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.txtAlamat = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.lblEmployeeId = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtPassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabNavigasi.SuspendLayout();
             this.tabStatusPesanan.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatusPengiriman)).BeginInit();
             this.tabProfile.SuspendLayout();
-            this.mnuMain.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.mnuMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuFormDock1
@@ -216,10 +216,10 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.Location = new System.Drawing.Point(185, 3);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
-            this.tabNavigasi.Page = this.tabProfile;
-            this.tabNavigasi.PageIndex = 1;
-            this.tabNavigasi.PageName = "tabProfile";
-            this.tabNavigasi.PageTitle = "Tab Profile";
+            this.tabNavigasi.Page = this.tabStatusPesanan;
+            this.tabNavigasi.PageIndex = 0;
+            this.tabNavigasi.PageName = "tabStatusPesanan";
+            this.tabNavigasi.PageTitle = "Status Pesanan";
             this.tabNavigasi.SelectedIndex = 0;
             this.tabNavigasi.Size = new System.Drawing.Size(952, 721);
             this.tabNavigasi.TabIndex = 77;
@@ -813,6 +813,80 @@ namespace FizzBuzz_tugas_1
             this.tabProfile.TabIndex = 1;
             this.tabProfile.Text = "Tab Profile";
             // 
+            // txtPassword
+            // 
+            this.txtPassword.AcceptsReturn = false;
+            this.txtPassword.AcceptsTab = false;
+            this.txtPassword.AnimationSpeed = 200;
+            this.txtPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
+            this.txtPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPassword.BackgroundImage")));
+            this.txtPassword.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtPassword.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtPassword.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtPassword.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtPassword.BorderRadius = 10;
+            this.txtPassword.BorderThickness = 1;
+            this.txtPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.FillColor = System.Drawing.Color.White;
+            this.txtPassword.HideSelection = true;
+            this.txtPassword.IconLeft = null;
+            this.txtPassword.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.IconPadding = 10;
+            this.txtPassword.IconRight = null;
+            this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.Lines = new string[0];
+            this.txtPassword.Location = new System.Drawing.Point(26, 144);
+            this.txtPassword.MaxLength = 10;
+            this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtPassword.Modified = false;
+            this.txtPassword.Multiline = false;
+            this.txtPassword.Name = "txtPassword";
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnIdleState = stateProperties8;
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(3);
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtPassword.PlaceholderText = "Enter text";
+            this.txtPassword.ReadOnly = false;
+            this.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.SelectionLength = 0;
+            this.txtPassword.SelectionStart = 0;
+            this.txtPassword.ShortcutsEnabled = true;
+            this.txtPassword.Size = new System.Drawing.Size(323, 37);
+            this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtPassword.TabIndex = 98;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPassword.TextMarginBottom = 0;
+            this.txtPassword.TextMarginLeft = 3;
+            this.txtPassword.TextMarginTop = 0;
+            this.txtPassword.TextPlaceholder = "Enter text";
+            this.txtPassword.UseSystemPasswordChar = false;
+            this.txtPassword.WordWrap = true;
+            // 
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -828,6 +902,287 @@ namespace FizzBuzz_tugas_1
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.txtAlamat);
+            this.groupBox2.Controls.Add(this.txtNomorTelepon);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.txtNama);
+            this.groupBox2.Location = new System.Drawing.Point(22, 219);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(329, 334);
+            this.groupBox2.TabIndex = 95;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Informasi Akun";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(12, 165);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(53, 18);
+            this.label19.TabIndex = 102;
+            this.label19.Text = "Alamat";
+            // 
+            // txtAlamat
+            // 
+            this.txtAlamat.AcceptsReturn = false;
+            this.txtAlamat.AcceptsTab = false;
+            this.txtAlamat.AnimationSpeed = 200;
+            this.txtAlamat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtAlamat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtAlamat.BackColor = System.Drawing.Color.Transparent;
+            this.txtAlamat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtAlamat.BackgroundImage")));
+            this.txtAlamat.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtAlamat.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtAlamat.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtAlamat.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtAlamat.BorderRadius = 10;
+            this.txtAlamat.BorderThickness = 1;
+            this.txtAlamat.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtAlamat.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAlamat.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtAlamat.DefaultText = "";
+            this.txtAlamat.FillColor = System.Drawing.Color.White;
+            this.txtAlamat.HideSelection = true;
+            this.txtAlamat.IconLeft = null;
+            this.txtAlamat.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAlamat.IconPadding = 10;
+            this.txtAlamat.IconRight = null;
+            this.txtAlamat.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAlamat.Lines = new string[0];
+            this.txtAlamat.Location = new System.Drawing.Point(15, 186);
+            this.txtAlamat.MaxLength = 200;
+            this.txtAlamat.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtAlamat.Modified = false;
+            this.txtAlamat.Multiline = true;
+            this.txtAlamat.Name = "txtAlamat";
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtAlamat.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnIdleState = stateProperties12;
+            this.txtAlamat.Padding = new System.Windows.Forms.Padding(3);
+            this.txtAlamat.PasswordChar = '\0';
+            this.txtAlamat.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtAlamat.PlaceholderText = "Enter text";
+            this.txtAlamat.ReadOnly = false;
+            this.txtAlamat.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtAlamat.SelectedText = "";
+            this.txtAlamat.SelectionLength = 0;
+            this.txtAlamat.SelectionStart = 0;
+            this.txtAlamat.ShortcutsEnabled = true;
+            this.txtAlamat.Size = new System.Drawing.Size(297, 120);
+            this.txtAlamat.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtAlamat.TabIndex = 106;
+            this.txtAlamat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAlamat.TextMarginBottom = 0;
+            this.txtAlamat.TextMarginLeft = 3;
+            this.txtAlamat.TextMarginTop = 0;
+            this.txtAlamat.TextPlaceholder = "Enter text";
+            this.txtAlamat.UseSystemPasswordChar = false;
+            this.txtAlamat.WordWrap = true;
+            // 
+            // txtNomorTelepon
+            // 
+            this.txtNomorTelepon.AcceptsReturn = false;
+            this.txtNomorTelepon.AcceptsTab = false;
+            this.txtNomorTelepon.AnimationSpeed = 200;
+            this.txtNomorTelepon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNomorTelepon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtNomorTelepon.BackColor = System.Drawing.Color.Transparent;
+            this.txtNomorTelepon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNomorTelepon.BackgroundImage")));
+            this.txtNomorTelepon.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtNomorTelepon.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtNomorTelepon.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtNomorTelepon.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtNomorTelepon.BorderRadius = 10;
+            this.txtNomorTelepon.BorderThickness = 1;
+            this.txtNomorTelepon.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNomorTelepon.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNomorTelepon.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtNomorTelepon.DefaultText = "";
+            this.txtNomorTelepon.FillColor = System.Drawing.Color.White;
+            this.txtNomorTelepon.HideSelection = true;
+            this.txtNomorTelepon.IconLeft = null;
+            this.txtNomorTelepon.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNomorTelepon.IconPadding = 10;
+            this.txtNomorTelepon.IconRight = null;
+            this.txtNomorTelepon.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNomorTelepon.Lines = new string[0];
+            this.txtNomorTelepon.Location = new System.Drawing.Point(15, 121);
+            this.txtNomorTelepon.MaxLength = 10;
+            this.txtNomorTelepon.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtNomorTelepon.Modified = false;
+            this.txtNomorTelepon.Multiline = false;
+            this.txtNomorTelepon.Name = "txtNomorTelepon";
+            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNomorTelepon.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.Silver;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.Empty;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnIdleState = stateProperties16;
+            this.txtNomorTelepon.Padding = new System.Windows.Forms.Padding(3);
+            this.txtNomorTelepon.PasswordChar = '\0';
+            this.txtNomorTelepon.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtNomorTelepon.PlaceholderText = "Enter text";
+            this.txtNomorTelepon.ReadOnly = false;
+            this.txtNomorTelepon.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtNomorTelepon.SelectedText = "";
+            this.txtNomorTelepon.SelectionLength = 0;
+            this.txtNomorTelepon.SelectionStart = 0;
+            this.txtNomorTelepon.ShortcutsEnabled = true;
+            this.txtNomorTelepon.Size = new System.Drawing.Size(297, 37);
+            this.txtNomorTelepon.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtNomorTelepon.TabIndex = 105;
+            this.txtNomorTelepon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNomorTelepon.TextMarginBottom = 0;
+            this.txtNomorTelepon.TextMarginLeft = 3;
+            this.txtNomorTelepon.TextMarginTop = 0;
+            this.txtNomorTelepon.TextPlaceholder = "Enter text";
+            this.txtNomorTelepon.UseSystemPasswordChar = false;
+            this.txtNomorTelepon.WordWrap = true;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(12, 28);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(108, 18);
+            this.label20.TabIndex = 103;
+            this.label20.Text = "Nama Lengkap";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(12, 97);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(112, 18);
+            this.label16.TabIndex = 101;
+            this.label16.Text = "Nomor Telepon";
+            // 
+            // txtNama
+            // 
+            this.txtNama.AcceptsReturn = false;
+            this.txtNama.AcceptsTab = false;
+            this.txtNama.AnimationSpeed = 200;
+            this.txtNama.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtNama.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtNama.BackColor = System.Drawing.Color.Transparent;
+            this.txtNama.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNama.BackgroundImage")));
+            this.txtNama.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtNama.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtNama.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtNama.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtNama.BorderRadius = 10;
+            this.txtNama.BorderThickness = 1;
+            this.txtNama.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNama.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNama.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtNama.DefaultText = "";
+            this.txtNama.FillColor = System.Drawing.Color.White;
+            this.txtNama.HideSelection = true;
+            this.txtNama.IconLeft = null;
+            this.txtNama.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNama.IconPadding = 10;
+            this.txtNama.IconRight = null;
+            this.txtNama.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNama.Lines = new string[0];
+            this.txtNama.Location = new System.Drawing.Point(15, 51);
+            this.txtNama.MaxLength = 50;
+            this.txtNama.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtNama.Modified = false;
+            this.txtNama.Multiline = false;
+            this.txtNama.Name = "txtNama";
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNama.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnIdleState = stateProperties20;
+            this.txtNama.Padding = new System.Windows.Forms.Padding(3);
+            this.txtNama.PasswordChar = '\0';
+            this.txtNama.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtNama.PlaceholderText = "Enter text";
+            this.txtNama.ReadOnly = false;
+            this.txtNama.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtNama.SelectedText = "";
+            this.txtNama.SelectionLength = 0;
+            this.txtNama.SelectionStart = 0;
+            this.txtNama.ShortcutsEnabled = true;
+            this.txtNama.Size = new System.Drawing.Size(297, 37);
+            this.txtNama.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtNama.TabIndex = 104;
+            this.txtNama.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtNama.TextMarginBottom = 0;
+            this.txtNama.TextMarginLeft = 3;
+            this.txtNama.TextMarginTop = 0;
+            this.txtNama.TextPlaceholder = "Enter text";
+            this.txtNama.UseSystemPasswordChar = false;
+            this.txtNama.WordWrap = true;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(23, 123);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(75, 18);
+            this.label22.TabIndex = 94;
+            this.label22.Text = "Password";
+            // 
             // chkShowPassword
             // 
             this.chkShowPassword.AutoSize = true;
@@ -838,6 +1193,17 @@ namespace FizzBuzz_tugas_1
             this.chkShowPassword.Text = "Show Password";
             this.chkShowPassword.UseVisualStyleBackColor = true;
             this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
+            // 
+            // lblEmployeeId
+            // 
+            this.lblEmployeeId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEmployeeId.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeId.Location = new System.Drawing.Point(27, 87);
+            this.lblEmployeeId.Name = "lblEmployeeId";
+            this.lblEmployeeId.Size = new System.Drawing.Size(322, 23);
+            this.lblEmployeeId.TabIndex = 91;
+            this.lblEmployeeId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label18
             // 
@@ -851,6 +1217,17 @@ namespace FizzBuzz_tugas_1
             this.label18.Text = "Profile";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(25, 64);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(77, 18);
+            this.label17.TabIndex = 89;
+            this.label17.Text = "Username";
+            // 
             // mnuMain
             // 
             this.mnuMain.BackColor = System.Drawing.Color.AliceBlue;
@@ -858,7 +1235,7 @@ namespace FizzBuzz_tugas_1
             this.mnuMain.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuMain.GripMargin = new System.Windows.Forms.Padding(2, 10, 0, 2);
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
+            this.btnProfile,
             this.toolStripMenuItem2,
             this.keluarToolStripMenuItem,
             this.toolStripMenuItem3});
@@ -871,18 +1248,18 @@ namespace FizzBuzz_tugas_1
             this.mnuMain.TabIndex = 76;
             this.mnuMain.Text = "mnuMain";
             // 
-            // toolStripMenuItem1
+            // btnProfile
             // 
-            this.toolStripMenuItem1.BackColor = System.Drawing.Color.White;
-            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.toolStripMenuItem1.Image = global::FizzBuzz_tugas_1.Properties.Resources.user;
-            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem1.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(181, 93);
-            this.toolStripMenuItem1.Text = "Username";
-            this.toolStripMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.btnProfile_Click);
+            this.btnProfile.BackColor = System.Drawing.Color.White;
+            this.btnProfile.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.btnProfile.Image = global::FizzBuzz_tugas_1.Properties.Resources.user;
+            this.btnProfile.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(181, 93);
+            this.btnProfile.Text = "Username";
+            this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -1051,383 +1428,6 @@ namespace FizzBuzz_tugas_1
             this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
-            // txtNama
-            // 
-            this.txtNama.AcceptsReturn = false;
-            this.txtNama.AcceptsTab = false;
-            this.txtNama.AnimationSpeed = 200;
-            this.txtNama.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtNama.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtNama.BackColor = System.Drawing.Color.Transparent;
-            this.txtNama.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNama.BackgroundImage")));
-            this.txtNama.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtNama.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtNama.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtNama.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtNama.BorderRadius = 10;
-            this.txtNama.BorderThickness = 1;
-            this.txtNama.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtNama.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNama.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtNama.DefaultText = "";
-            this.txtNama.FillColor = System.Drawing.Color.White;
-            this.txtNama.HideSelection = true;
-            this.txtNama.IconLeft = null;
-            this.txtNama.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNama.IconPadding = 10;
-            this.txtNama.IconRight = null;
-            this.txtNama.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNama.Lines = new string[0];
-            this.txtNama.Location = new System.Drawing.Point(15, 51);
-            this.txtNama.MaxLength = 50;
-            this.txtNama.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtNama.Modified = false;
-            this.txtNama.Multiline = false;
-            this.txtNama.Name = "txtNama";
-            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNama.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnIdleState = stateProperties20;
-            this.txtNama.Padding = new System.Windows.Forms.Padding(3);
-            this.txtNama.PasswordChar = '\0';
-            this.txtNama.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtNama.PlaceholderText = "Enter text";
-            this.txtNama.ReadOnly = false;
-            this.txtNama.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtNama.SelectedText = "";
-            this.txtNama.SelectionLength = 0;
-            this.txtNama.SelectionStart = 0;
-            this.txtNama.ShortcutsEnabled = true;
-            this.txtNama.Size = new System.Drawing.Size(297, 37);
-            this.txtNama.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtNama.TabIndex = 104;
-            this.txtNama.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtNama.TextMarginBottom = 0;
-            this.txtNama.TextMarginLeft = 3;
-            this.txtNama.TextMarginTop = 0;
-            this.txtNama.TextPlaceholder = "Enter text";
-            this.txtNama.UseSystemPasswordChar = false;
-            this.txtNama.WordWrap = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(12, 97);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(112, 18);
-            this.label16.TabIndex = 101;
-            this.label16.Text = "Nomor Telepon";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(12, 28);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(108, 18);
-            this.label20.TabIndex = 103;
-            this.label20.Text = "Nama Lengkap";
-            // 
-            // txtNomorTelepon
-            // 
-            this.txtNomorTelepon.AcceptsReturn = false;
-            this.txtNomorTelepon.AcceptsTab = false;
-            this.txtNomorTelepon.AnimationSpeed = 200;
-            this.txtNomorTelepon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtNomorTelepon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtNomorTelepon.BackColor = System.Drawing.Color.Transparent;
-            this.txtNomorTelepon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNomorTelepon.BackgroundImage")));
-            this.txtNomorTelepon.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtNomorTelepon.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtNomorTelepon.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtNomorTelepon.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtNomorTelepon.BorderRadius = 10;
-            this.txtNomorTelepon.BorderThickness = 1;
-            this.txtNomorTelepon.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtNomorTelepon.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNomorTelepon.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtNomorTelepon.DefaultText = "";
-            this.txtNomorTelepon.FillColor = System.Drawing.Color.White;
-            this.txtNomorTelepon.HideSelection = true;
-            this.txtNomorTelepon.IconLeft = null;
-            this.txtNomorTelepon.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNomorTelepon.IconPadding = 10;
-            this.txtNomorTelepon.IconRight = null;
-            this.txtNomorTelepon.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNomorTelepon.Lines = new string[0];
-            this.txtNomorTelepon.Location = new System.Drawing.Point(15, 121);
-            this.txtNomorTelepon.MaxLength = 10;
-            this.txtNomorTelepon.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtNomorTelepon.Modified = false;
-            this.txtNomorTelepon.Multiline = false;
-            this.txtNomorTelepon.Name = "txtNomorTelepon";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNomorTelepon.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnIdleState = stateProperties16;
-            this.txtNomorTelepon.Padding = new System.Windows.Forms.Padding(3);
-            this.txtNomorTelepon.PasswordChar = '\0';
-            this.txtNomorTelepon.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtNomorTelepon.PlaceholderText = "Enter text";
-            this.txtNomorTelepon.ReadOnly = false;
-            this.txtNomorTelepon.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtNomorTelepon.SelectedText = "";
-            this.txtNomorTelepon.SelectionLength = 0;
-            this.txtNomorTelepon.SelectionStart = 0;
-            this.txtNomorTelepon.ShortcutsEnabled = true;
-            this.txtNomorTelepon.Size = new System.Drawing.Size(297, 37);
-            this.txtNomorTelepon.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtNomorTelepon.TabIndex = 105;
-            this.txtNomorTelepon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtNomorTelepon.TextMarginBottom = 0;
-            this.txtNomorTelepon.TextMarginLeft = 3;
-            this.txtNomorTelepon.TextMarginTop = 0;
-            this.txtNomorTelepon.TextPlaceholder = "Enter text";
-            this.txtNomorTelepon.UseSystemPasswordChar = false;
-            this.txtNomorTelepon.WordWrap = true;
-            // 
-            // txtAlamat
-            // 
-            this.txtAlamat.AcceptsReturn = false;
-            this.txtAlamat.AcceptsTab = false;
-            this.txtAlamat.AnimationSpeed = 200;
-            this.txtAlamat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtAlamat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtAlamat.BackColor = System.Drawing.Color.Transparent;
-            this.txtAlamat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtAlamat.BackgroundImage")));
-            this.txtAlamat.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtAlamat.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtAlamat.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtAlamat.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtAlamat.BorderRadius = 10;
-            this.txtAlamat.BorderThickness = 1;
-            this.txtAlamat.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtAlamat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAlamat.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtAlamat.DefaultText = "";
-            this.txtAlamat.FillColor = System.Drawing.Color.White;
-            this.txtAlamat.HideSelection = true;
-            this.txtAlamat.IconLeft = null;
-            this.txtAlamat.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAlamat.IconPadding = 10;
-            this.txtAlamat.IconRight = null;
-            this.txtAlamat.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAlamat.Lines = new string[0];
-            this.txtAlamat.Location = new System.Drawing.Point(15, 186);
-            this.txtAlamat.MaxLength = 200;
-            this.txtAlamat.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtAlamat.Modified = false;
-            this.txtAlamat.Multiline = true;
-            this.txtAlamat.Name = "txtAlamat";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtAlamat.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnIdleState = stateProperties12;
-            this.txtAlamat.Padding = new System.Windows.Forms.Padding(3);
-            this.txtAlamat.PasswordChar = '\0';
-            this.txtAlamat.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtAlamat.PlaceholderText = "Enter text";
-            this.txtAlamat.ReadOnly = false;
-            this.txtAlamat.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtAlamat.SelectedText = "";
-            this.txtAlamat.SelectionLength = 0;
-            this.txtAlamat.SelectionStart = 0;
-            this.txtAlamat.ShortcutsEnabled = true;
-            this.txtAlamat.Size = new System.Drawing.Size(297, 120);
-            this.txtAlamat.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtAlamat.TabIndex = 106;
-            this.txtAlamat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtAlamat.TextMarginBottom = 0;
-            this.txtAlamat.TextMarginLeft = 3;
-            this.txtAlamat.TextMarginTop = 0;
-            this.txtAlamat.TextPlaceholder = "Enter text";
-            this.txtAlamat.UseSystemPasswordChar = false;
-            this.txtAlamat.WordWrap = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(12, 165);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 18);
-            this.label19.TabIndex = 102;
-            this.label19.Text = "Alamat";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.txtAlamat);
-            this.groupBox2.Controls.Add(this.txtNomorTelepon);
-            this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.txtNama);
-            this.groupBox2.Location = new System.Drawing.Point(22, 219);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(329, 334);
-            this.groupBox2.TabIndex = 95;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Informasi Akun";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(25, 64);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 18);
-            this.label17.TabIndex = 89;
-            this.label17.Text = "Username";
-            // 
-            // lblEmployeeId
-            // 
-            this.lblEmployeeId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEmployeeId.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeId.Location = new System.Drawing.Point(27, 87);
-            this.lblEmployeeId.Name = "lblEmployeeId";
-            this.lblEmployeeId.Size = new System.Drawing.Size(322, 23);
-            this.lblEmployeeId.TabIndex = 91;
-            this.lblEmployeeId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(23, 123);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(75, 18);
-            this.label22.TabIndex = 94;
-            this.label22.Text = "Password";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.AcceptsReturn = false;
-            this.txtPassword.AcceptsTab = false;
-            this.txtPassword.AnimationSpeed = 200;
-            this.txtPassword.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtPassword.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtPassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPassword.BackgroundImage")));
-            this.txtPassword.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtPassword.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtPassword.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtPassword.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtPassword.BorderRadius = 10;
-            this.txtPassword.BorderThickness = 1;
-            this.txtPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtPassword.DefaultText = "";
-            this.txtPassword.FillColor = System.Drawing.Color.White;
-            this.txtPassword.HideSelection = true;
-            this.txtPassword.IconLeft = null;
-            this.txtPassword.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.IconPadding = 10;
-            this.txtPassword.IconRight = null;
-            this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.Lines = new string[0];
-            this.txtPassword.Location = new System.Drawing.Point(26, 144);
-            this.txtPassword.MaxLength = 10;
-            this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtPassword.Modified = false;
-            this.txtPassword.Multiline = false;
-            this.txtPassword.Name = "txtPassword";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnIdleState = stateProperties8;
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(3);
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtPassword.PlaceholderText = "Enter text";
-            this.txtPassword.ReadOnly = false;
-            this.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.SelectionLength = 0;
-            this.txtPassword.SelectionStart = 0;
-            this.txtPassword.ShortcutsEnabled = true;
-            this.txtPassword.Size = new System.Drawing.Size(323, 37);
-            this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtPassword.TabIndex = 98;
-            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPassword.TextMarginBottom = 0;
-            this.txtPassword.TextMarginLeft = 3;
-            this.txtPassword.TextMarginTop = 0;
-            this.txtPassword.TextPlaceholder = "Enter text";
-            this.txtPassword.UseSystemPasswordChar = false;
-            this.txtPassword.WordWrap = true;
-            // 
             // Pegawai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1448,10 +1448,10 @@ namespace FizzBuzz_tugas_1
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatusPengiriman)).EndInit();
             this.tabProfile.ResumeLayout(false);
             this.tabProfile.PerformLayout();
-            this.mnuMain.ResumeLayout(false);
-            this.mnuMain.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.mnuMain.ResumeLayout(false);
+            this.mnuMain.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1459,12 +1459,6 @@ namespace FizzBuzz_tugas_1
         #endregion
         public Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         public Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.MenuStrip mnuMain;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem keluarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         public Bunifu.UI.WinForms.BunifuPages tabNavigasi;
         public System.Windows.Forms.TabPage tabStatusPesanan;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnRefresh;
@@ -1489,18 +1483,24 @@ namespace FizzBuzz_tugas_1
         public System.Windows.Forms.Button btnUpdate;
         public System.Windows.Forms.CheckBox chkShowPassword;
         public System.Windows.Forms.Label label18;
-        private Bunifu.UI.WinForms.BunifuSnackbar snackbar;
-        private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
-        private Bunifu.UI.WinForms.BunifuTextBox txtPassword;
         public System.Windows.Forms.GroupBox groupBox2;
         public System.Windows.Forms.Label label19;
-        private Bunifu.UI.WinForms.BunifuTextBox txtAlamat;
-        private Bunifu.UI.WinForms.BunifuTextBox txtNomorTelepon;
         public System.Windows.Forms.Label label20;
         public System.Windows.Forms.Label label16;
-        private Bunifu.UI.WinForms.BunifuTextBox txtNama;
         public System.Windows.Forms.Label label22;
         public System.Windows.Forms.Label lblEmployeeId;
         public System.Windows.Forms.Label label17;
+        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        public System.Windows.Forms.MenuStrip mnuMain;
+        public System.Windows.Forms.ToolStripMenuItem btnProfile;
+        public System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        public System.Windows.Forms.ToolStripMenuItem keluarToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        public Bunifu.UI.WinForms.BunifuSnackbar snackbar;
+        public Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
+        public Bunifu.UI.WinForms.BunifuTextBox txtPassword;
+        public Bunifu.UI.WinForms.BunifuTextBox txtAlamat;
+        public Bunifu.UI.WinForms.BunifuTextBox txtNomorTelepon;
+        public Bunifu.UI.WinForms.BunifuTextBox txtNama;
     }
 }
