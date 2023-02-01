@@ -115,41 +115,41 @@ namespace FizzBuzz_tugas_1
         private void LoadDataDelivery()
         {
             ds = new DataSet();
-            query = "SELECT * FROM tbldelivery";
+            query = "SELECT * FROM tblDelivery";
             cmd = new SqlCommand(query, con);
             da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "tbldelivery");
-            dc[0] = ds.Tables["tbldelivery"].Columns[0];
-            ds.Tables["tbldelivery"].PrimaryKey = dc;
+            da.Fill(ds, "tblDelivery");
+            dc[0] = ds.Tables["tblDelivery"].Columns[0];
+            ds.Tables["tblDelivery"].PrimaryKey = dc;
         }
         private void LoadDataRiwayat()
         {
             ds = new DataSet();
             if (rdoFilterSemua.Checked)
             {
-                query = $"SELECT D.Transaction_Id, C.Category_Name, T.Total, T.Total_Price, D.Status, D.Pickup_Date, D.Delivery_Date FROM dbo.tblTransaction T INNER JOIN dbo.tbldelivery D ON T.Transaction_Id = D.Transaction_Id INNER JOIN dbo.tblCategory C ON T.Category_Id = C.Category_Id WHERE T.Customer_Id = '{lblCustID.Text}'";
+                query = $"SELECT D.Transaction_Id, C.Category_Name, T.Total, T.Total_Price, D.Status, D.Pickup_Date, D.Delivery_Date FROM dbo.tblTransaction T INNER JOIN dbo.tblDelivery D ON T.Transaction_Id = D.Transaction_Id INNER JOIN dbo.tblCategory C ON T.Category_Id = C.Category_Id WHERE T.Customer_Id = '{lblCustID.Text}'";
             }
             else if (rdoFilterPending.Checked)
             {
-                query = $"SELECT D.Transaction_Id, C.Category_Name, T.Total, T.Total_Price, D.Status, D.Pickup_Date, D.Delivery_Date FROM dbo.tblTransaction T INNER JOIN dbo.tbldelivery D ON T.Transaction_Id = D.Transaction_Id INNER JOIN dbo.tblCategory C ON T.Category_Id = C.Category_Id WHERE T.Customer_Id = '{lblCustID.Text}' AND D.Status = 'Pending'";
+                query = $"SELECT D.Transaction_Id, C.Category_Name, T.Total, T.Total_Price, D.Status, D.Pickup_Date, D.Delivery_Date FROM dbo.tblTransaction T INNER JOIN dbo.tblDelivery D ON T.Transaction_Id = D.Transaction_Id INNER JOIN dbo.tblCategory C ON T.Category_Id = C.Category_Id WHERE T.Customer_Id = '{lblCustID.Text}' AND D.Status = 'Pending'";
             }
             else if (rdoFilterDiproses.Checked)
             {
-                query = $"SELECT D.Transaction_Id, C.Category_Name, T.Total, T.Total_Price, D.Status, D.Pickup_Date, D.Delivery_Date FROM dbo.tblTransaction T INNER JOIN dbo.tbldelivery D ON T.Transaction_Id = D.Transaction_Id INNER JOIN dbo.tblCategory C ON T.Category_Id = C.Category_Id WHERE T.Customer_Id = '{lblCustID.Text}' AND D.Status = 'Diproses'";
+                query = $"SELECT D.Transaction_Id, C.Category_Name, T.Total, T.Total_Price, D.Status, D.Pickup_Date, D.Delivery_Date FROM dbo.tblTransaction T INNER JOIN dbo.tblDelivery D ON T.Transaction_Id = D.Transaction_Id INNER JOIN dbo.tblCategory C ON T.Category_Id = C.Category_Id WHERE T.Customer_Id = '{lblCustID.Text}' AND D.Status = 'Diproses'";
             }
             else if (rdoFilterDikirim.Checked)
             {
-                query = $"SELECT D.Transaction_Id, C.Category_Name, T.Total, T.Total_Price, D.Status, D.Pickup_Date, D.Delivery_Date FROM dbo.tblTransaction T INNER JOIN dbo.tbldelivery D ON T.Transaction_Id = D.Transaction_Id INNER JOIN dbo.tblCategory C ON T.Category_Id = C.Category_Id WHERE T.Customer_Id = '{lblCustID.Text}' AND D.Status = 'Dikirim'";
+                query = $"SELECT D.Transaction_Id, C.Category_Name, T.Total, T.Total_Price, D.Status, D.Pickup_Date, D.Delivery_Date FROM dbo.tblTransaction T INNER JOIN dbo.tblDelivery D ON T.Transaction_Id = D.Transaction_Id INNER JOIN dbo.tblCategory C ON T.Category_Id = C.Category_Id WHERE T.Customer_Id = '{lblCustID.Text}' AND D.Status = 'Dikirim'";
             }
             else if (rdoFilterSelesai.Checked)
             {
-                query = $"SELECT D.Transaction_Id, C.Category_Name, T.Total, T.Total_Price, D.Status, D.Pickup_Date, D.Delivery_Date FROM dbo.tblTransaction T INNER JOIN dbo.tbldelivery D ON T.Transaction_Id = D.Transaction_Id INNER JOIN dbo.tblCategory C ON T.Category_Id = C.Category_Id WHERE T.Customer_Id = '{lblCustID.Text}' AND D.Status = 'Selesai'";
+                query = $"SELECT D.Transaction_Id, C.Category_Name, T.Total, T.Total_Price, D.Status, D.Pickup_Date, D.Delivery_Date FROM dbo.tblTransaction T INNER JOIN dbo.tblDelivery D ON T.Transaction_Id = D.Transaction_Id INNER JOIN dbo.tblCategory C ON T.Category_Id = C.Category_Id WHERE T.Customer_Id = '{lblCustID.Text}' AND D.Status = 'Selesai'";
             }
             cmd = new SqlCommand(query, con);
             da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "tbldelivery");
-            dc[0] = ds.Tables["tbldelivery"].Columns[0];
-            ds.Tables["tbldelivery"].PrimaryKey = dc;
+            da.Fill(ds, "tblDelivery");
+            dc[0] = ds.Tables["tblDelivery"].Columns[0];
+            ds.Tables["tblDelivery"].PrimaryKey = dc;
         }
 
         // ----- tampil data
@@ -167,7 +167,7 @@ namespace FizzBuzz_tugas_1
         {
             LoadDataRiwayat();
             dgvRiwayatPesanan.Rows.Clear();
-            foreach (DataRow dr in ds.Tables["tbldelivery"].Rows)
+            foreach (DataRow dr in ds.Tables["tblDelivery"].Rows)
             {
                 dgvRiwayatPesanan.Rows.Add(dr[1], dr[2], dr[3], dr[4], dr[5], dr[6]);
             }
@@ -191,7 +191,7 @@ namespace FizzBuzz_tugas_1
         {
             cb = new SqlCommandBuilder(da);
             da = cb.DataAdapter;
-            da.Update(ds.Tables["tbldelivery"]);
+            da.Update(ds.Tables["tblDelivery"]);
         }
         private void Pelanggan_Load(object sender, EventArgs e)
         {
@@ -247,11 +247,11 @@ namespace FizzBuzz_tugas_1
 
             LoadDataDelivery();
 
-            int row = ds.Tables["tbldelivery"].Rows.Count + 1;
-            dr = ds.Tables["tbldelivery"].Rows.Find("TR" + row);
+            int row = ds.Tables["tblDelivery"].Rows.Count + 1;
+            dr = ds.Tables["tblDelivery"].Rows.Find("TR" + row);
             if (dr == null)
             {
-                dr = ds.Tables["tbldelivery"].NewRow();
+                dr = ds.Tables["tblDelivery"].NewRow();
                 dr[0] = "TR" + row;
                 dr[1] = datePengambilan.Value.ToString();
                 if (rdoNextDays.Checked)
@@ -264,7 +264,7 @@ namespace FizzBuzz_tugas_1
                 }
                 dr[3] = "Pending";
             }
-            ds.Tables["tbldelivery"].Rows.Add(dr);
+            ds.Tables["tblDelivery"].Rows.Add(dr);
             UpdateDataDelivery();
 
             LoadDataTrans(); 
@@ -336,9 +336,6 @@ namespace FizzBuzz_tugas_1
 
             if (result == DialogResult.Yes)
             {
-                this.Hide();
-                Login frm = new Login();
-                frm.ShowDialog();
                 this.Close();
             }
 

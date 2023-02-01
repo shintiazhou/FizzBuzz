@@ -28,6 +28,12 @@ namespace FizzBuzz_tugas_1
         DataRow dr;
         DataColumn[] dc = new DataColumn[1];
 
+        Login Login;
+        public AkunBaru(Login Login)
+        {
+            InitializeComponent();
+            this.Login = Login;
+        }
         private void koneksi()
         {
             try
@@ -53,16 +59,25 @@ namespace FizzBuzz_tugas_1
                 txtPassword.PasswordChar = '\0';
             }
         }
-
+        private void LoaddataCabang()
+        {
+            ds = new DataSet();
+            query = "SELECT * FROM tblBranch";
+            cmd = new SqlCommand(query, con);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds, "tblBranch");
+            dc[0] = ds.Tables["tblBranch"].Columns[0];
+            ds.Tables["tblBranch"].PrimaryKey = dc;
+        }
         private void LoaddataEmployee()
         {
             ds = new DataSet();
-            query = "SELECT * FROM tblEmployees";
+            query = "SELECT * FROM tblEmployee";
             cmd = new SqlCommand(query, con);
             da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "tblEmployees");
-            dc[0] = ds.Tables["tblEmployees"].Columns[0];
-            ds.Tables["tblEmployees"].PrimaryKey = dc;
+            da.Fill(ds,"tblEmployee");
+            dc[0] = ds.Tables["tblEmployee"].Columns[0];
+            ds.Tables["tblEmployee"].PrimaryKey = dc;
         }
         private void LoaddataCustomer()
         {
@@ -78,7 +93,7 @@ namespace FizzBuzz_tugas_1
         {
             cb = new SqlCommandBuilder(da);
             da = cb.DataAdapter;
-            da.Update(ds.Tables["tblEmployees"]);
+            da.Update(ds.Tables["tblEmployee"]);
         }
         private void UpdateDataCustomer()
         {
@@ -87,87 +102,85 @@ namespace FizzBuzz_tugas_1
             da.Update(ds.Tables["tblCustomer"]);
         }
 
-        private void Kosong()
-        {
-            txtUsername.Text = "";
-            txtPassword.Text = "";
-            txtNama.Text = "";
-            txtNomorTelepon.Text = "";
-            txtAlamat.Text = "";
-            txtUsername.Focus();
-            chkShowPassword.Checked = false;
-        }
-
-
-        private void HalamanUtama()
-        {
-            this.Hide();
-            Login frm = new Login();
-            frm.ShowDialog();
-            this.Close();
-        }
-
         private void btnAkunBaru_Click(object sender, EventArgs e)
         {
+
+
             if (rdoAkunPegawai.Checked == true)
             {
-                LoaddataEmployee();
-                dr = ds.Tables["tblEmployees"].Rows.Find(txtUsername.Text);
+                LoaddataCabang();
+                dr = ds.Tables["tblBranch"].Rows.Find(txtIDCabang.Text);
+
+                if (dr != null)
+                {
+                    LoaddataEmployee();
+                dr = ds.Tables["tblEmployee"].Rows.Find(txtUsername.Text);
                 if (dr == null)
                 {
-                    dr = ds.Tables["tblEmployees"].NewRow();
+                    dr = ds.Tables["tblEmployee"].NewRow();
                     dr[0] = txtUsername.Text;
                     dr[1] = txtNama.Text;
                     dr[2] = txtPassword.Text;
                     dr[3] = txtNomorTelepon.Text;
                     dr[4] = txtAlamat.Text;
+                     dr[5] = txtIDCabang.Text;
 
-                    ds.Tables["tblEmployees"].Rows.Add(dr);
+                        ds.Tables["tblEmployee"].Rows.Add(dr);
                     UpdateDataEmployee();
 
-                    snackbar.Show(this, $"Account created successfully", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000);
+                    snackbar.Show(this, $"Berhasil dibuat", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000);
                     Pegawai Pegawai = new Pegawai(this);
-                    Pegawai.lblEmployeeId.Text = dr[0].ToString();
-                    Pegawai.ShowDialog();
+                        Pegawai.lblEmployeeId.Text = dr[0].ToString();
+                                 Pegawai.btnProfile.Text = dr[0].ToString();
+                        Pegawai.ShowDialog();
                     this.Close();
                 }
                 else
                 {
-                    snackbar.Show(this, $"Username {txtUsername.Text} has been taken", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000);
+                    snackbar.Show(this, $"Username {txtUsername.Text} tidak tersedia", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000);
                 }
-                HalamanUtama();
+
+
             }
+            else
+            {
+                snackbar.Show(this, $"ID Branch {txtIDCabang.Text} tidak ditemukan", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000);
+            }
+        }
             if (rdoAkunPelanggan.Checked == true)
             {
-                LoaddataCustomer();
-                dr = ds.Tables["tblCustomer"].Rows.Find(txtUsername.Text);
-                if (dr == null)
-                {
-                    dr = ds.Tables["tblCustomer"].NewRow();
-                    dr[0] = txtUsername.Text;
-                    dr[1] = txtNama.Text;
-                    dr[2] = txtPassword.Text;
+
+                    LoaddataCustomer();
+                    dr = ds.Tables["tblCustomer"].Rows.Find(txtUsername.Text);
+                    if (dr == null)
+                    {
+                        dr = ds.Tables["tblCustomer"].NewRow();
+                        dr[0] = txtUsername.Text;
+                        dr[1] = txtNama.Text;
+                        dr[2] = txtPassword.Text;
                     dr[3] = txtAlamat.Text;
                     dr[4] = txtNomorTelepon.Text;
+                     
 
-                    ds.Tables["tblCustomer"].Rows.Add(dr);
-                    UpdateDataCustomer();
+                        ds.Tables["tblCustomer"].Rows.Add(dr);
+                        UpdateDataCustomer();
 
-                    snackbar.Show(this, $"Account created successfully", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000);
-                    Pelanggan Pelanggan = new Pelanggan(this);
-                    Pelanggan.lblCustID.Text = dr[0].ToString();
+                        snackbar.Show(this, $"Akun berhasil dibuat", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success, 1000);
+                        Pelanggan Pelanggan = new Pelanggan(this);
+                        Pelanggan.lblCustID.Text = dr[0].ToString();
+                    Pelanggan.btnProfile.Text = dr[0].ToString();
                     Pelanggan.ShowDialog();
-                    this.Close();
-                }
-                else
-                {
-                    snackbar.Show(this, $"Username {txtUsername.Text} has been taken", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000);
-                }
-                HalamanUtama();
-            }
-            
-        }
+                        this.Close();
+                    }
+                    else
+                    {
+                        snackbar.Show(this, $"Username {txtUsername.Text} tidak tersedia", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 1000);
+                    }
 
+
+            }
+
+        }
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             if (chkShowPassword.Checked == true)
@@ -177,6 +190,18 @@ namespace FizzBuzz_tugas_1
             else
             {
                 txtPassword.PasswordChar = '*';
+            }
+        }
+
+        private void rdoAkunPegawai_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoAkunPegawai.Checked)
+            {
+                txtIDCabang.Visible = true;
+            }
+            else
+            {
+                txtIDCabang.Visible = false;
             }
         }
     }

@@ -1,7 +1,7 @@
 ﻿
 namespace FizzBuzz_tugas_1
 {
-    partial class Pegawai
+    partial class Cabang
     {
         /// <summary>
         /// Required designer variable.
@@ -30,32 +30,41 @@ namespace FizzBuzz_tugas_1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pegawai));
-            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.bunifuFormDock2 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cabang));
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.snackbar = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.label22 = new System.Windows.Forms.Label();
+            this.chkShowPassword = new System.Windows.Forms.CheckBox();
+            this.lblEmployeeId = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tabLaporan = new System.Windows.Forms.TabPage();
+            this.btnTampilLaporan = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cboLaporanPelanggan = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabNavigasi = new Bunifu.UI.WinForms.BunifuPages();
             this.tabStatusPesanan = new System.Windows.Forms.TabPage();
             this.dgvStatusPengiriman = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -74,7 +83,6 @@ namespace FizzBuzz_tugas_1
             this.label1 = new System.Windows.Forms.Label();
             this.tabProfile = new System.Windows.Forms.TabPage();
             this.txtPassword = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
             this.txtAlamat = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -82,130 +90,221 @@ namespace FizzBuzz_tugas_1
             this.label20 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.txtNama = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.chkShowPassword = new System.Windows.Forms.CheckBox();
-            this.lblEmployeeId = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tabLaporan = new System.Windows.Forms.TabPage();
-            this.btnTampilLaporan = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cboLaporanPelanggan = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.mnuMain = new System.Windows.Forms.MenuStrip();
-            this.btnProfile = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.keluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.snackbar = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
-            this.tableLayoutPanel1.SuspendLayout();
+            this.bunifuFormDock2 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.mnuMain = new System.Windows.Forms.MenuStrip();
+            this.btnProfile = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.tabLaporan.SuspendLayout();
             this.tabNavigasi.SuspendLayout();
             this.tabStatusPesanan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStatusPengiriman)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabProfile.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.tabLaporan.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.mnuMain.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bunifuFormDock1
+            // btnUpdate
             // 
-            this.bunifuFormDock1.AllowFormDragging = true;
-            this.bunifuFormDock1.AllowFormDropShadow = true;
-            this.bunifuFormDock1.AllowFormResizing = true;
-            this.bunifuFormDock1.AllowHidingBottomRegion = true;
-            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
-            this.bunifuFormDock1.ContainerControl = this;
-            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
-            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
-            this.bunifuFormDock1.DockingOptions.DockAll = true;
-            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
-            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
-            this.bunifuFormDock1.DockingOptions.DockLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockRight = true;
-            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
-            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
-            this.bunifuFormDock1.ParentForm = this;
-            this.bunifuFormDock1.ShowCursorChanges = true;
-            this.bunifuFormDock1.ShowDockingIndicators = true;
-            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
-            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
-            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
-            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
-            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUpdate.Location = new System.Drawing.Point(22, 561);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(327, 29);
+            this.btnUpdate.TabIndex = 96;
+            this.btnUpdate.Text = "Simpan Data";
+            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // bunifuFormDock2
+            // snackbar
             // 
-            this.bunifuFormDock2.AllowFormDragging = true;
-            this.bunifuFormDock2.AllowFormDropShadow = true;
-            this.bunifuFormDock2.AllowFormResizing = true;
-            this.bunifuFormDock2.AllowHidingBottomRegion = true;
-            this.bunifuFormDock2.AllowOpacityChangesWhileDragging = false;
-            this.bunifuFormDock2.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock2.BorderOptions.BottomBorder.BorderThickness = 1;
-            this.bunifuFormDock2.BorderOptions.BottomBorder.ShowBorder = true;
-            this.bunifuFormDock2.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock2.BorderOptions.LeftBorder.BorderThickness = 1;
-            this.bunifuFormDock2.BorderOptions.LeftBorder.ShowBorder = true;
-            this.bunifuFormDock2.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock2.BorderOptions.RightBorder.BorderThickness = 1;
-            this.bunifuFormDock2.BorderOptions.RightBorder.ShowBorder = true;
-            this.bunifuFormDock2.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock2.BorderOptions.TopBorder.BorderThickness = 1;
-            this.bunifuFormDock2.BorderOptions.TopBorder.ShowBorder = true;
-            this.bunifuFormDock2.ContainerControl = this;
-            this.bunifuFormDock2.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
-            this.bunifuFormDock2.DockingIndicatorsOpacity = 0.5D;
-            this.bunifuFormDock2.DockingOptions.DockAll = true;
-            this.bunifuFormDock2.DockingOptions.DockBottomLeft = true;
-            this.bunifuFormDock2.DockingOptions.DockBottomRight = true;
-            this.bunifuFormDock2.DockingOptions.DockFullScreen = true;
-            this.bunifuFormDock2.DockingOptions.DockLeft = true;
-            this.bunifuFormDock2.DockingOptions.DockRight = true;
-            this.bunifuFormDock2.DockingOptions.DockTopLeft = true;
-            this.bunifuFormDock2.DockingOptions.DockTopRight = true;
-            this.bunifuFormDock2.FormDraggingOpacity = 0.9D;
-            this.bunifuFormDock2.ParentForm = this;
-            this.bunifuFormDock2.ShowCursorChanges = true;
-            this.bunifuFormDock2.ShowDockingIndicators = true;
-            this.bunifuFormDock2.TitleBarOptions.AllowFormDragging = true;
-            this.bunifuFormDock2.TitleBarOptions.BunifuFormDock = this.bunifuFormDock2;
-            this.bunifuFormDock2.TitleBarOptions.DoubleClickToExpandWindow = true;
-            this.bunifuFormDock2.TitleBarOptions.TitleBarControl = null;
-            this.bunifuFormDock2.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            this.snackbar.AllowDragging = false;
+            this.snackbar.AllowMultipleViews = true;
+            this.snackbar.ClickToClose = true;
+            this.snackbar.DoubleClickToClose = true;
+            this.snackbar.DurationAfterIdle = 3000;
+            this.snackbar.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.snackbar.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.snackbar.ErrorOptions.ActionBorderRadius = 1;
+            this.snackbar.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.snackbar.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.snackbar.ErrorOptions.BackColor = System.Drawing.Color.White;
+            this.snackbar.ErrorOptions.BorderColor = System.Drawing.Color.White;
+            this.snackbar.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
+            this.snackbar.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.snackbar.ErrorOptions.ForeColor = System.Drawing.Color.Black;
+            this.snackbar.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
+            this.snackbar.ErrorOptions.IconLeftMargin = 12;
+            this.snackbar.FadeCloseIcon = false;
+            this.snackbar.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
+            this.snackbar.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.snackbar.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.snackbar.InformationOptions.ActionBorderRadius = 1;
+            this.snackbar.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.snackbar.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.snackbar.InformationOptions.BackColor = System.Drawing.Color.White;
+            this.snackbar.InformationOptions.BorderColor = System.Drawing.Color.White;
+            this.snackbar.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.snackbar.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.snackbar.InformationOptions.ForeColor = System.Drawing.Color.Black;
+            this.snackbar.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
+            this.snackbar.InformationOptions.IconLeftMargin = 12;
+            this.snackbar.Margin = 10;
+            this.snackbar.MaximumSize = new System.Drawing.Size(0, 0);
+            this.snackbar.MaximumViews = 7;
+            this.snackbar.MessageRightMargin = 15;
+            this.snackbar.MinimumSize = new System.Drawing.Size(0, 0);
+            this.snackbar.ShowBorders = false;
+            this.snackbar.ShowCloseIcon = false;
+            this.snackbar.ShowIcon = true;
+            this.snackbar.ShowShadows = true;
+            this.snackbar.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.snackbar.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.snackbar.SuccessOptions.ActionBorderRadius = 1;
+            this.snackbar.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.snackbar.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.snackbar.SuccessOptions.BackColor = System.Drawing.Color.White;
+            this.snackbar.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.snackbar.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.snackbar.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.snackbar.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.snackbar.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
+            this.snackbar.SuccessOptions.IconLeftMargin = 12;
+            this.snackbar.ViewsMargin = 7;
+            this.snackbar.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.snackbar.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.snackbar.WarningOptions.ActionBorderRadius = 1;
+            this.snackbar.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.snackbar.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.snackbar.WarningOptions.BackColor = System.Drawing.Color.White;
+            this.snackbar.WarningOptions.BorderColor = System.Drawing.Color.White;
+            this.snackbar.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
+            this.snackbar.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.snackbar.WarningOptions.ForeColor = System.Drawing.Color.Black;
+            this.snackbar.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
+            this.snackbar.WarningOptions.IconLeftMargin = 12;
+            this.snackbar.ZoomCloseIcon = true;
             // 
-            // tableLayoutPanel1
+            // label22
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.04322F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.95677F));
-            this.tableLayoutPanel1.Controls.Add(this.tabNavigasi, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.mnuMain, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1140, 727);
-            this.tableLayoutPanel1.TabIndex = 78;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(23, 123);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(75, 18);
+            this.label22.TabIndex = 94;
+            this.label22.Text = "Password";
+            // 
+            // chkShowPassword
+            // 
+            this.chkShowPassword.AutoSize = true;
+            this.chkShowPassword.Location = new System.Drawing.Point(248, 191);
+            this.chkShowPassword.Name = "chkShowPassword";
+            this.chkShowPassword.Size = new System.Drawing.Size(102, 17);
+            this.chkShowPassword.TabIndex = 93;
+            this.chkShowPassword.Text = "Show Password";
+            this.chkShowPassword.UseVisualStyleBackColor = true;
+            // 
+            // lblEmployeeId
+            // 
+            this.lblEmployeeId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEmployeeId.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeId.Location = new System.Drawing.Point(27, 87);
+            this.lblEmployeeId.Name = "lblEmployeeId";
+            this.lblEmployeeId.Size = new System.Drawing.Size(322, 23);
+            this.lblEmployeeId.TabIndex = 91;
+            this.lblEmployeeId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(16, 19);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(91, 32);
+            this.label18.TabIndex = 90;
+            this.label18.Text = "Profile";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(25, 64);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(77, 18);
+            this.label17.TabIndex = 89;
+            this.label17.Text = "Username";
+            // 
+            // tabLaporan
+            // 
+            this.tabLaporan.Controls.Add(this.btnTampilLaporan);
+            this.tabLaporan.Controls.Add(this.label3);
+            this.tabLaporan.Controls.Add(this.cboLaporanPelanggan);
+            this.tabLaporan.Controls.Add(this.label2);
+            this.tabLaporan.Location = new System.Drawing.Point(4, 4);
+            this.tabLaporan.Name = "tabLaporan";
+            this.tabLaporan.Size = new System.Drawing.Size(899, 657);
+            this.tabLaporan.TabIndex = 2;
+            this.tabLaporan.Text = "Laporan";
+            this.tabLaporan.UseVisualStyleBackColor = true;
+            // 
+            // btnTampilLaporan
+            // 
+            this.btnTampilLaporan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTampilLaporan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnTampilLaporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTampilLaporan.Location = new System.Drawing.Point(422, 101);
+            this.btnTampilLaporan.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTampilLaporan.Name = "btnTampilLaporan";
+            this.btnTampilLaporan.Size = new System.Drawing.Size(167, 27);
+            this.btnTampilLaporan.TabIndex = 97;
+            this.btnTampilLaporan.Text = "Tampilkan Laporan";
+            this.btnTampilLaporan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTampilLaporan.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 20);
+            this.label3.TabIndex = 85;
+            this.label3.Text = "Pilih Username";
+            // 
+            // cboLaporanPelanggan
+            // 
+            this.cboLaporanPelanggan.FormattingEnabled = true;
+            this.cboLaporanPelanggan.Location = new System.Drawing.Point(29, 104);
+            this.cboLaporanPelanggan.Name = "cboLaporanPelanggan";
+            this.cboLaporanPelanggan.Size = new System.Drawing.Size(385, 21);
+            this.cboLaporanPelanggan.TabIndex = 84;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(23, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 32);
+            this.label2.TabIndex = 66;
+            this.label2.Text = "Laporan";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tabNavigasi
             // 
@@ -215,32 +314,32 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.Controls.Add(this.tabProfile);
             this.tabNavigasi.Controls.Add(this.tabLaporan);
             this.tabNavigasi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabNavigasi.Location = new System.Drawing.Point(185, 3);
+            this.tabNavigasi.Location = new System.Drawing.Point(177, 3);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
-            this.tabNavigasi.Page = this.tabLaporan;
-            this.tabNavigasi.PageIndex = 2;
-            this.tabNavigasi.PageName = "tabLaporan";
-            this.tabNavigasi.PageTitle = "Laporan";
+            this.tabNavigasi.Page = this.tabStatusPesanan;
+            this.tabNavigasi.PageIndex = 0;
+            this.tabNavigasi.PageName = "tabStatusPesanan";
+            this.tabNavigasi.PageTitle = "Status Pesanan";
             this.tabNavigasi.SelectedIndex = 0;
-            this.tabNavigasi.Size = new System.Drawing.Size(952, 721);
+            this.tabNavigasi.Size = new System.Drawing.Size(907, 683);
             this.tabNavigasi.TabIndex = 77;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 1F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.tabNavigasi.Transition = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 1F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.tabNavigasi.Transition = animation1;
             this.tabNavigasi.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Leaf;
             // 
             // tabStatusPesanan
@@ -260,7 +359,7 @@ namespace FizzBuzz_tugas_1
             this.tabStatusPesanan.Location = new System.Drawing.Point(4, 4);
             this.tabStatusPesanan.Name = "tabStatusPesanan";
             this.tabStatusPesanan.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStatusPesanan.Size = new System.Drawing.Size(944, 695);
+            this.tabStatusPesanan.Size = new System.Drawing.Size(899, 657);
             this.tabStatusPesanan.TabIndex = 0;
             this.tabStatusPesanan.Text = "Status Pesanan";
             // 
@@ -271,22 +370,22 @@ namespace FizzBuzz_tugas_1
             this.dgvStatusPengiriman.AllowUserToDeleteRows = false;
             this.dgvStatusPengiriman.AllowUserToResizeColumns = false;
             this.dgvStatusPengiriman.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.dgvStatusPengiriman.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvStatusPengiriman.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStatusPengiriman.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvStatusPengiriman.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStatusPengiriman.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvStatusPengiriman.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(10);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStatusPengiriman.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStatusPengiriman.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStatusPengiriman.ColumnHeadersHeight = 40;
             this.dgvStatusPengiriman.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgvStatusPengiriman.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -306,15 +405,15 @@ namespace FizzBuzz_tugas_1
             this.dgvStatusPengiriman.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvStatusPengiriman.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dgvStatusPengiriman.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(10);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStatusPengiriman.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStatusPengiriman.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStatusPengiriman.EnableHeadersVisualStyles = false;
             this.dgvStatusPengiriman.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgvStatusPengiriman.HeaderBackColor = System.Drawing.Color.DodgerBlue;
@@ -331,7 +430,6 @@ namespace FizzBuzz_tugas_1
             this.dgvStatusPengiriman.Size = new System.Drawing.Size(551, 274);
             this.dgvStatusPengiriman.TabIndex = 84;
             this.dgvStatusPengiriman.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            this.dgvStatusPengiriman.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStatusPengiriman_CellContentClick);
             // 
             // btnRefresh
             // 
@@ -352,11 +450,11 @@ namespace FizzBuzz_tugas_1
             this.btnRefresh.ColorContrastOnClick = 45;
             this.btnRefresh.ColorContrastOnHover = 45;
             this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnRefresh.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnRefresh.CustomizableEdges = borderEdges1;
             this.btnRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRefresh.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRefresh.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -422,7 +520,6 @@ namespace FizzBuzz_tugas_1
             this.btnRefresh.TextMarginLeft = 0;
             this.btnRefresh.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnRefresh.UseDefaultRadiusAndThickness = true;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // groupBox1
             // 
@@ -453,7 +550,6 @@ namespace FizzBuzz_tugas_1
             this.cboPelanggan.Name = "cboPelanggan";
             this.cboPelanggan.Size = new System.Drawing.Size(514, 21);
             this.cboPelanggan.TabIndex = 83;
-            this.cboPelanggan.SelectedIndexChanged += new System.EventHandler(this.cboPelanggan_SelectedIndexChanged);
             // 
             // chkPesananPending
             // 
@@ -465,7 +561,6 @@ namespace FizzBuzz_tugas_1
             this.chkPesananPending.TabIndex = 78;
             this.chkPesananPending.Text = "Filter pesanan pending";
             this.chkPesananPending.UseVisualStyleBackColor = true;
-            this.chkPesananPending.CheckedChanged += new System.EventHandler(this.chkPesananPending_CheckedChanged);
             // 
             // lblTransactionId
             // 
@@ -536,11 +631,11 @@ namespace FizzBuzz_tugas_1
             this.btnUbahStatusPesanan.ColorContrastOnClick = 45;
             this.btnUbahStatusPesanan.ColorContrastOnHover = 45;
             this.btnUbahStatusPesanan.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnUbahStatusPesanan.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnUbahStatusPesanan.CustomizableEdges = borderEdges2;
             this.btnUbahStatusPesanan.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnUbahStatusPesanan.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnUbahStatusPesanan.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -606,7 +701,6 @@ namespace FizzBuzz_tugas_1
             this.btnUbahStatusPesanan.TextMarginLeft = 0;
             this.btnUbahStatusPesanan.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnUbahStatusPesanan.UseDefaultRadiusAndThickness = true;
-            this.btnUbahStatusPesanan.Click += new System.EventHandler(this.btnUbahStatusPesanan_Click);
             // 
             // label11
             // 
@@ -652,7 +746,7 @@ namespace FizzBuzz_tugas_1
             this.tabProfile.Controls.Add(this.label17);
             this.tabProfile.Location = new System.Drawing.Point(4, 4);
             this.tabProfile.Name = "tabProfile";
-            this.tabProfile.Size = new System.Drawing.Size(944, 695);
+            this.tabProfile.Size = new System.Drawing.Size(899, 657);
             this.tabProfile.TabIndex = 1;
             this.tabProfile.Text = "Tab Profile";
             // 
@@ -689,26 +783,26 @@ namespace FizzBuzz_tugas_1
             this.txtPassword.Modified = false;
             this.txtPassword.Multiline = false;
             this.txtPassword.Name = "txtPassword";
-            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.White;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnIdleState = stateProperties20;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnIdleState = stateProperties4;
             this.txtPassword.Padding = new System.Windows.Forms.Padding(3);
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -729,21 +823,6 @@ namespace FizzBuzz_tugas_1
             this.txtPassword.TextPlaceholder = "Enter text";
             this.txtPassword.UseSystemPasswordChar = false;
             this.txtPassword.WordWrap = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(22, 561);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(327, 29);
-            this.btnUpdate.TabIndex = 96;
-            this.btnUpdate.Text = "Simpan Data";
-            this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // groupBox2
             // 
@@ -804,26 +883,26 @@ namespace FizzBuzz_tugas_1
             this.txtAlamat.Modified = false;
             this.txtAlamat.Multiline = true;
             this.txtAlamat.Name = "txtAlamat";
-            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties21.FillColor = System.Drawing.Color.Empty;
-            stateProperties21.ForeColor = System.Drawing.Color.Empty;
-            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnActiveState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtAlamat.OnDisabledState = stateProperties22;
-            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties23.FillColor = System.Drawing.Color.Empty;
-            stateProperties23.ForeColor = System.Drawing.Color.Empty;
-            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnHoverState = stateProperties23;
-            stateProperties24.BorderColor = System.Drawing.Color.Silver;
-            stateProperties24.FillColor = System.Drawing.Color.White;
-            stateProperties24.ForeColor = System.Drawing.Color.Empty;
-            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnIdleState = stateProperties24;
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtAlamat.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnIdleState = stateProperties8;
             this.txtAlamat.Padding = new System.Windows.Forms.Padding(3);
             this.txtAlamat.PasswordChar = '\0';
             this.txtAlamat.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -878,26 +957,26 @@ namespace FizzBuzz_tugas_1
             this.txtNomorTelepon.Modified = false;
             this.txtNomorTelepon.Multiline = false;
             this.txtNomorTelepon.Name = "txtNomorTelepon";
-            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties25.FillColor = System.Drawing.Color.Empty;
-            stateProperties25.ForeColor = System.Drawing.Color.Empty;
-            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnActiveState = stateProperties25;
-            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNomorTelepon.OnDisabledState = stateProperties26;
-            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties27.FillColor = System.Drawing.Color.Empty;
-            stateProperties27.ForeColor = System.Drawing.Color.Empty;
-            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnHoverState = stateProperties27;
-            stateProperties28.BorderColor = System.Drawing.Color.Silver;
-            stateProperties28.FillColor = System.Drawing.Color.White;
-            stateProperties28.ForeColor = System.Drawing.Color.Empty;
-            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnIdleState = stateProperties28;
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNomorTelepon.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnIdleState = stateProperties12;
             this.txtNomorTelepon.Padding = new System.Windows.Forms.Padding(3);
             this.txtNomorTelepon.PasswordChar = '\0';
             this.txtNomorTelepon.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -974,26 +1053,26 @@ namespace FizzBuzz_tugas_1
             this.txtNama.Modified = false;
             this.txtNama.Multiline = false;
             this.txtNama.Name = "txtNama";
-            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties29.FillColor = System.Drawing.Color.Empty;
-            stateProperties29.ForeColor = System.Drawing.Color.Empty;
-            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnActiveState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNama.OnDisabledState = stateProperties30;
-            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties31.FillColor = System.Drawing.Color.Empty;
-            stateProperties31.ForeColor = System.Drawing.Color.Empty;
-            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnHoverState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.Silver;
-            stateProperties32.FillColor = System.Drawing.Color.White;
-            stateProperties32.ForeColor = System.Drawing.Color.Empty;
-            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnIdleState = stateProperties32;
+            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNama.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.Silver;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.Empty;
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnIdleState = stateProperties16;
             this.txtNama.Padding = new System.Windows.Forms.Padding(3);
             this.txtNama.PasswordChar = '\0';
             this.txtNama.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -1015,164 +1094,15 @@ namespace FizzBuzz_tugas_1
             this.txtNama.UseSystemPasswordChar = false;
             this.txtNama.WordWrap = true;
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(23, 123);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(75, 18);
-            this.label22.TabIndex = 94;
-            this.label22.Text = "Password";
-            // 
-            // chkShowPassword
-            // 
-            this.chkShowPassword.AutoSize = true;
-            this.chkShowPassword.Location = new System.Drawing.Point(248, 191);
-            this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(102, 17);
-            this.chkShowPassword.TabIndex = 93;
-            this.chkShowPassword.Text = "Show Password";
-            this.chkShowPassword.UseVisualStyleBackColor = true;
-            this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
-            // 
-            // lblEmployeeId
-            // 
-            this.lblEmployeeId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEmployeeId.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeId.Location = new System.Drawing.Point(27, 87);
-            this.lblEmployeeId.Name = "lblEmployeeId";
-            this.lblEmployeeId.Size = new System.Drawing.Size(322, 23);
-            this.lblEmployeeId.TabIndex = 91;
-            this.lblEmployeeId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(16, 19);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(91, 32);
-            this.label18.TabIndex = 90;
-            this.label18.Text = "Profile";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(25, 64);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 18);
-            this.label17.TabIndex = 89;
-            this.label17.Text = "Username";
-            // 
-            // tabLaporan
-            // 
-            this.tabLaporan.Controls.Add(this.btnTampilLaporan);
-            this.tabLaporan.Controls.Add(this.label3);
-            this.tabLaporan.Controls.Add(this.cboLaporanPelanggan);
-            this.tabLaporan.Controls.Add(this.label2);
-            this.tabLaporan.Location = new System.Drawing.Point(4, 4);
-            this.tabLaporan.Name = "tabLaporan";
-            this.tabLaporan.Size = new System.Drawing.Size(944, 695);
-            this.tabLaporan.TabIndex = 2;
-            this.tabLaporan.Text = "Laporan";
-            this.tabLaporan.UseVisualStyleBackColor = true;
-            // 
-            // btnTampilLaporan
-            // 
-            this.btnTampilLaporan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTampilLaporan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnTampilLaporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTampilLaporan.Location = new System.Drawing.Point(422, 101);
-            this.btnTampilLaporan.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTampilLaporan.Name = "btnTampilLaporan";
-            this.btnTampilLaporan.Size = new System.Drawing.Size(167, 27);
-            this.btnTampilLaporan.TabIndex = 97;
-            this.btnTampilLaporan.Text = "Tampilkan Laporan";
-            this.btnTampilLaporan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTampilLaporan.UseVisualStyleBackColor = true;
-            this.btnTampilLaporan.Click += new System.EventHandler(this.btnTampilLaporan_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 20);
-            this.label3.TabIndex = 85;
-            this.label3.Text = "Pilih Username";
-            // 
-            // cboLaporanPelanggan
-            // 
-            this.cboLaporanPelanggan.FormattingEnabled = true;
-            this.cboLaporanPelanggan.Location = new System.Drawing.Point(29, 104);
-            this.cboLaporanPelanggan.Name = "cboLaporanPelanggan";
-            this.cboLaporanPelanggan.Size = new System.Drawing.Size(385, 21);
-            this.cboLaporanPelanggan.TabIndex = 84;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 32);
-            this.label2.TabIndex = 66;
-            this.label2.Text = "Laporan";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // mnuMain
-            // 
-            this.mnuMain.BackColor = System.Drawing.Color.AliceBlue;
-            this.mnuMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mnuMain.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuMain.GripMargin = new System.Windows.Forms.Padding(2, 10, 0, 2);
-            this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnProfile,
-            this.toolStripMenuItem2,
-            this.keluarToolStripMenuItem,
-            this.toolStripMenuItem3,
-            this.laporanToolStripMenuItem});
-            this.mnuMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.mnuMain.Location = new System.Drawing.Point(0, 0);
-            this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.mnuMain.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.mnuMain.Size = new System.Drawing.Size(182, 727);
-            this.mnuMain.TabIndex = 76;
-            this.mnuMain.Text = "mnuMain";
-            // 
-            // btnProfile
-            // 
-            this.btnProfile.BackColor = System.Drawing.Color.White;
-            this.btnProfile.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.btnProfile.Image = global::FizzBuzz_tugas_1.Properties.Resources.user;
-            this.btnProfile.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(159, 93);
-            this.btnProfile.Text = "Username";
-            this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
-            // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.AutoToolTip = true;
             this.toolStripMenuItem2.Margin = new System.Windows.Forms.Padding(0, 30, 0, 20);
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(159, 29);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(151, 29);
             this.toolStripMenuItem2.Text = "Status Pesanan";
             this.toolStripMenuItem2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.btnPesanan_Click);
             // 
             // keluarToolStripMenuItem
             // 
@@ -1181,99 +1111,16 @@ namespace FizzBuzz_tugas_1
             this.keluarToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 30);
             this.keluarToolStripMenuItem.Name = "keluarToolStripMenuItem";
             this.keluarToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(159, 29);
+            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(151, 29);
             this.keluarToolStripMenuItem.Text = "Keluar";
-            this.keluarToolStripMenuItem.Click += new System.EventHandler(this.btnKeluar_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem3.Image = global::FizzBuzz_tugas_1.Properties.Resources.clean_laundry_1;
-            this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(159, 85);
-            this.toolStripMenuItem3.Text = " ";
-            this.toolStripMenuItem3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.toolStripMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // laporanToolStripMenuItem
             // 
             this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
             this.laporanToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(159, 29);
+            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(151, 29);
             this.laporanToolStripMenuItem.Text = "Laporan";
             this.laporanToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.laporanToolStripMenuItem.Click += new System.EventHandler(this.laporanToolStripMenuItem_Click);
-            // 
-            // snackbar
-            // 
-            this.snackbar.AllowDragging = false;
-            this.snackbar.AllowMultipleViews = true;
-            this.snackbar.ClickToClose = true;
-            this.snackbar.DoubleClickToClose = true;
-            this.snackbar.DurationAfterIdle = 3000;
-            this.snackbar.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.snackbar.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.snackbar.ErrorOptions.ActionBorderRadius = 1;
-            this.snackbar.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.snackbar.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.snackbar.ErrorOptions.BackColor = System.Drawing.Color.White;
-            this.snackbar.ErrorOptions.BorderColor = System.Drawing.Color.White;
-            this.snackbar.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
-            this.snackbar.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.snackbar.ErrorOptions.ForeColor = System.Drawing.Color.Black;
-            this.snackbar.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
-            this.snackbar.ErrorOptions.IconLeftMargin = 12;
-            this.snackbar.FadeCloseIcon = false;
-            this.snackbar.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
-            this.snackbar.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.snackbar.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.snackbar.InformationOptions.ActionBorderRadius = 1;
-            this.snackbar.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.snackbar.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.snackbar.InformationOptions.BackColor = System.Drawing.Color.White;
-            this.snackbar.InformationOptions.BorderColor = System.Drawing.Color.White;
-            this.snackbar.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.snackbar.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.snackbar.InformationOptions.ForeColor = System.Drawing.Color.Black;
-            this.snackbar.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
-            this.snackbar.InformationOptions.IconLeftMargin = 12;
-            this.snackbar.Margin = 10;
-            this.snackbar.MaximumSize = new System.Drawing.Size(0, 0);
-            this.snackbar.MaximumViews = 7;
-            this.snackbar.MessageRightMargin = 15;
-            this.snackbar.MinimumSize = new System.Drawing.Size(0, 0);
-            this.snackbar.ShowBorders = false;
-            this.snackbar.ShowCloseIcon = false;
-            this.snackbar.ShowIcon = true;
-            this.snackbar.ShowShadows = true;
-            this.snackbar.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.snackbar.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.snackbar.SuccessOptions.ActionBorderRadius = 1;
-            this.snackbar.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.snackbar.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.snackbar.SuccessOptions.BackColor = System.Drawing.Color.White;
-            this.snackbar.SuccessOptions.BorderColor = System.Drawing.Color.White;
-            this.snackbar.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
-            this.snackbar.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.snackbar.SuccessOptions.ForeColor = System.Drawing.Color.Black;
-            this.snackbar.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
-            this.snackbar.SuccessOptions.IconLeftMargin = 12;
-            this.snackbar.ViewsMargin = 7;
-            this.snackbar.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.snackbar.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.snackbar.WarningOptions.ActionBorderRadius = 1;
-            this.snackbar.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.snackbar.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.snackbar.WarningOptions.BackColor = System.Drawing.Color.White;
-            this.snackbar.WarningOptions.BorderColor = System.Drawing.Color.White;
-            this.snackbar.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
-            this.snackbar.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.snackbar.WarningOptions.ForeColor = System.Drawing.Color.Black;
-            this.snackbar.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
-            this.snackbar.WarningOptions.IconLeftMargin = 12;
-            this.snackbar.ZoomCloseIcon = true;
             // 
             // bunifuSnackbar1
             // 
@@ -1344,20 +1191,160 @@ namespace FizzBuzz_tugas_1
             this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
-            // Pegawai
+            // bunifuFormDock2
+            // 
+            this.bunifuFormDock2.AllowFormDragging = true;
+            this.bunifuFormDock2.AllowFormDropShadow = true;
+            this.bunifuFormDock2.AllowFormResizing = true;
+            this.bunifuFormDock2.AllowHidingBottomRegion = true;
+            this.bunifuFormDock2.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDock2.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock2.BorderOptions.BottomBorder.BorderThickness = 1;
+            this.bunifuFormDock2.BorderOptions.BottomBorder.ShowBorder = true;
+            this.bunifuFormDock2.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock2.BorderOptions.LeftBorder.BorderThickness = 1;
+            this.bunifuFormDock2.BorderOptions.LeftBorder.ShowBorder = true;
+            this.bunifuFormDock2.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock2.BorderOptions.RightBorder.BorderThickness = 1;
+            this.bunifuFormDock2.BorderOptions.RightBorder.ShowBorder = true;
+            this.bunifuFormDock2.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock2.BorderOptions.TopBorder.BorderThickness = 1;
+            this.bunifuFormDock2.BorderOptions.TopBorder.ShowBorder = true;
+            this.bunifuFormDock2.ContainerControl = this;
+            this.bunifuFormDock2.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDock2.DockingIndicatorsOpacity = 0.5D;
+            this.bunifuFormDock2.DockingOptions.DockAll = true;
+            this.bunifuFormDock2.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDock2.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDock2.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDock2.DockingOptions.DockLeft = true;
+            this.bunifuFormDock2.DockingOptions.DockRight = true;
+            this.bunifuFormDock2.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDock2.DockingOptions.DockTopRight = true;
+            this.bunifuFormDock2.FormDraggingOpacity = 0.9D;
+            this.bunifuFormDock2.ParentForm = this;
+            this.bunifuFormDock2.ShowCursorChanges = true;
+            this.bunifuFormDock2.ShowDockingIndicators = true;
+            this.bunifuFormDock2.TitleBarOptions.AllowFormDragging = true;
+            this.bunifuFormDock2.TitleBarOptions.BunifuFormDock = this.bunifuFormDock2;
+            this.bunifuFormDock2.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDock2.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock2.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.04322F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 83.95677F));
+            this.tableLayoutPanel1.Controls.Add(this.tabNavigasi, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.mnuMain, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1087, 689);
+            this.tableLayoutPanel1.TabIndex = 79;
+            // 
+            // mnuMain
+            // 
+            this.mnuMain.BackColor = System.Drawing.Color.AliceBlue;
+            this.mnuMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mnuMain.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnuMain.GripMargin = new System.Windows.Forms.Padding(2, 10, 0, 2);
+            this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnProfile,
+            this.toolStripMenuItem2,
+            this.keluarToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.laporanToolStripMenuItem});
+            this.mnuMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
+            this.mnuMain.Location = new System.Drawing.Point(0, 0);
+            this.mnuMain.Name = "mnuMain";
+            this.mnuMain.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.mnuMain.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.mnuMain.Size = new System.Drawing.Size(174, 689);
+            this.mnuMain.TabIndex = 76;
+            this.mnuMain.Text = "mnuMain";
+            // 
+            // btnProfile
+            // 
+            this.btnProfile.BackColor = System.Drawing.Color.White;
+            this.btnProfile.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.btnProfile.Image = global::FizzBuzz_tugas_1.Properties.Resources.user;
+            this.btnProfile.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(151, 68);
+            this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripMenuItem3.Image = global::FizzBuzz_tugas_1.Properties.Resources.clean_laundry_1;
+            this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(151, 85);
+            this.toolStripMenuItem3.Text = " ";
+            this.toolStripMenuItem3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // bunifuFormDock1
+            // 
+            this.bunifuFormDock1.AllowFormDragging = true;
+            this.bunifuFormDock1.AllowFormDropShadow = true;
+            this.bunifuFormDock1.AllowFormResizing = true;
+            this.bunifuFormDock1.AllowHidingBottomRegion = true;
+            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
+            this.bunifuFormDock1.ContainerControl = this;
+            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
+            this.bunifuFormDock1.DockingOptions.DockAll = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDock1.DockingOptions.DockLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockRight = true;
+            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
+            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
+            this.bunifuFormDock1.ParentForm = this;
+            this.bunifuFormDock1.ShowCursorChanges = true;
+            this.bunifuFormDock1.ShowDockingIndicators = true;
+            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
+            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
+            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
+            // Cabang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1140, 727);
+            this.ClientSize = new System.Drawing.Size(1087, 689);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Pegawai";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pegawai Clean Laundry";
+            this.Name = "Cabang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Cabang";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Pegawai_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.Load += new System.EventHandler(this.Cabang_Load);
+            this.tabLaporan.ResumeLayout(false);
+            this.tabLaporan.PerformLayout();
             this.tabNavigasi.ResumeLayout(false);
             this.tabStatusPesanan.ResumeLayout(false);
             this.tabStatusPesanan.PerformLayout();
@@ -1368,8 +1355,8 @@ namespace FizzBuzz_tugas_1
             this.tabProfile.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.tabLaporan.ResumeLayout(false);
-            this.tabLaporan.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.ResumeLayout(false);
@@ -1377,12 +1364,26 @@ namespace FizzBuzz_tugas_1
         }
 
         #endregion
-        public Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
-        public Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock2;
+
+        public System.Windows.Forms.Button btnUpdate;
+        public Bunifu.UI.WinForms.BunifuSnackbar snackbar;
+        public System.Windows.Forms.Label label22;
+        public System.Windows.Forms.CheckBox chkShowPassword;
+        public System.Windows.Forms.Label lblEmployeeId;
+        public System.Windows.Forms.Label label18;
+        public System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TabPage tabLaporan;
+        public System.Windows.Forms.Button btnTampilLaporan;
+        public System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cboLaporanPelanggan;
+        public System.Windows.Forms.Label label2;
         public Bunifu.UI.WinForms.BunifuPages tabNavigasi;
         public System.Windows.Forms.TabPage tabStatusPesanan;
+        public Bunifu.UI.WinForms.BunifuDataGridView dgvStatusPengiriman;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnRefresh;
         public System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cboPelanggan;
         public System.Windows.Forms.CheckBox chkPesananPending;
         public System.Windows.Forms.Label lblTransactionId;
         public System.Windows.Forms.RadioButton rdoDikirim;
@@ -1393,36 +1394,23 @@ namespace FizzBuzz_tugas_1
         public System.Windows.Forms.Label lblJumlahRecord;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.TabPage tabProfile;
-        public System.Windows.Forms.Button btnUpdate;
-        public System.Windows.Forms.CheckBox chkShowPassword;
-        public System.Windows.Forms.Label label18;
+        public Bunifu.UI.WinForms.BunifuTextBox txtPassword;
         public System.Windows.Forms.GroupBox groupBox2;
         public System.Windows.Forms.Label label19;
+        public Bunifu.UI.WinForms.BunifuTextBox txtAlamat;
+        public Bunifu.UI.WinForms.BunifuTextBox txtNomorTelepon;
         public System.Windows.Forms.Label label20;
         public System.Windows.Forms.Label label16;
-        public System.Windows.Forms.Label label22;
-        public System.Windows.Forms.Label lblEmployeeId;
-        public System.Windows.Forms.Label label17;
-        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        public System.Windows.Forms.MenuStrip mnuMain;
+        public Bunifu.UI.WinForms.BunifuTextBox txtNama;
         public System.Windows.Forms.ToolStripMenuItem btnProfile;
         public System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         public System.Windows.Forms.ToolStripMenuItem keluarToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        public Bunifu.UI.WinForms.BunifuSnackbar snackbar;
-        public Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
-        public Bunifu.UI.WinForms.BunifuTextBox txtPassword;
-        public Bunifu.UI.WinForms.BunifuTextBox txtAlamat;
-        public Bunifu.UI.WinForms.BunifuTextBox txtNomorTelepon;
-        public Bunifu.UI.WinForms.BunifuTextBox txtNama;
-        public System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cboPelanggan;
-        public Bunifu.UI.WinForms.BunifuDataGridView dgvStatusPengiriman;
         private System.Windows.Forms.ToolStripMenuItem laporanToolStripMenuItem;
-        private System.Windows.Forms.TabPage tabLaporan;
-        public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cboLaporanPelanggan;
-        public System.Windows.Forms.Button btnTampilLaporan;
+        public Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
+        public Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock2;
+        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        public System.Windows.Forms.MenuStrip mnuMain;
+        public Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
     }
 }

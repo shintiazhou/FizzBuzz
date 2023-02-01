@@ -23,7 +23,7 @@ namespace FizzBuzz_tugas_1
         SqlDataAdapter da;
         SqlCommand cmd;
         string query;
-        DataSet ds;
+        DataSet ds,dsCleanLaundry;
         SqlCommandBuilder cb;
         DataRow dr;
         DataColumn[] dc = new DataColumn[1];
@@ -71,43 +71,52 @@ namespace FizzBuzz_tugas_1
             TampilCustomer();
         }
 
+        private void LoadDataPenjualan()
+        {
+            LoadDataDelivery();
+            string queryParam = $"SELECT T.Transaction_Id, T.Title, T.Total, T.Total_Price, C.Category_Id, C.Category_Name, C.Price, Cs.Customer_Id, Cs.Name FROM tblTransaction T INNER JOIN tblCategory C ON T.Category_Id = C.Category_Id INNER JOIN tblCustomer Cs ON T.Customer_Id = Cs.Customer_Id WHERE T.Customer_Id LIKE '%{cboLaporanPelanggan.SelectedItem}%'";
+            dsCleanLaundry = new DataSet();
+            cmd = new SqlCommand(queryParam, con);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(dsCleanLaundry, "Transaction");
+        }
         private void LoadDataEmployees()
         {
             ds = new DataSet();
-            query = "SELECT * FROM tblEmployees";
+            query = "SELECT * FROM tblEmployee";
             cmd = new SqlCommand(query, con);
             da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "tblEmployees");
-            dc[0] = ds.Tables["tblEmployees"].Columns[0];
-            ds.Tables["tblEmployees"].PrimaryKey = dc;
+            da.Fill(ds,"tblEmployee");
+            dc[0] = ds.Tables["tblEmployee"].Columns[0];
+            ds.Tables["tblEmployee"].PrimaryKey = dc;
         }
         private void LoadDataDelivery()
         {
             ds = new DataSet();
-            query = "SELECT * FROM tbldelivery";
+            query = "SELECT * FROM tblDelivery";
             cmd = new SqlCommand(query, con);
             da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "tbldelivery");
-            dc[0] = ds.Tables["tbldelivery"].Columns[0];
-            ds.Tables["tbldelivery"].PrimaryKey = dc;
+            da.Fill(ds, "tblDelivery");
+            dc[0] = ds.Tables["tblDelivery"].Columns[0];
+            ds.Tables["tblDelivery"].PrimaryKey = dc;
         }
         private void SearchDataDelivery()
         {
             ds = new DataSet();
             if (chkPesananPending.Checked)
             {
-                query = $"SELECT T.Transaction_Id, T.Title, T.Total, T.Total_Price, D.Pickup_Date, D.Delivery_Date, D.Status FROM tblTransaction T INNER JOIN tbldelivery D ON T.Transaction_Id = D.Transaction_Id WHERE T.Customer_Id LIKE '%{cboPelanggan.SelectedItem}%' AND D.Status = 'Pending'";
+                query = $"SELECT T.Transaction_Id, T.Title, T.Total, T.Total_Price, D.Pickup_Date, D.Delivery_Date, D.Status FROM tblTransaction T INNER JOIN tblDelivery D ON T.Transaction_Id = D.Transaction_Id WHERE T.Customer_Id LIKE '%{cboPelanggan.SelectedItem}%' AND D.Status = 'Pending'";
             }
             else
             {
-                query = $"SELECT T.Transaction_Id, T.Title, T.Total, T.Total_Price, D.Pickup_Date, D.Delivery_Date, D.Status FROM tblTransaction T INNER JOIN tbldelivery D ON T.Transaction_Id = D.Transaction_Id WHERE T.Customer_Id LIKE '%{cboPelanggan.SelectedItem}%' ";
+                query = $"SELECT T.Transaction_Id, T.Title, T.Total, T.Total_Price, D.Pickup_Date, D.Delivery_Date, D.Status FROM tblTransaction T INNER JOIN tblDelivery D ON T.Transaction_Id = D.Transaction_Id WHERE T.Customer_Id LIKE '%{cboPelanggan.SelectedItem}%' ";
             }
                 
             cmd = new SqlCommand(query, con);
             da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "tbldelivery");
-            dc[0] = ds.Tables["tbldelivery"].Columns[0];
-            ds.Tables["tbldelivery"].PrimaryKey = dc;
+            da.Fill(ds, "tblDelivery");
+            dc[0] = ds.Tables["tblDelivery"].Columns[0];
+            ds.Tables["tblDelivery"].PrimaryKey = dc;
         }
         private void LoadDataCustomer()
         {
@@ -123,13 +132,13 @@ namespace FizzBuzz_tugas_1
         {
             cb = new SqlCommandBuilder(da);
             da = cb.DataAdapter;
-            da.Update(ds.Tables["tblEmployees"]);
+            da.Update(ds.Tables["tblEmployee"]);
         }
         private void UpdateDataDelivery()
         {
             cb = new SqlCommandBuilder(da);
             da = cb.DataAdapter;
-            da.Update(ds.Tables["tbldelivery"]);
+            da.Update(ds.Tables["tblDelivery"]);
         }
         private void TampilDataDelivery()
         {
@@ -170,7 +179,7 @@ namespace FizzBuzz_tugas_1
         private void TampilDataEmployee()
         {
             LoadDataEmployees();
-            dr = ds.Tables["tblEmployees"].Rows.Find(lblEmployeeId.Text);
+            dr = ds.Tables["tblEmployee"].Rows.Find(lblEmployeeId.Text);
             lblEmployeeId.Text = dr[0].ToString();
             txtPassword.Text = dr[2].ToString();
             txtNama.Text = dr[1].ToString();
@@ -181,14 +190,19 @@ namespace FizzBuzz_tugas_1
         {
             LoadDataCustomer();
             cboPelanggan.Items.Clear();
+            cboLaporanPelanggan.Items.Clear();
             for (int i = 0; i < ds.Tables["tblCustomer"].Rows.Count; i++)
             {
                 if (i == 0)
                 {
                     cboPelanggan.Items.Add("");
+                    cboLaporanPelanggan.Items.Add("");
                 }
                 cboPelanggan.Items.Add(ds.Tables["tblCustomer"].Rows[i][0].ToString());
+
+                cboLaporanPelanggan.Items.Add(ds.Tables["tblCustomer"].Rows[i][0].ToString());
             }
+          
         }
         private void btnKeluar_Click(object sender, EventArgs e)
         {
@@ -199,9 +213,6 @@ namespace FizzBuzz_tugas_1
 
             if (result == DialogResult.Yes)
             {
-                this.Hide();
-                Login frm = new Login();
-                frm.ShowDialog();
                 this.Close();
             }
 
@@ -221,7 +232,7 @@ namespace FizzBuzz_tugas_1
         {
             LoadDataEmployees();
 
-            dr = ds.Tables["tblEmployees"].Rows.Find(lblEmployeeId.Text);
+            dr = ds.Tables["tblEmployee"].Rows.Find(lblEmployeeId.Text);
             if (dr != null)
             {
                 dr[1] = txtNama.Text;
@@ -259,7 +270,7 @@ namespace FizzBuzz_tugas_1
         private void btnUbahStatusPesanan_Click(object sender, EventArgs e)
         {
             LoadDataDelivery();
-            dr = ds.Tables["tbldelivery"].Rows.Find(lblTransactionId.Text);
+            dr = ds.Tables["tblDelivery"].Rows.Find(lblTransactionId.Text);
             if(dr != null)
             {
                 if (rdoDiproses.Checked)
@@ -321,6 +332,22 @@ namespace FizzBuzz_tugas_1
         {
             SearchDataDelivery();
             TampilDataDelivery();
+        }
+
+        private void laporanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabNavigasi.PageIndex = 2;
+        }
+
+        private void btnTampilLaporan_Click(object sender, EventArgs e)
+        {
+            Report.crPenjualan cr = new Report.crPenjualan();
+            Report.cleanLaundryViewer viewer = new Report.cleanLaundryViewer();
+            LoadDataPenjualan();
+            cr.SetDataSource(dsCleanLaundry);
+            viewer.crystalReportViewer1.ReportSource = cr;
+            viewer.WindowState = FormWindowState.Maximized;
+            viewer.Show();
         }
     }
 }

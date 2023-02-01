@@ -39,6 +39,7 @@ namespace FizzBuzz_tugas_1
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.txtUsername = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -50,6 +51,8 @@ namespace FizzBuzz_tugas_1
             this.noticeSnackbar = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.btnAkunBaru = new System.Windows.Forms.Button();
             this.snackbar = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.btnDaftarCabang = new System.Windows.Forms.Button();
+            this.btnLoginCabang = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.SuspendLayout();
             // 
             // txtUsername
@@ -261,11 +264,11 @@ namespace FizzBuzz_tugas_1
             this.btnLoginPelanggan.ColorContrastOnClick = 45;
             this.btnLoginPelanggan.ColorContrastOnHover = 45;
             this.btnLoginPelanggan.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnLoginPelanggan.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnLoginPelanggan.CustomizableEdges = borderEdges3;
             this.btnLoginPelanggan.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLoginPelanggan.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoginPelanggan.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -290,7 +293,7 @@ namespace FizzBuzz_tugas_1
             this.btnLoginPelanggan.IdleIconLeftImage = null;
             this.btnLoginPelanggan.IdleIconRightImage = null;
             this.btnLoginPelanggan.IndicateFocus = false;
-            this.btnLoginPelanggan.Location = new System.Drawing.Point(304, 411);
+            this.btnLoginPelanggan.Location = new System.Drawing.Point(304, 404);
             this.btnLoginPelanggan.Name = "btnLoginPelanggan";
             this.btnLoginPelanggan.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoginPelanggan.OnDisabledState.BorderRadius = 20;
@@ -352,11 +355,11 @@ namespace FizzBuzz_tugas_1
             this.btnLoginPegawai.ColorContrastOnClick = 45;
             this.btnLoginPegawai.ColorContrastOnHover = 45;
             this.btnLoginPegawai.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnLoginPegawai.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnLoginPegawai.CustomizableEdges = borderEdges2;
             this.btnLoginPegawai.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLoginPegawai.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoginPegawai.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -374,14 +377,14 @@ namespace FizzBuzz_tugas_1
             this.btnLoginPegawai.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btnLoginPegawai.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnLoginPegawai.IconSize = 25;
-            this.btnLoginPegawai.IdleBorderColor = System.Drawing.Color.Brown;
+            this.btnLoginPegawai.IdleBorderColor = System.Drawing.Color.White;
             this.btnLoginPegawai.IdleBorderRadius = 20;
             this.btnLoginPegawai.IdleBorderThickness = 1;
             this.btnLoginPegawai.IdleFillColor = System.Drawing.Color.Transparent;
             this.btnLoginPegawai.IdleIconLeftImage = null;
             this.btnLoginPegawai.IdleIconRightImage = null;
             this.btnLoginPegawai.IndicateFocus = false;
-            this.btnLoginPegawai.Location = new System.Drawing.Point(304, 451);
+            this.btnLoginPegawai.Location = new System.Drawing.Point(304, 454);
             this.btnLoginPegawai.Name = "btnLoginPegawai";
             this.btnLoginPegawai.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoginPegawai.OnDisabledState.BorderRadius = 20;
@@ -399,7 +402,7 @@ namespace FizzBuzz_tugas_1
             this.btnLoginPegawai.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btnLoginPegawai.onHoverState.IconLeftImage = null;
             this.btnLoginPegawai.onHoverState.IconRightImage = null;
-            this.btnLoginPegawai.OnIdleState.BorderColor = System.Drawing.Color.Brown;
+            this.btnLoginPegawai.OnIdleState.BorderColor = System.Drawing.Color.White;
             this.btnLoginPegawai.OnIdleState.BorderRadius = 20;
             this.btnLoginPegawai.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnLoginPegawai.OnIdleState.BorderThickness = 1;
@@ -415,7 +418,7 @@ namespace FizzBuzz_tugas_1
             this.btnLoginPegawai.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLoginPegawai.OnPressedState.IconLeftImage = null;
             this.btnLoginPegawai.OnPressedState.IconRightImage = null;
-            this.btnLoginPegawai.Size = new System.Drawing.Size(260, 28);
+            this.btnLoginPegawai.Size = new System.Drawing.Size(120, 28);
             this.btnLoginPegawai.TabIndex = 21;
             this.btnLoginPegawai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLoginPegawai.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -587,6 +590,112 @@ namespace FizzBuzz_tugas_1
             this.snackbar.WarningOptions.IconLeftMargin = 12;
             this.snackbar.ZoomCloseIcon = true;
             // 
+            // btnDaftarCabang
+            // 
+            this.btnDaftarCabang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDaftarCabang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnDaftarCabang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDaftarCabang.Location = new System.Drawing.Point(11, 530);
+            this.btnDaftarCabang.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDaftarCabang.Name = "btnDaftarCabang";
+            this.btnDaftarCabang.Size = new System.Drawing.Size(153, 33);
+            this.btnDaftarCabang.TabIndex = 98;
+            this.btnDaftarCabang.Text = "Daftar Cabang Baru";
+            this.btnDaftarCabang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDaftarCabang.UseVisualStyleBackColor = true;
+            this.btnDaftarCabang.Click += new System.EventHandler(this.btnDaftarCabang_Click);
+            // 
+            // btnLoginCabang
+            // 
+            this.btnLoginCabang.AllowAnimations = true;
+            this.btnLoginCabang.AllowMouseEffects = true;
+            this.btnLoginCabang.AllowToggling = false;
+            this.btnLoginCabang.AnimationSpeed = 200;
+            this.btnLoginCabang.AutoGenerateColors = false;
+            this.btnLoginCabang.AutoRoundBorders = false;
+            this.btnLoginCabang.AutoSizeLeftIcon = true;
+            this.btnLoginCabang.AutoSizeRightIcon = true;
+            this.btnLoginCabang.BackColor = System.Drawing.Color.Transparent;
+            this.btnLoginCabang.BackColor1 = System.Drawing.Color.Transparent;
+            this.btnLoginCabang.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLoginCabang.BackgroundImage")));
+            this.btnLoginCabang.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnLoginCabang.ButtonText = "Login Cabang";
+            this.btnLoginCabang.ButtonTextMarginLeft = 0;
+            this.btnLoginCabang.ColorContrastOnClick = 45;
+            this.btnLoginCabang.ColorContrastOnHover = 45;
+            this.btnLoginCabang.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnLoginCabang.CustomizableEdges = borderEdges1;
+            this.btnLoginCabang.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnLoginCabang.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnLoginCabang.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnLoginCabang.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnLoginCabang.Enabled = false;
+            this.btnLoginCabang.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnLoginCabang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLoginCabang.ForeColor = System.Drawing.Color.Brown;
+            this.btnLoginCabang.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoginCabang.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnLoginCabang.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnLoginCabang.IconMarginLeft = 11;
+            this.btnLoginCabang.IconPadding = 10;
+            this.btnLoginCabang.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLoginCabang.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnLoginCabang.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnLoginCabang.IconSize = 25;
+            this.btnLoginCabang.IdleBorderColor = System.Drawing.Color.White;
+            this.btnLoginCabang.IdleBorderRadius = 20;
+            this.btnLoginCabang.IdleBorderThickness = 1;
+            this.btnLoginCabang.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnLoginCabang.IdleIconLeftImage = null;
+            this.btnLoginCabang.IdleIconRightImage = null;
+            this.btnLoginCabang.IndicateFocus = false;
+            this.btnLoginCabang.Location = new System.Drawing.Point(457, 454);
+            this.btnLoginCabang.Name = "btnLoginCabang";
+            this.btnLoginCabang.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnLoginCabang.OnDisabledState.BorderRadius = 20;
+            this.btnLoginCabang.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnLoginCabang.OnDisabledState.BorderThickness = 1;
+            this.btnLoginCabang.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnLoginCabang.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnLoginCabang.OnDisabledState.IconLeftImage = null;
+            this.btnLoginCabang.OnDisabledState.IconRightImage = null;
+            this.btnLoginCabang.onHoverState.BorderColor = System.Drawing.Color.Brown;
+            this.btnLoginCabang.onHoverState.BorderRadius = 20;
+            this.btnLoginCabang.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnLoginCabang.onHoverState.BorderThickness = 1;
+            this.btnLoginCabang.onHoverState.FillColor = System.Drawing.Color.Brown;
+            this.btnLoginCabang.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnLoginCabang.onHoverState.IconLeftImage = null;
+            this.btnLoginCabang.onHoverState.IconRightImage = null;
+            this.btnLoginCabang.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.btnLoginCabang.OnIdleState.BorderRadius = 20;
+            this.btnLoginCabang.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnLoginCabang.OnIdleState.BorderThickness = 1;
+            this.btnLoginCabang.OnIdleState.FillColor = System.Drawing.Color.Transparent;
+            this.btnLoginCabang.OnIdleState.ForeColor = System.Drawing.Color.Brown;
+            this.btnLoginCabang.OnIdleState.IconLeftImage = null;
+            this.btnLoginCabang.OnIdleState.IconRightImage = null;
+            this.btnLoginCabang.OnPressedState.BorderColor = System.Drawing.Color.Brown;
+            this.btnLoginCabang.OnPressedState.BorderRadius = 20;
+            this.btnLoginCabang.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnLoginCabang.OnPressedState.BorderThickness = 1;
+            this.btnLoginCabang.OnPressedState.FillColor = System.Drawing.Color.Brown;
+            this.btnLoginCabang.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnLoginCabang.OnPressedState.IconLeftImage = null;
+            this.btnLoginCabang.OnPressedState.IconRightImage = null;
+            this.btnLoginCabang.Size = new System.Drawing.Size(120, 28);
+            this.btnLoginCabang.TabIndex = 99;
+            this.btnLoginCabang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLoginCabang.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnLoginCabang.TextMarginLeft = 0;
+            this.btnLoginCabang.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnLoginCabang.UseDefaultRadiusAndThickness = true;
+            this.btnLoginCabang.Click += new System.EventHandler(this.btnLoginCabang_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -595,6 +704,8 @@ namespace FizzBuzz_tugas_1
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(860, 574);
+            this.Controls.Add(this.btnLoginCabang);
+            this.Controls.Add(this.btnDaftarCabang);
             this.Controls.Add(this.btnAkunBaru);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLoginPegawai);
@@ -624,6 +735,8 @@ namespace FizzBuzz_tugas_1
         public Bunifu.UI.WinForms.BunifuSnackbar noticeSnackbar;
         public System.Windows.Forms.Button btnAkunBaru;
         private Bunifu.UI.WinForms.BunifuSnackbar snackbar;
+        public System.Windows.Forms.Button btnDaftarCabang;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLoginCabang;
     }
 }
 
