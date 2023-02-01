@@ -55,6 +55,19 @@ namespace FizzBuzz_tugas_1
             dc[0] = ds.Tables["tblBranch"].Columns[0];
             ds.Tables["tblBranch"].PrimaryKey = dc;
         }
+        private void LoadDataTransaction()
+        {
+   
+            ds = new DataSet();
+            query = $"SELECT * FROM tblTransaction WHERE Branch_Id like '%{lblIDCabang.Text}%'";
+            cmd = new SqlCommand(query, con);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds, "tblTransaction");
+            dc[0] = ds.Tables["tblTransaction"].Columns[0];
+            ds.Tables["tblTransaction"].PrimaryKey = dc;
+
+            
+        }
         private void TampilDataCabang()
         {
             LoadDataCabang();
@@ -102,9 +115,18 @@ namespace FizzBuzz_tugas_1
 
         private void Cabang_Load(object sender, EventArgs e)
         {
+            int saldo = 0;
             koneksi();
             LoadDataCabang();
             TampilDataCabang();
+            LoadDataTransaction();
+
+            for (int i = 0; i < ds.Tables["tblTransaction"].Rows.Count; i++)
+            {
+                saldo += int.Parse(ds.Tables["tblTransaction"].Rows[i][5].ToString());
+            }
+           
+            menuSaldo.Text = "Rp." + saldo;
         }
     }
 }
