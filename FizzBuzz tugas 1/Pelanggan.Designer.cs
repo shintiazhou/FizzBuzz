@@ -57,6 +57,10 @@ namespace FizzBuzz_tugas_1
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.snackBarBuatPesanan = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -84,6 +88,8 @@ namespace FizzBuzz_tugas_1
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.tabLaundryKiloan = new System.Windows.Forms.TabPage();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.cboCabang = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -129,12 +135,17 @@ namespace FizzBuzz_tugas_1
             this.lblCustID = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.tabTopUp = new System.Windows.Forms.TabPage();
+            this.btnTopUp = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtJlhTopUp = new Bunifu.UI.WinForms.BunifuTextBox();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.btnProfile = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuSaldo = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPesananBaru = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRiwayatPesanan = new System.Windows.Forms.ToolStripMenuItem();
             this.keluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.snackbar = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tabNavigasi.SuspendLayout();
@@ -149,6 +160,7 @@ namespace FizzBuzz_tugas_1
             ((System.ComponentModel.ISupportInitialize)(this.dgvRiwayatPesanan)).BeginInit();
             this.tabProfile.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.tabTopUp.SuspendLayout();
             this.mnuMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -284,14 +296,15 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.Controls.Add(this.tabPesanan);
             this.tabNavigasi.Controls.Add(this.tabRiwayatPesanan);
             this.tabNavigasi.Controls.Add(this.tabProfile);
+            this.tabNavigasi.Controls.Add(this.tabTopUp);
             this.tabNavigasi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabNavigasi.Location = new System.Drawing.Point(184, 3);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
-            this.tabNavigasi.Page = this.tabRiwayatPesanan;
-            this.tabNavigasi.PageIndex = 1;
-            this.tabNavigasi.PageName = "tabRiwayatPesanan";
-            this.tabNavigasi.PageTitle = "tab Riwayat Pesanan";
+            this.tabNavigasi.Page = this.tabTopUp;
+            this.tabNavigasi.PageIndex = 3;
+            this.tabNavigasi.PageName = "tabTopUp";
+            this.tabNavigasi.PageTitle = "Top up";
             this.tabNavigasi.SelectedIndex = 0;
             this.tabNavigasi.Size = new System.Drawing.Size(944, 748);
             this.tabNavigasi.TabIndex = 79;
@@ -394,7 +407,7 @@ namespace FizzBuzz_tugas_1
             this.label11.AutoSize = true;
             this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(19, 22);
+            this.label11.Location = new System.Drawing.Point(18, 22);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(169, 32);
             this.label11.TabIndex = 65;
@@ -610,6 +623,8 @@ namespace FizzBuzz_tugas_1
             // tabLaundryKiloan
             // 
             this.tabLaundryKiloan.BackColor = System.Drawing.Color.White;
+            this.tabLaundryKiloan.Controls.Add(this.bunifuLabel1);
+            this.tabLaundryKiloan.Controls.Add(this.cboCabang);
             this.tabLaundryKiloan.Controls.Add(this.label14);
             this.tabLaundryKiloan.Controls.Add(this.label12);
             this.tabLaundryKiloan.Controls.Add(this.label10);
@@ -638,12 +653,37 @@ namespace FizzBuzz_tugas_1
             this.tabLaundryKiloan.TabIndex = 1;
             this.tabLaundryKiloan.Text = "detail pesanan";
             // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuLabel1.Location = new System.Drawing.Point(25, 545);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(151, 21);
+            this.bunifuLabel1.TabIndex = 67;
+            this.bunifuLabel1.Text = "Pilih Cabang Laundry";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // cboCabang
+            // 
+            this.cboCabang.FormattingEnabled = true;
+            this.cboCabang.Location = new System.Drawing.Point(25, 573);
+            this.cboCabang.Name = "cboCabang";
+            this.cboCabang.Size = new System.Drawing.Size(321, 21);
+            this.cboCabang.TabIndex = 66;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(298, 171);
+            this.label14.Location = new System.Drawing.Point(293, 226);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(138, 20);
             this.label14.TabIndex = 65;
@@ -655,7 +695,7 @@ namespace FizzBuzz_tugas_1
             this.label12.AutoSize = true;
             this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(26, 301);
+            this.label12.Location = new System.Drawing.Point(21, 356);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(133, 20);
             this.label12.TabIndex = 64;
@@ -667,7 +707,7 @@ namespace FizzBuzz_tugas_1
             this.label10.AutoSize = true;
             this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(26, 171);
+            this.label10.Location = new System.Drawing.Point(21, 226);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(151, 20);
             this.label10.TabIndex = 62;
@@ -677,7 +717,7 @@ namespace FizzBuzz_tugas_1
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(26, 446);
+            this.label21.Location = new System.Drawing.Point(21, 501);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(31, 13);
             this.label21.TabIndex = 61;
@@ -692,7 +732,7 @@ namespace FizzBuzz_tugas_1
             this.lblHarga.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblHarga.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblHarga.ForeColor = System.Drawing.Color.Black;
-            this.lblHarga.Location = new System.Drawing.Point(75, 435);
+            this.lblHarga.Location = new System.Drawing.Point(70, 490);
             this.lblHarga.Name = "lblHarga";
             this.lblHarga.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblHarga.Size = new System.Drawing.Size(177, 34);
@@ -711,7 +751,7 @@ namespace FizzBuzz_tugas_1
             this.lblJumlahLaundry.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblJumlahLaundry.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblJumlahLaundry.ForeColor = System.Drawing.Color.Black;
-            this.lblJumlahLaundry.Location = new System.Drawing.Point(382, 96);
+            this.lblJumlahLaundry.Location = new System.Drawing.Point(377, 151);
             this.lblJumlahLaundry.Name = "lblJumlahLaundry";
             this.lblJumlahLaundry.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblJumlahLaundry.Size = new System.Drawing.Size(58, 33);
@@ -745,7 +785,7 @@ namespace FizzBuzz_tugas_1
             this.lblPakaian.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblPakaian.ForeColor = System.Drawing.Color.Black;
-            this.lblPakaian.Location = new System.Drawing.Point(26, 67);
+            this.lblPakaian.Location = new System.Drawing.Point(21, 122);
             this.lblPakaian.Name = "lblPakaian";
             this.lblPakaian.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPakaian.Size = new System.Drawing.Size(97, 21);
@@ -759,7 +799,7 @@ namespace FizzBuzz_tugas_1
             this.rdoNextDay.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.rdoNextDay.AutoSize = true;
             this.rdoNextDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNextDay.Location = new System.Drawing.Point(326, 212);
+            this.rdoNextDay.Location = new System.Drawing.Point(321, 267);
             this.rdoNextDay.Name = "rdoNextDay";
             this.rdoNextDay.Size = new System.Drawing.Size(71, 16);
             this.rdoNextDay.TabIndex = 50;
@@ -773,7 +813,7 @@ namespace FizzBuzz_tugas_1
             this.rdoNextDays.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.rdoNextDays.BorderThickness = 1;
             this.rdoNextDays.Checked = false;
-            this.rdoNextDays.Location = new System.Drawing.Point(298, 210);
+            this.rdoNextDays.Location = new System.Drawing.Point(293, 265);
             this.rdoNextDays.Name = "rdoNextDays";
             this.rdoNextDays.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdoNextDays.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -790,7 +830,7 @@ namespace FizzBuzz_tugas_1
             this.rdoHariKerja.AutoSize = true;
             this.rdoHariKerja.Cursor = System.Windows.Forms.Cursors.Default;
             this.rdoHariKerja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoHariKerja.Location = new System.Drawing.Point(326, 243);
+            this.rdoHariKerja.Location = new System.Drawing.Point(321, 298);
             this.rdoHariKerja.Name = "rdoHariKerja";
             this.rdoHariKerja.Size = new System.Drawing.Size(98, 16);
             this.rdoHariKerja.TabIndex = 48;
@@ -804,7 +844,7 @@ namespace FizzBuzz_tugas_1
             this.bunifuRadioButton1.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.bunifuRadioButton1.BorderThickness = 1;
             this.bunifuRadioButton1.Checked = true;
-            this.bunifuRadioButton1.Location = new System.Drawing.Point(298, 243);
+            this.bunifuRadioButton1.Location = new System.Drawing.Point(293, 298);
             this.bunifuRadioButton1.Name = "bunifuRadioButton1";
             this.bunifuRadioButton1.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.bunifuRadioButton1.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -818,7 +858,7 @@ namespace FizzBuzz_tugas_1
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(310, 119);
+            this.label8.Location = new System.Drawing.Point(305, 174);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(19, 13);
             this.label8.TabIndex = 42;
@@ -827,7 +867,7 @@ namespace FizzBuzz_tugas_1
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(26, 119);
+            this.label13.Location = new System.Drawing.Point(21, 174);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(13, 13);
             this.label13.TabIndex = 41;
@@ -836,7 +876,7 @@ namespace FizzBuzz_tugas_1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FizzBuzz_tugas_1.Properties.Resources.weight;
-            this.pictureBox1.Location = new System.Drawing.Point(446, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(441, 136);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 61);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -852,7 +892,7 @@ namespace FizzBuzz_tugas_1
             this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(26, 271);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(21, 326);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
@@ -868,7 +908,7 @@ namespace FizzBuzz_tugas_1
             this.bunifuSeparator2.LineColor = System.Drawing.Color.Silver;
             this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(26, 141);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(21, 196);
             this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
@@ -922,7 +962,7 @@ namespace FizzBuzz_tugas_1
             this.btnBuatPesanan.IdleIconLeftImage = null;
             this.btnBuatPesanan.IdleIconRightImage = null;
             this.btnBuatPesanan.IndicateFocus = false;
-            this.btnBuatPesanan.Location = new System.Drawing.Point(329, 435);
+            this.btnBuatPesanan.Location = new System.Drawing.Point(25, 610);
             this.btnBuatPesanan.Name = "btnBuatPesanan";
             this.btnBuatPesanan.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuatPesanan.OnDisabledState.BorderRadius = 20;
@@ -992,7 +1032,7 @@ namespace FizzBuzz_tugas_1
             this.txtCatatanPesanan.IconRight = null;
             this.txtCatatanPesanan.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCatatanPesanan.Lines = new string[0];
-            this.txtCatatanPesanan.Location = new System.Drawing.Point(26, 327);
+            this.txtCatatanPesanan.Location = new System.Drawing.Point(21, 382);
             this.txtCatatanPesanan.MaxLength = 32767;
             this.txtCatatanPesanan.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtCatatanPesanan.Modified = false;
@@ -1038,6 +1078,7 @@ namespace FizzBuzz_tugas_1
             this.txtCatatanPesanan.TextPlaceholder = "Masukan catatan pesanan";
             this.txtCatatanPesanan.UseSystemPasswordChar = false;
             this.txtCatatanPesanan.WordWrap = true;
+            this.txtCatatanPesanan.TextChanged += new System.EventHandler(this.txtCatatanPesanan_TextChanged);
             // 
             // datePengambilan
             // 
@@ -1059,7 +1100,7 @@ namespace FizzBuzz_tugas_1
             this.datePengambilan.IconColor = System.Drawing.Color.Gray;
             this.datePengambilan.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.datePengambilan.LeftTextMargin = 5;
-            this.datePengambilan.Location = new System.Drawing.Point(26, 206);
+            this.datePengambilan.Location = new System.Drawing.Point(21, 261);
             this.datePengambilan.MinimumSize = new System.Drawing.Size(4, 32);
             this.datePengambilan.Name = "datePengambilan";
             this.datePengambilan.Size = new System.Drawing.Size(210, 32);
@@ -1087,7 +1128,7 @@ namespace FizzBuzz_tugas_1
             this.sliderJumlahLaundry.DurationBeforeShrink = 2000;
             this.sliderJumlahLaundry.ElapsedColor = System.Drawing.Color.DodgerBlue;
             this.sliderJumlahLaundry.LargeChange = 10;
-            this.sliderJumlahLaundry.Location = new System.Drawing.Point(26, 93);
+            this.sliderJumlahLaundry.Location = new System.Drawing.Point(21, 148);
             this.sliderJumlahLaundry.Margin = new System.Windows.Forms.Padding(4);
             this.sliderJumlahLaundry.Maximum = 20;
             this.sliderJumlahLaundry.Minimum = 1;
@@ -1330,7 +1371,7 @@ namespace FizzBuzz_tugas_1
             this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Lines = new string[] {
         "Password"};
-            this.txtPassword.Location = new System.Drawing.Point(23, 142);
+            this.txtPassword.Location = new System.Drawing.Point(22, 137);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPassword.Modified = false;
@@ -1382,7 +1423,7 @@ namespace FizzBuzz_tugas_1
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(19, 559);
+            this.btnUpdate.Location = new System.Drawing.Point(18, 554);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(327, 29);
@@ -1400,7 +1441,7 @@ namespace FizzBuzz_tugas_1
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.txtNama);
-            this.groupBox2.Location = new System.Drawing.Point(19, 217);
+            this.groupBox2.Location = new System.Drawing.Point(18, 212);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(329, 334);
             this.groupBox2.TabIndex = 104;
@@ -1669,7 +1710,7 @@ namespace FizzBuzz_tugas_1
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(20, 121);
+            this.label22.Location = new System.Drawing.Point(19, 116);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(75, 18);
@@ -1679,7 +1720,7 @@ namespace FizzBuzz_tugas_1
             // chkShowPassword
             // 
             this.chkShowPassword.AutoSize = true;
-            this.chkShowPassword.Location = new System.Drawing.Point(245, 189);
+            this.chkShowPassword.Location = new System.Drawing.Point(244, 184);
             this.chkShowPassword.Name = "chkShowPassword";
             this.chkShowPassword.Size = new System.Drawing.Size(102, 17);
             this.chkShowPassword.TabIndex = 102;
@@ -1692,7 +1733,7 @@ namespace FizzBuzz_tugas_1
             this.lblCustID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCustID.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblCustID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustID.Location = new System.Drawing.Point(19, 85);
+            this.lblCustID.Location = new System.Drawing.Point(18, 80);
             this.lblCustID.Name = "lblCustID";
             this.lblCustID.Size = new System.Drawing.Size(329, 23);
             this.lblCustID.TabIndex = 101;
@@ -1714,12 +1755,137 @@ namespace FizzBuzz_tugas_1
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(17, 62);
+            this.label17.Location = new System.Drawing.Point(16, 57);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(77, 18);
             this.label17.TabIndex = 99;
             this.label17.Text = "Username";
+            // 
+            // tabTopUp
+            // 
+            this.tabTopUp.Controls.Add(this.btnTopUp);
+            this.tabTopUp.Controls.Add(this.label24);
+            this.tabTopUp.Controls.Add(this.label23);
+            this.tabTopUp.Controls.Add(this.txtJlhTopUp);
+            this.tabTopUp.Location = new System.Drawing.Point(4, 4);
+            this.tabTopUp.Name = "tabTopUp";
+            this.tabTopUp.Size = new System.Drawing.Size(936, 722);
+            this.tabTopUp.TabIndex = 3;
+            this.tabTopUp.Text = "Top up";
+            this.tabTopUp.UseVisualStyleBackColor = true;
+            // 
+            // btnTopUp
+            // 
+            this.btnTopUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTopUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnTopUp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTopUp.Location = new System.Drawing.Point(23, 148);
+            this.btnTopUp.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTopUp.Name = "btnTopUp";
+            this.btnTopUp.Size = new System.Drawing.Size(297, 29);
+            this.btnTopUp.TabIndex = 108;
+            this.btnTopUp.Text = "Simpan";
+            this.btnTopUp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTopUp.UseVisualStyleBackColor = true;
+            this.btnTopUp.Click += new System.EventHandler(this.btnTopUp_Click);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(17, 17);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(96, 32);
+            this.label24.TabIndex = 107;
+            this.label24.Text = "Top Up";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(20, 63);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(106, 18);
+            this.label23.TabIndex = 105;
+            this.label23.Text = "Jumlah Top up";
+            // 
+            // txtJlhTopUp
+            // 
+            this.txtJlhTopUp.AcceptsReturn = false;
+            this.txtJlhTopUp.AcceptsTab = false;
+            this.txtJlhTopUp.AnimationSpeed = 200;
+            this.txtJlhTopUp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtJlhTopUp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtJlhTopUp.BackColor = System.Drawing.Color.Transparent;
+            this.txtJlhTopUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtJlhTopUp.BackgroundImage")));
+            this.txtJlhTopUp.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtJlhTopUp.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtJlhTopUp.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtJlhTopUp.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtJlhTopUp.BorderRadius = 10;
+            this.txtJlhTopUp.BorderThickness = 1;
+            this.txtJlhTopUp.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtJlhTopUp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtJlhTopUp.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtJlhTopUp.DefaultText = "";
+            this.txtJlhTopUp.FillColor = System.Drawing.Color.White;
+            this.txtJlhTopUp.HideSelection = true;
+            this.txtJlhTopUp.IconLeft = null;
+            this.txtJlhTopUp.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtJlhTopUp.IconPadding = 10;
+            this.txtJlhTopUp.IconRight = null;
+            this.txtJlhTopUp.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtJlhTopUp.Lines = new string[0];
+            this.txtJlhTopUp.Location = new System.Drawing.Point(23, 87);
+            this.txtJlhTopUp.MaxLength = 32767;
+            this.txtJlhTopUp.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtJlhTopUp.Modified = false;
+            this.txtJlhTopUp.Multiline = false;
+            this.txtJlhTopUp.Name = "txtJlhTopUp";
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtJlhTopUp.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtJlhTopUp.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtJlhTopUp.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtJlhTopUp.OnIdleState = stateProperties24;
+            this.txtJlhTopUp.Padding = new System.Windows.Forms.Padding(3);
+            this.txtJlhTopUp.PasswordChar = '\0';
+            this.txtJlhTopUp.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtJlhTopUp.PlaceholderText = "Enter text";
+            this.txtJlhTopUp.ReadOnly = false;
+            this.txtJlhTopUp.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtJlhTopUp.SelectedText = "";
+            this.txtJlhTopUp.SelectionLength = 0;
+            this.txtJlhTopUp.SelectionStart = 0;
+            this.txtJlhTopUp.ShortcutsEnabled = true;
+            this.txtJlhTopUp.Size = new System.Drawing.Size(297, 37);
+            this.txtJlhTopUp.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtJlhTopUp.TabIndex = 106;
+            this.txtJlhTopUp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtJlhTopUp.TextMarginBottom = 0;
+            this.txtJlhTopUp.TextMarginLeft = 3;
+            this.txtJlhTopUp.TextMarginTop = 0;
+            this.txtJlhTopUp.TextPlaceholder = "Enter text";
+            this.txtJlhTopUp.UseSystemPasswordChar = false;
+            this.txtJlhTopUp.WordWrap = true;
             // 
             // mnuMain
             // 
@@ -1729,10 +1895,10 @@ namespace FizzBuzz_tugas_1
             this.mnuMain.GripMargin = new System.Windows.Forms.Padding(2, 10, 0, 2);
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnProfile,
+            this.menuSaldo,
             this.btnPesananBaru,
             this.btnRiwayatPesanan,
-            this.keluarToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.keluarToolStripMenuItem});
             this.mnuMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
@@ -1754,6 +1920,12 @@ namespace FizzBuzz_tugas_1
             this.btnProfile.Text = "Username";
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            // 
+            // menuSaldo
+            // 
+            this.menuSaldo.Name = "menuSaldo";
+            this.menuSaldo.Size = new System.Drawing.Size(180, 4);
+            this.menuSaldo.Click += new System.EventHandler(this.menuSaldo_Click);
             // 
             // btnPesananBaru
             // 
@@ -1783,16 +1955,6 @@ namespace FizzBuzz_tugas_1
             this.keluarToolStripMenuItem.Size = new System.Drawing.Size(180, 29);
             this.keluarToolStripMenuItem.Text = "Keluar";
             this.keluarToolStripMenuItem.Click += new System.EventHandler(this.btnKeluar_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripMenuItem1.Image = global::FizzBuzz_tugas_1.Properties.Resources.clean_laundry_1;
-            this.toolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 85);
-            this.toolStripMenuItem1.Text = " ";
-            this.toolStripMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // snackbar
             // 
@@ -1896,6 +2058,8 @@ namespace FizzBuzz_tugas_1
             this.tabProfile.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.tabTopUp.ResumeLayout(false);
+            this.tabTopUp.PerformLayout();
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.ResumeLayout(false);
@@ -1976,11 +2140,18 @@ namespace FizzBuzz_tugas_1
         public System.Windows.Forms.ToolStripMenuItem btnPesananBaru;
         public System.Windows.Forms.ToolStripMenuItem btnRiwayatPesanan;
         public System.Windows.Forms.ToolStripMenuItem keluarToolStripMenuItem;
-        public System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         public Bunifu.UI.WinForms.BunifuTextBox txtPassword;
         public Bunifu.UI.WinForms.BunifuTextBox txtAlamat;
         public Bunifu.UI.WinForms.BunifuTextBox txtNomorTelepon;
         public Bunifu.UI.WinForms.BunifuTextBox txtNama;
         public Bunifu.UI.WinForms.BunifuSnackbar snackbar;
+        public Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private System.Windows.Forms.ComboBox cboCabang;
+        private System.Windows.Forms.ToolStripMenuItem menuSaldo;
+        private System.Windows.Forms.TabPage tabTopUp;
+        public System.Windows.Forms.Label label23;
+        public Bunifu.UI.WinForms.BunifuTextBox txtJlhTopUp;
+        public System.Windows.Forms.Button btnTopUp;
+        public System.Windows.Forms.Label label24;
     }
 }

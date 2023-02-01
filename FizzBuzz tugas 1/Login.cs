@@ -145,7 +145,7 @@ namespace FizzBuzz_tugas_1
                 {
                     Cabang Cabang = new Cabang(this);
                     Cabang.btnProfile.Text = dr[0].ToString();
-                    Cabang.lblEmployeeId.Text = dr[0].ToString();
+                    Cabang.lblIDCabang.Text = dr[0].ToString();
                     Cabang.ShowDialog();
                 }
                 else

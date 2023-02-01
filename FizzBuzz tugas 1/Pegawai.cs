@@ -74,7 +74,7 @@ namespace FizzBuzz_tugas_1
         private void LoadDataPenjualan()
         {
             LoadDataDelivery();
-            string queryParam = $"SELECT T.Transaction_Id, T.Title, T.Total, T.Total_Price, C.Category_Id, C.Category_Name, C.Price, Cs.Customer_Id, Cs.Name FROM tblTransaction T INNER JOIN tblCategory C ON T.Category_Id = C.Category_Id INNER JOIN tblCustomer Cs ON T.Customer_Id = Cs.Customer_Id WHERE T.Customer_Id LIKE '%{cboLaporanPelanggan.SelectedItem}%'";
+            string queryParam = $"SELECT T.Transaction_Id, T.Title, T.Total, T.Total_Price, C.Category_Id, C.Category_Name, C.Price, Cs.Customer_Id, Cs.Name FROM tblTransaction T INNER JOIN tblCategory C ON T.Category_Id = C.Category_Id INNER JOIN tblCustomer Cs ON T.Customer_Id = Cs.Customer_Id WHERE T.Customer_Id LIKE '%{cboLaporanPelanggan.SelectedItem}%' AND WHERE T.Company_ID LIKE '%{lblIDCabang.Text}%'";
             dsCleanLaundry = new DataSet();
             cmd = new SqlCommand(queryParam, con);
             da = new SqlDataAdapter(cmd);
@@ -185,6 +185,7 @@ namespace FizzBuzz_tugas_1
             txtNama.Text = dr[1].ToString();
             txtAlamat.Text = dr[3].ToString();
             txtNomorTelepon.Text = dr[4].ToString();
+            lblIDCabang.Text = dr[5].ToString();
         }
         private void TampilCustomer()
         {
