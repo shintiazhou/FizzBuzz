@@ -297,6 +297,10 @@ namespace FizzBuzz_tugas_1.Report {
             
             private global::System.Data.DataColumn columnName;
             
+            private global::System.Data.DataColumn columnCreated_Date;
+            
+            private global::System.Data.DataColumn columnBranch_ID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public TransactionDataTable() {
@@ -404,6 +408,22 @@ namespace FizzBuzz_tugas_1.Report {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Created_DateColumn {
+                get {
+                    return this.columnCreated_Date;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Branch_IDColumn {
+                get {
+                    return this.columnBranch_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -439,7 +459,7 @@ namespace FizzBuzz_tugas_1.Report {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TransactionRow AddTransactionRow(string Transaction_Id, string Title, long Total, decimal Total_Price, string Category_Id, string Category_Name, decimal Price, string Customer_Id, string Name) {
+            public TransactionRow AddTransactionRow(string Transaction_Id, string Title, long Total, decimal Total_Price, string Category_Id, string Category_Name, decimal Price, string Customer_Id, string Name, string Created_Date, string Branch_ID) {
                 TransactionRow rowTransactionRow = ((TransactionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Transaction_Id,
@@ -450,7 +470,9 @@ namespace FizzBuzz_tugas_1.Report {
                         Category_Name,
                         Price,
                         Customer_Id,
-                        Name};
+                        Name,
+                        Created_Date,
+                        Branch_ID};
                 rowTransactionRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTransactionRow);
                 return rowTransactionRow;
@@ -489,6 +511,8 @@ namespace FizzBuzz_tugas_1.Report {
                 this.columnPrice = base.Columns["Price"];
                 this.columnCustomer_Id = base.Columns["Customer_Id"];
                 this.columnName = base.Columns["Name"];
+                this.columnCreated_Date = base.Columns["Created_Date"];
+                this.columnBranch_ID = base.Columns["Branch_ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -512,6 +536,10 @@ namespace FizzBuzz_tugas_1.Report {
                 base.Columns.Add(this.columnCustomer_Id);
                 this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnName);
+                this.columnCreated_Date = new global::System.Data.DataColumn("Created_Date", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCreated_Date);
+                this.columnBranch_ID = new global::System.Data.DataColumn("Branch_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBranch_ID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnTransaction_Id}, true));
                 this.columnTransaction_Id.AllowDBNull = false;
@@ -797,6 +825,38 @@ namespace FizzBuzz_tugas_1.Report {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Created_Date {
+                get {
+                    try {
+                        return ((string)(this[this.tableTransaction.Created_DateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Created_Date\' in table \'Transaction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTransaction.Created_DateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Branch_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableTransaction.Branch_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Branch_ID\' in table \'Transaction\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTransaction.Branch_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsTitleNull() {
                 return this.IsNull(this.tableTransaction.TitleColumn);
             }
@@ -889,6 +949,30 @@ namespace FizzBuzz_tugas_1.Report {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetNameNull() {
                 this[this.tableTransaction.NameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCreated_DateNull() {
+                return this.IsNull(this.tableTransaction.Created_DateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCreated_DateNull() {
+                this[this.tableTransaction.Created_DateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsBranch_IDNull() {
+                return this.IsNull(this.tableTransaction.Branch_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetBranch_IDNull() {
+                this[this.tableTransaction.Branch_IDColumn] = global::System.Convert.DBNull;
             }
         }
         

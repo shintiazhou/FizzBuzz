@@ -62,7 +62,7 @@ namespace FizzBuzz_tugas_1
         {
             Koneksi();
             LoadData();
-            lblIDCabang.Text ="BRANCH" +ds.Tables["tblBranch"].Rows.Count +1;
+            lblIDCabang.Text ="BRANCH" + (ds.Tables["tblBranch"].Rows.Count +1);
         }
         private void kosong()
         {
@@ -74,7 +74,7 @@ namespace FizzBuzz_tugas_1
         private void btnCabangBaru_Click(object sender, EventArgs e)
         {
 
-            dr = ds.Tables["tblBranch"].Rows.Find("BRANCH" + ds.Tables["tblBranch"].Rows.Count + 1);
+            dr = ds.Tables["tblBranch"].Rows.Find("BRANCH" + (ds.Tables["tblBranch"].Rows.Count + 1));
 
                 if (dr == null)
                 {

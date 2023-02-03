@@ -301,10 +301,10 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.Location = new System.Drawing.Point(184, 3);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
-            this.tabNavigasi.Page = this.tabTopUp;
-            this.tabNavigasi.PageIndex = 3;
-            this.tabNavigasi.PageName = "tabTopUp";
-            this.tabNavigasi.PageTitle = "Top up";
+            this.tabNavigasi.Page = this.tabPesanan;
+            this.tabNavigasi.PageIndex = 0;
+            this.tabNavigasi.PageName = "tabPesanan";
+            this.tabNavigasi.PageTitle = "Pesanan";
             this.tabNavigasi.SelectedIndex = 0;
             this.tabNavigasi.Size = new System.Drawing.Size(944, 748);
             this.tabNavigasi.TabIndex = 79;
@@ -1101,11 +1101,12 @@ namespace FizzBuzz_tugas_1
             this.datePengambilan.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.datePengambilan.LeftTextMargin = 5;
             this.datePengambilan.Location = new System.Drawing.Point(21, 261);
+            this.datePengambilan.MinDate = new System.DateTime(2023, 2, 3, 0, 0, 0, 0);
             this.datePengambilan.MinimumSize = new System.Drawing.Size(4, 32);
             this.datePengambilan.Name = "datePengambilan";
             this.datePengambilan.Size = new System.Drawing.Size(210, 32);
             this.datePengambilan.TabIndex = 44;
-            this.datePengambilan.Value = new System.DateTime(2023, 1, 3, 10, 58, 0, 0);
+            this.datePengambilan.Value = new System.DateTime(2023, 2, 3, 0, 0, 0, 0);
             // 
             // sliderJumlahLaundry
             // 

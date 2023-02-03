@@ -21,7 +21,7 @@ namespace FizzBuzz_tugas_1
         SqlDataAdapter da;
         SqlCommand cmd;
         string query;
-        DataSet ds;
+        DataSet ds, dsCleanLaundry;
         SqlCommandBuilder cb;
         DataRow dr;
         DataColumn[] dc = new DataColumn[1];
@@ -55,9 +55,18 @@ namespace FizzBuzz_tugas_1
             dc[0] = ds.Tables["tblBranch"].Columns[0];
             ds.Tables["tblBranch"].PrimaryKey = dc;
         }
+        private void LoadDataPenjualan()
+        {
+            dsCleanLaundry = new DataSet();
+            string queryParam = $"SELECT T.Transaction_Id, T.Title, T.Total, T.Total_Price, C.Category_Id, C.Category_Name, C.Price, Cs.Customer_Id, Cs.Name, T.Created_Date, T.Branch_ID FROM tblTransaction T INNER JOIN tblCategory C ON T.Category_Id = C.Category_Id INNER JOIN tblCustomer Cs ON T.Customer_Id = Cs.Customer_Id WHERE T.Branch_ID LIKE '%{lblIDCabang.Text}%'";
+
+            cmd = new SqlCommand(queryParam, con);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(dsCleanLaundry, "Transaction");
+        }
         private void LoadDataTransaction()
         {
-   
+
             ds = new DataSet();
             query = $"SELECT * FROM tblTransaction WHERE Branch_Id like '%{lblIDCabang.Text}%'";
             cmd = new SqlCommand(query, con);
@@ -127,6 +136,30 @@ namespace FizzBuzz_tugas_1
             }
            
             menuSaldo.Text = "Rp." + saldo;
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Report.crPenjualan cr = new Report.crPenjualan();
+            Report.cleanLaundryViewer viewer = new Report.cleanLaundryViewer();
+            LoadDataPenjualan();
+            cr.SetDataSource(dsCleanLaundry);
+            viewer.crystalReportViewer1.ReportSource = cr;
+            viewer.WindowState = FormWindowState.Maximized;
+            viewer.Show();
+        }
+
+        private void keluarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string message = "Keluar dari aplikasi?";
+            string title = "Keluar";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

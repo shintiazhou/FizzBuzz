@@ -30,29 +30,29 @@ namespace FizzBuzz_tugas_1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pegawai));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuFormDock2 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -102,6 +102,7 @@ namespace FizzBuzz_tugas_1
             this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snackbar = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.lblGaji = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabNavigasi.SuspendLayout();
             this.tabStatusPesanan.SuspendLayout();
@@ -203,10 +204,11 @@ namespace FizzBuzz_tugas_1
             this.tableLayoutPanel1.Controls.Add(this.mnuMain, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1140, 727);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1520, 895);
             this.tableLayoutPanel1.TabIndex = 78;
             // 
             // tabNavigasi
@@ -217,32 +219,33 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.Controls.Add(this.tabProfile);
             this.tabNavigasi.Controls.Add(this.tabLaporan);
             this.tabNavigasi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabNavigasi.Location = new System.Drawing.Point(185, 3);
+            this.tabNavigasi.Location = new System.Drawing.Point(247, 4);
+            this.tabNavigasi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
-            this.tabNavigasi.Page = this.tabProfile;
-            this.tabNavigasi.PageIndex = 1;
-            this.tabNavigasi.PageName = "tabProfile";
-            this.tabNavigasi.PageTitle = "Tab Profile";
+            this.tabNavigasi.Page = this.tabLaporan;
+            this.tabNavigasi.PageIndex = 2;
+            this.tabNavigasi.PageName = "tabLaporan";
+            this.tabNavigasi.PageTitle = "Laporan";
             this.tabNavigasi.SelectedIndex = 0;
-            this.tabNavigasi.Size = new System.Drawing.Size(952, 721);
+            this.tabNavigasi.Size = new System.Drawing.Size(1269, 887);
             this.tabNavigasi.TabIndex = 77;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 1F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.tabNavigasi.Transition = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 1F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.tabNavigasi.Transition = animation2;
             this.tabNavigasi.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Leaf;
             // 
             // tabStatusPesanan
@@ -260,9 +263,10 @@ namespace FizzBuzz_tugas_1
             this.tabStatusPesanan.Controls.Add(this.lblJumlahRecord);
             this.tabStatusPesanan.Controls.Add(this.label1);
             this.tabStatusPesanan.Location = new System.Drawing.Point(4, 4);
+            this.tabStatusPesanan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabStatusPesanan.Name = "tabStatusPesanan";
-            this.tabStatusPesanan.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStatusPesanan.Size = new System.Drawing.Size(944, 695);
+            this.tabStatusPesanan.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabStatusPesanan.Size = new System.Drawing.Size(1261, 858);
             this.tabStatusPesanan.TabIndex = 0;
             this.tabStatusPesanan.Text = "Status Pesanan";
             // 
@@ -273,22 +277,22 @@ namespace FizzBuzz_tugas_1
             this.dgvStatusPengiriman.AllowUserToDeleteRows = false;
             this.dgvStatusPengiriman.AllowUserToResizeColumns = false;
             this.dgvStatusPengiriman.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dgvStatusPengiriman.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dgvStatusPengiriman.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvStatusPengiriman.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvStatusPengiriman.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStatusPengiriman.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvStatusPengiriman.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(10);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStatusPengiriman.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStatusPengiriman.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvStatusPengiriman.ColumnHeadersHeight = 40;
             this.dgvStatusPengiriman.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgvStatusPengiriman.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -308,29 +312,29 @@ namespace FizzBuzz_tugas_1
             this.dgvStatusPengiriman.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvStatusPengiriman.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dgvStatusPengiriman.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(10);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStatusPengiriman.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStatusPengiriman.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvStatusPengiriman.EnableHeadersVisualStyles = false;
             this.dgvStatusPengiriman.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.dgvStatusPengiriman.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.dgvStatusPengiriman.HeaderBgColor = System.Drawing.Color.Empty;
             this.dgvStatusPengiriman.HeaderForeColor = System.Drawing.Color.White;
-            this.dgvStatusPengiriman.Location = new System.Drawing.Point(25, 193);
-            this.dgvStatusPengiriman.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvStatusPengiriman.Location = new System.Drawing.Point(33, 238);
+            this.dgvStatusPengiriman.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvStatusPengiriman.Name = "dgvStatusPengiriman";
             this.dgvStatusPengiriman.ReadOnly = true;
             this.dgvStatusPengiriman.RowHeadersVisible = false;
             this.dgvStatusPengiriman.RowHeadersWidth = 51;
             this.dgvStatusPengiriman.RowTemplate.Height = 40;
             this.dgvStatusPengiriman.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStatusPengiriman.Size = new System.Drawing.Size(551, 274);
+            this.dgvStatusPengiriman.Size = new System.Drawing.Size(735, 337);
             this.dgvStatusPengiriman.TabIndex = 84;
             this.dgvStatusPengiriman.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dgvStatusPengiriman.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStatusPengiriman_CellContentClick);
@@ -354,11 +358,11 @@ namespace FizzBuzz_tugas_1
             this.btnRefresh.ColorContrastOnClick = 45;
             this.btnRefresh.ColorContrastOnHover = 45;
             this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnRefresh.CustomizableEdges = borderEdges1;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnRefresh.CustomizableEdges = borderEdges3;
             this.btnRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnRefresh.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRefresh.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -383,7 +387,8 @@ namespace FizzBuzz_tugas_1
             this.btnRefresh.IdleIconLeftImage = null;
             this.btnRefresh.IdleIconRightImage = null;
             this.btnRefresh.IndicateFocus = false;
-            this.btnRefresh.Location = new System.Drawing.Point(442, 585);
+            this.btnRefresh.Location = new System.Drawing.Point(589, 720);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnRefresh.OnDisabledState.BorderRadius = 20;
@@ -417,7 +422,7 @@ namespace FizzBuzz_tugas_1
             this.btnRefresh.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.OnPressedState.IconLeftImage = null;
             this.btnRefresh.OnPressedState.IconRightImage = null;
-            this.btnRefresh.Size = new System.Drawing.Size(131, 27);
+            this.btnRefresh.Size = new System.Drawing.Size(175, 33);
             this.btnRefresh.TabIndex = 83;
             this.btnRefresh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnRefresh.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -431,9 +436,11 @@ namespace FizzBuzz_tugas_1
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.cboPelanggan);
             this.groupBox1.Controls.Add(this.chkPesananPending);
-            this.groupBox1.Location = new System.Drawing.Point(25, 67);
+            this.groupBox1.Location = new System.Drawing.Point(33, 82);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(550, 109);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(733, 134);
             this.groupBox1.TabIndex = 76;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search";
@@ -442,18 +449,20 @@ namespace FizzBuzz_tugas_1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 18);
+            this.label4.Location = new System.Drawing.Point(17, 22);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 20);
+            this.label4.Size = new System.Drawing.Size(143, 25);
             this.label4.TabIndex = 84;
             this.label4.Text = "Pilih Username";
             // 
             // cboPelanggan
             // 
             this.cboPelanggan.FormattingEnabled = true;
-            this.cboPelanggan.Location = new System.Drawing.Point(17, 47);
+            this.cboPelanggan.Location = new System.Drawing.Point(23, 58);
+            this.cboPelanggan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboPelanggan.Name = "cboPelanggan";
-            this.cboPelanggan.Size = new System.Drawing.Size(514, 21);
+            this.cboPelanggan.Size = new System.Drawing.Size(684, 24);
             this.cboPelanggan.TabIndex = 83;
             this.cboPelanggan.SelectedIndexChanged += new System.EventHandler(this.cboPelanggan_SelectedIndexChanged);
             // 
@@ -461,9 +470,10 @@ namespace FizzBuzz_tugas_1
             // 
             this.chkPesananPending.AutoSize = true;
             this.chkPesananPending.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkPesananPending.Location = new System.Drawing.Point(341, 74);
+            this.chkPesananPending.Location = new System.Drawing.Point(455, 91);
+            this.chkPesananPending.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkPesananPending.Name = "chkPesananPending";
-            this.chkPesananPending.Size = new System.Drawing.Size(190, 24);
+            this.chkPesananPending.Size = new System.Drawing.Size(232, 29);
             this.chkPesananPending.TabIndex = 78;
             this.chkPesananPending.Text = "Filter pesanan pending";
             this.chkPesananPending.UseVisualStyleBackColor = true;
@@ -474,9 +484,10 @@ namespace FizzBuzz_tugas_1
             this.lblTransactionId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTransactionId.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTransactionId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTransactionId.Location = new System.Drawing.Point(25, 481);
+            this.lblTransactionId.Location = new System.Drawing.Point(33, 592);
+            this.lblTransactionId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTransactionId.Name = "lblTransactionId";
-            this.lblTransactionId.Size = new System.Drawing.Size(168, 20);
+            this.lblTransactionId.Size = new System.Drawing.Size(223, 24);
             this.lblTransactionId.TabIndex = 74;
             this.lblTransactionId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -485,9 +496,10 @@ namespace FizzBuzz_tugas_1
             this.rdoDikirim.AutoSize = true;
             this.rdoDikirim.Enabled = false;
             this.rdoDikirim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoDikirim.Location = new System.Drawing.Point(23, 534);
+            this.rdoDikirim.Location = new System.Drawing.Point(31, 657);
+            this.rdoDikirim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoDikirim.Name = "rdoDikirim";
-            this.rdoDikirim.Size = new System.Drawing.Size(201, 24);
+            this.rdoDikirim.Size = new System.Drawing.Size(248, 29);
             this.rdoDikirim.TabIndex = 73;
             this.rdoDikirim.TabStop = true;
             this.rdoDikirim.Text = "Pesanan Sedang Dikirim";
@@ -498,9 +510,10 @@ namespace FizzBuzz_tugas_1
             this.rdoDiproses.AutoSize = true;
             this.rdoDiproses.Enabled = false;
             this.rdoDiproses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoDiproses.Location = new System.Drawing.Point(23, 511);
+            this.rdoDiproses.Location = new System.Drawing.Point(31, 629);
+            this.rdoDiproses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoDiproses.Name = "rdoDiproses";
-            this.rdoDiproses.Size = new System.Drawing.Size(217, 24);
+            this.rdoDiproses.Size = new System.Drawing.Size(267, 29);
             this.rdoDiproses.TabIndex = 72;
             this.rdoDiproses.TabStop = true;
             this.rdoDiproses.Text = "Pesanan Sedang Diproses";
@@ -511,9 +524,10 @@ namespace FizzBuzz_tugas_1
             this.rdoSelesai.AutoSize = true;
             this.rdoSelesai.Enabled = false;
             this.rdoSelesai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoSelesai.Location = new System.Drawing.Point(23, 557);
+            this.rdoSelesai.Location = new System.Drawing.Point(31, 686);
+            this.rdoSelesai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoSelesai.Name = "rdoSelesai";
-            this.rdoSelesai.Size = new System.Drawing.Size(146, 24);
+            this.rdoSelesai.Size = new System.Drawing.Size(181, 29);
             this.rdoSelesai.TabIndex = 71;
             this.rdoSelesai.TabStop = true;
             this.rdoSelesai.Text = "Pesanan Selesai";
@@ -538,11 +552,11 @@ namespace FizzBuzz_tugas_1
             this.btnUbahStatusPesanan.ColorContrastOnClick = 45;
             this.btnUbahStatusPesanan.ColorContrastOnHover = 45;
             this.btnUbahStatusPesanan.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnUbahStatusPesanan.CustomizableEdges = borderEdges2;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnUbahStatusPesanan.CustomizableEdges = borderEdges4;
             this.btnUbahStatusPesanan.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnUbahStatusPesanan.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnUbahStatusPesanan.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -567,7 +581,8 @@ namespace FizzBuzz_tugas_1
             this.btnUbahStatusPesanan.IdleIconLeftImage = null;
             this.btnUbahStatusPesanan.IdleIconRightImage = null;
             this.btnUbahStatusPesanan.IndicateFocus = false;
-            this.btnUbahStatusPesanan.Location = new System.Drawing.Point(23, 589);
+            this.btnUbahStatusPesanan.Location = new System.Drawing.Point(31, 725);
+            this.btnUbahStatusPesanan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUbahStatusPesanan.Name = "btnUbahStatusPesanan";
             this.btnUbahStatusPesanan.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnUbahStatusPesanan.OnDisabledState.BorderRadius = 20;
@@ -601,7 +616,7 @@ namespace FizzBuzz_tugas_1
             this.btnUbahStatusPesanan.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnUbahStatusPesanan.OnPressedState.IconLeftImage = null;
             this.btnUbahStatusPesanan.OnPressedState.IconRightImage = null;
-            this.btnUbahStatusPesanan.Size = new System.Drawing.Size(178, 26);
+            this.btnUbahStatusPesanan.Size = new System.Drawing.Size(237, 32);
             this.btnUbahStatusPesanan.TabIndex = 70;
             this.btnUbahStatusPesanan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUbahStatusPesanan.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -615,9 +630,10 @@ namespace FizzBuzz_tugas_1
             this.label11.AutoSize = true;
             this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(25, 19);
+            this.label11.Location = new System.Drawing.Point(33, 23);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(185, 32);
+            this.label11.Size = new System.Drawing.Size(227, 41);
             this.label11.TabIndex = 65;
             this.label11.Text = "Status Pesanan";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -625,9 +641,10 @@ namespace FizzBuzz_tugas_1
             // lblJumlahRecord
             // 
             this.lblJumlahRecord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblJumlahRecord.Location = new System.Drawing.Point(520, 479);
+            this.lblJumlahRecord.Location = new System.Drawing.Point(693, 590);
+            this.lblJumlahRecord.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblJumlahRecord.Name = "lblJumlahRecord";
-            this.lblJumlahRecord.Size = new System.Drawing.Size(54, 26);
+            this.lblJumlahRecord.Size = new System.Drawing.Size(71, 32);
             this.lblJumlahRecord.TabIndex = 4;
             this.lblJumlahRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -635,9 +652,10 @@ namespace FizzBuzz_tugas_1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(387, 483);
+            this.label1.Location = new System.Drawing.Point(516, 594);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 20);
+            this.label1.Size = new System.Drawing.Size(159, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Jumlah Pesanan";
             // 
@@ -655,8 +673,9 @@ namespace FizzBuzz_tugas_1
             this.tabProfile.Controls.Add(this.label18);
             this.tabProfile.Controls.Add(this.label17);
             this.tabProfile.Location = new System.Drawing.Point(4, 4);
+            this.tabProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabProfile.Name = "tabProfile";
-            this.tabProfile.Size = new System.Drawing.Size(944, 695);
+            this.tabProfile.Size = new System.Drawing.Size(1261, 858);
             this.tabProfile.TabIndex = 1;
             this.tabProfile.Text = "Tab Profile";
             // 
@@ -665,9 +684,10 @@ namespace FizzBuzz_tugas_1
             this.lblIDCabang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblIDCabang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblIDCabang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIDCabang.Location = new System.Drawing.Point(26, 83);
+            this.lblIDCabang.Location = new System.Drawing.Point(35, 102);
+            this.lblIDCabang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIDCabang.Name = "lblIDCabang";
-            this.lblIDCabang.Size = new System.Drawing.Size(322, 23);
+            this.lblIDCabang.Size = new System.Drawing.Size(429, 28);
             this.lblIDCabang.TabIndex = 100;
             this.lblIDCabang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -675,10 +695,9 @@ namespace FizzBuzz_tugas_1
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(24, 60);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(32, 74);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 18);
+            this.label6.Size = new System.Drawing.Size(98, 24);
             this.label6.TabIndex = 99;
             this.label6.Text = "ID Cabang";
             // 
@@ -709,33 +728,34 @@ namespace FizzBuzz_tugas_1
             this.txtPassword.IconRight = null;
             this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Lines = new string[0];
-            this.txtPassword.Location = new System.Drawing.Point(26, 199);
+            this.txtPassword.Location = new System.Drawing.Point(35, 245);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.MaxLength = 10;
             this.txtPassword.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPassword.Modified = false;
             this.txtPassword.Multiline = false;
             this.txtPassword.Name = "txtPassword";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnIdleState = stateProperties4;
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(3);
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnIdleState = stateProperties20;
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPassword.PlaceholderText = "Enter text";
@@ -745,7 +765,7 @@ namespace FizzBuzz_tugas_1
             this.txtPassword.SelectionLength = 0;
             this.txtPassword.SelectionStart = 0;
             this.txtPassword.ShortcutsEnabled = true;
-            this.txtPassword.Size = new System.Drawing.Size(323, 37);
+            this.txtPassword.Size = new System.Drawing.Size(431, 46);
             this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPassword.TabIndex = 98;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -761,10 +781,10 @@ namespace FizzBuzz_tugas_1
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(22, 616);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Location = new System.Drawing.Point(29, 758);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(327, 29);
+            this.btnUpdate.Size = new System.Drawing.Size(436, 36);
             this.btnUpdate.TabIndex = 96;
             this.btnUpdate.Text = "Simpan Data";
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -779,9 +799,11 @@ namespace FizzBuzz_tugas_1
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.txtNama);
-            this.groupBox2.Location = new System.Drawing.Point(22, 274);
+            this.groupBox2.Location = new System.Drawing.Point(29, 337);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(329, 334);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(439, 411);
             this.groupBox2.TabIndex = 95;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informasi Akun";
@@ -790,10 +812,9 @@ namespace FizzBuzz_tugas_1
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(12, 165);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Location = new System.Drawing.Point(16, 203);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 18);
+            this.label19.Size = new System.Drawing.Size(67, 24);
             this.label19.TabIndex = 102;
             this.label19.Text = "Alamat";
             // 
@@ -824,33 +845,34 @@ namespace FizzBuzz_tugas_1
             this.txtAlamat.IconRight = null;
             this.txtAlamat.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAlamat.Lines = new string[0];
-            this.txtAlamat.Location = new System.Drawing.Point(15, 186);
+            this.txtAlamat.Location = new System.Drawing.Point(20, 229);
+            this.txtAlamat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAlamat.MaxLength = 200;
             this.txtAlamat.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtAlamat.Modified = false;
             this.txtAlamat.Multiline = true;
             this.txtAlamat.Name = "txtAlamat";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtAlamat.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnIdleState = stateProperties8;
-            this.txtAlamat.Padding = new System.Windows.Forms.Padding(3);
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtAlamat.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnIdleState = stateProperties24;
+            this.txtAlamat.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAlamat.PasswordChar = '\0';
             this.txtAlamat.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtAlamat.PlaceholderText = "Enter text";
@@ -860,7 +882,7 @@ namespace FizzBuzz_tugas_1
             this.txtAlamat.SelectionLength = 0;
             this.txtAlamat.SelectionStart = 0;
             this.txtAlamat.ShortcutsEnabled = true;
-            this.txtAlamat.Size = new System.Drawing.Size(297, 120);
+            this.txtAlamat.Size = new System.Drawing.Size(396, 148);
             this.txtAlamat.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtAlamat.TabIndex = 106;
             this.txtAlamat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -898,33 +920,34 @@ namespace FizzBuzz_tugas_1
             this.txtNomorTelepon.IconRight = null;
             this.txtNomorTelepon.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNomorTelepon.Lines = new string[0];
-            this.txtNomorTelepon.Location = new System.Drawing.Point(15, 121);
+            this.txtNomorTelepon.Location = new System.Drawing.Point(20, 149);
+            this.txtNomorTelepon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNomorTelepon.MaxLength = 10;
             this.txtNomorTelepon.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNomorTelepon.Modified = false;
             this.txtNomorTelepon.Multiline = false;
             this.txtNomorTelepon.Name = "txtNomorTelepon";
-            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties9.FillColor = System.Drawing.Color.Empty;
-            stateProperties9.ForeColor = System.Drawing.Color.Empty;
-            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnActiveState = stateProperties9;
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNomorTelepon.OnDisabledState = stateProperties10;
-            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties11.FillColor = System.Drawing.Color.Empty;
-            stateProperties11.ForeColor = System.Drawing.Color.Empty;
-            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnHoverState = stateProperties11;
-            stateProperties12.BorderColor = System.Drawing.Color.Silver;
-            stateProperties12.FillColor = System.Drawing.Color.White;
-            stateProperties12.ForeColor = System.Drawing.Color.Empty;
-            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnIdleState = stateProperties12;
-            this.txtNomorTelepon.Padding = new System.Windows.Forms.Padding(3);
+            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties25.FillColor = System.Drawing.Color.Empty;
+            stateProperties25.ForeColor = System.Drawing.Color.Empty;
+            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnActiveState = stateProperties25;
+            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNomorTelepon.OnDisabledState = stateProperties26;
+            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties27.FillColor = System.Drawing.Color.Empty;
+            stateProperties27.ForeColor = System.Drawing.Color.Empty;
+            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnHoverState = stateProperties27;
+            stateProperties28.BorderColor = System.Drawing.Color.Silver;
+            stateProperties28.FillColor = System.Drawing.Color.White;
+            stateProperties28.ForeColor = System.Drawing.Color.Empty;
+            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnIdleState = stateProperties28;
+            this.txtNomorTelepon.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNomorTelepon.PasswordChar = '\0';
             this.txtNomorTelepon.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtNomorTelepon.PlaceholderText = "Enter text";
@@ -934,7 +957,7 @@ namespace FizzBuzz_tugas_1
             this.txtNomorTelepon.SelectionLength = 0;
             this.txtNomorTelepon.SelectionStart = 0;
             this.txtNomorTelepon.ShortcutsEnabled = true;
-            this.txtNomorTelepon.Size = new System.Drawing.Size(297, 37);
+            this.txtNomorTelepon.Size = new System.Drawing.Size(396, 46);
             this.txtNomorTelepon.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtNomorTelepon.TabIndex = 105;
             this.txtNomorTelepon.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -949,10 +972,9 @@ namespace FizzBuzz_tugas_1
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(12, 28);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Location = new System.Drawing.Point(16, 34);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(108, 18);
+            this.label20.Size = new System.Drawing.Size(138, 24);
             this.label20.TabIndex = 103;
             this.label20.Text = "Nama Lengkap";
             // 
@@ -960,10 +982,9 @@ namespace FizzBuzz_tugas_1
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(12, 97);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(16, 119);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(112, 18);
+            this.label16.Size = new System.Drawing.Size(144, 24);
             this.label16.TabIndex = 101;
             this.label16.Text = "Nomor Telepon";
             // 
@@ -994,33 +1015,34 @@ namespace FizzBuzz_tugas_1
             this.txtNama.IconRight = null;
             this.txtNama.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNama.Lines = new string[0];
-            this.txtNama.Location = new System.Drawing.Point(15, 51);
+            this.txtNama.Location = new System.Drawing.Point(20, 63);
+            this.txtNama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNama.MaxLength = 50;
             this.txtNama.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNama.Modified = false;
             this.txtNama.Multiline = false;
             this.txtNama.Name = "txtNama";
-            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNama.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnIdleState = stateProperties16;
-            this.txtNama.Padding = new System.Windows.Forms.Padding(3);
+            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties29.FillColor = System.Drawing.Color.Empty;
+            stateProperties29.ForeColor = System.Drawing.Color.Empty;
+            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnActiveState = stateProperties29;
+            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNama.OnDisabledState = stateProperties30;
+            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties31.FillColor = System.Drawing.Color.Empty;
+            stateProperties31.ForeColor = System.Drawing.Color.Empty;
+            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnHoverState = stateProperties31;
+            stateProperties32.BorderColor = System.Drawing.Color.Silver;
+            stateProperties32.FillColor = System.Drawing.Color.White;
+            stateProperties32.ForeColor = System.Drawing.Color.Empty;
+            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnIdleState = stateProperties32;
+            this.txtNama.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNama.PasswordChar = '\0';
             this.txtNama.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtNama.PlaceholderText = "Enter text";
@@ -1030,7 +1052,7 @@ namespace FizzBuzz_tugas_1
             this.txtNama.SelectionLength = 0;
             this.txtNama.SelectionStart = 0;
             this.txtNama.ShortcutsEnabled = true;
-            this.txtNama.Size = new System.Drawing.Size(297, 37);
+            this.txtNama.Size = new System.Drawing.Size(396, 46);
             this.txtNama.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtNama.TabIndex = 104;
             this.txtNama.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1045,19 +1067,19 @@ namespace FizzBuzz_tugas_1
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(23, 178);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Location = new System.Drawing.Point(31, 219);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(75, 18);
+            this.label22.Size = new System.Drawing.Size(92, 24);
             this.label22.TabIndex = 94;
             this.label22.Text = "Password";
             // 
             // chkShowPassword
             // 
             this.chkShowPassword.AutoSize = true;
-            this.chkShowPassword.Location = new System.Drawing.Point(248, 246);
+            this.chkShowPassword.Location = new System.Drawing.Point(331, 303);
+            this.chkShowPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(102, 17);
+            this.chkShowPassword.Size = new System.Drawing.Size(129, 21);
             this.chkShowPassword.TabIndex = 93;
             this.chkShowPassword.Text = "Show Password";
             this.chkShowPassword.UseVisualStyleBackColor = true;
@@ -1068,9 +1090,10 @@ namespace FizzBuzz_tugas_1
             this.lblEmployeeId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblEmployeeId.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblEmployeeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeId.Location = new System.Drawing.Point(27, 142);
+            this.lblEmployeeId.Location = new System.Drawing.Point(36, 175);
+            this.lblEmployeeId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmployeeId.Name = "lblEmployeeId";
-            this.lblEmployeeId.Size = new System.Drawing.Size(322, 23);
+            this.lblEmployeeId.Size = new System.Drawing.Size(429, 28);
             this.lblEmployeeId.TabIndex = 91;
             this.lblEmployeeId.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -1079,9 +1102,10 @@ namespace FizzBuzz_tugas_1
             this.label18.AutoSize = true;
             this.label18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(16, 19);
+            this.label18.Location = new System.Drawing.Point(21, 23);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(91, 32);
+            this.label18.Size = new System.Drawing.Size(112, 41);
             this.label18.TabIndex = 90;
             this.label18.Text = "Profile";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1090,10 +1114,9 @@ namespace FizzBuzz_tugas_1
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(25, 119);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Location = new System.Drawing.Point(33, 146);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 18);
+            this.label17.Size = new System.Drawing.Size(97, 24);
             this.label17.TabIndex = 89;
             this.label17.Text = "Username";
             // 
@@ -1104,8 +1127,9 @@ namespace FizzBuzz_tugas_1
             this.tabLaporan.Controls.Add(this.cboLaporanPelanggan);
             this.tabLaporan.Controls.Add(this.label2);
             this.tabLaporan.Location = new System.Drawing.Point(4, 4);
+            this.tabLaporan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabLaporan.Name = "tabLaporan";
-            this.tabLaporan.Size = new System.Drawing.Size(944, 695);
+            this.tabLaporan.Size = new System.Drawing.Size(1261, 858);
             this.tabLaporan.TabIndex = 2;
             this.tabLaporan.Text = "Laporan";
             this.tabLaporan.UseVisualStyleBackColor = true;
@@ -1115,10 +1139,10 @@ namespace FizzBuzz_tugas_1
             this.btnTampilLaporan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTampilLaporan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnTampilLaporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTampilLaporan.Location = new System.Drawing.Point(422, 101);
-            this.btnTampilLaporan.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTampilLaporan.Location = new System.Drawing.Point(563, 124);
+            this.btnTampilLaporan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTampilLaporan.Name = "btnTampilLaporan";
-            this.btnTampilLaporan.Size = new System.Drawing.Size(167, 27);
+            this.btnTampilLaporan.Size = new System.Drawing.Size(223, 33);
             this.btnTampilLaporan.TabIndex = 97;
             this.btnTampilLaporan.Text = "Tampilkan Laporan";
             this.btnTampilLaporan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1129,18 +1153,20 @@ namespace FizzBuzz_tugas_1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 76);
+            this.label3.Location = new System.Drawing.Point(33, 94);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 20);
+            this.label3.Size = new System.Drawing.Size(143, 25);
             this.label3.TabIndex = 85;
             this.label3.Text = "Pilih Username";
             // 
             // cboLaporanPelanggan
             // 
             this.cboLaporanPelanggan.FormattingEnabled = true;
-            this.cboLaporanPelanggan.Location = new System.Drawing.Point(29, 104);
+            this.cboLaporanPelanggan.Location = new System.Drawing.Point(39, 128);
+            this.cboLaporanPelanggan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboLaporanPelanggan.Name = "cboLaporanPelanggan";
-            this.cboLaporanPelanggan.Size = new System.Drawing.Size(385, 21);
+            this.cboLaporanPelanggan.Size = new System.Drawing.Size(512, 24);
             this.cboLaporanPelanggan.TabIndex = 84;
             // 
             // label2
@@ -1148,9 +1174,10 @@ namespace FizzBuzz_tugas_1
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 27);
+            this.label2.Location = new System.Drawing.Point(31, 33);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 32);
+            this.label2.Size = new System.Drawing.Size(132, 41);
             this.label2.TabIndex = 66;
             this.label2.Text = "Laporan";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1161,8 +1188,10 @@ namespace FizzBuzz_tugas_1
             this.mnuMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mnuMain.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuMain.GripMargin = new System.Windows.Forms.Padding(2, 10, 0, 2);
+            this.mnuMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnProfile,
+            this.lblGaji,
             this.toolStripMenuItem2,
             this.keluarToolStripMenuItem,
             this.toolStripMenuItem3,
@@ -1170,11 +1199,10 @@ namespace FizzBuzz_tugas_1
             this.mnuMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.mnuMain.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
             this.mnuMain.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.mnuMain.Size = new System.Drawing.Size(182, 727);
+            this.mnuMain.Size = new System.Drawing.Size(243, 895);
             this.mnuMain.TabIndex = 76;
-            this.mnuMain.Text = "mnuMain";
             // 
             // btnProfile
             // 
@@ -1184,7 +1212,7 @@ namespace FizzBuzz_tugas_1
             this.btnProfile.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnProfile.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(159, 93);
+            this.btnProfile.Size = new System.Drawing.Size(213, 100);
             this.btnProfile.Text = "Username";
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
@@ -1195,7 +1223,7 @@ namespace FizzBuzz_tugas_1
             this.toolStripMenuItem2.Margin = new System.Windows.Forms.Padding(0, 30, 0, 20);
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(159, 29);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(213, 36);
             this.toolStripMenuItem2.Text = "Status Pesanan";
             this.toolStripMenuItem2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripMenuItem2.Click += new System.EventHandler(this.btnPesanan_Click);
@@ -1207,7 +1235,7 @@ namespace FizzBuzz_tugas_1
             this.keluarToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 30);
             this.keluarToolStripMenuItem.Name = "keluarToolStripMenuItem";
             this.keluarToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(159, 29);
+            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(213, 36);
             this.keluarToolStripMenuItem.Text = "Keluar";
             this.keluarToolStripMenuItem.Click += new System.EventHandler(this.btnKeluar_Click);
             // 
@@ -1218,7 +1246,7 @@ namespace FizzBuzz_tugas_1
             this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(159, 85);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(213, 92);
             this.toolStripMenuItem3.Text = " ";
             this.toolStripMenuItem3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -1227,7 +1255,7 @@ namespace FizzBuzz_tugas_1
             // 
             this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
             this.laporanToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(159, 29);
+            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(213, 36);
             this.laporanToolStripMenuItem.Text = "Laporan";
             this.laporanToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.laporanToolStripMenuItem.Click += new System.EventHandler(this.laporanToolStripMenuItem_Click);
@@ -1370,13 +1398,19 @@ namespace FizzBuzz_tugas_1
             this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
+            // lblGaji
+            // 
+            this.lblGaji.Name = "lblGaji";
+            this.lblGaji.Size = new System.Drawing.Size(213, 4);
+            // 
             // Pegawai
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1140, 727);
+            this.ClientSize = new System.Drawing.Size(1520, 895);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Pegawai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pegawai Clean Laundry";
@@ -1452,5 +1486,6 @@ namespace FizzBuzz_tugas_1
         public System.Windows.Forms.Button btnTampilLaporan;
         public System.Windows.Forms.Label lblIDCabang;
         public System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ToolStripMenuItem lblGaji;
     }
 }

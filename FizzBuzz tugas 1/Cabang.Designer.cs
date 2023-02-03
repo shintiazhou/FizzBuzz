@@ -31,31 +31,31 @@ namespace FizzBuzz_tugas_1
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cabang));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties73 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties74 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties75 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties76 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties77 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties78 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties79 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties80 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties81 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties82 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties83 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties84 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties37 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties41 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties42 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties43 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties44 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties45 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties46 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties47 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties48 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties85 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties86 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties87 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties88 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties89 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties90 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties91 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties92 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties93 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties94 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties95 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties96 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.snackbar = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuFormDock2 = new Bunifu.UI.WinForms.BunifuFormDock();
@@ -66,7 +66,6 @@ namespace FizzBuzz_tugas_1
             this.txtNomorTelepon = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtAlamat = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.miniToolStrip = new System.Windows.Forms.MenuStrip();
             this.btnProfile = new System.Windows.Forms.ToolStripMenuItem();
             this.keluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -85,8 +84,10 @@ namespace FizzBuzz_tugas_1
             this.chkPassword = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
-            this.menuSaldo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuSaldo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabNavigasi.SuspendLayout();
             this.tabProfile.SuspendLayout();
@@ -345,26 +346,26 @@ namespace FizzBuzz_tugas_1
             this.txtNama.Modified = false;
             this.txtNama.Multiline = false;
             this.txtNama.Name = "txtNama";
-            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties25.FillColor = System.Drawing.Color.Empty;
-            stateProperties25.ForeColor = System.Drawing.Color.Empty;
-            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnActiveState = stateProperties25;
-            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNama.OnDisabledState = stateProperties26;
-            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties27.FillColor = System.Drawing.Color.Empty;
-            stateProperties27.ForeColor = System.Drawing.Color.Empty;
-            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnHoverState = stateProperties27;
-            stateProperties28.BorderColor = System.Drawing.Color.Silver;
-            stateProperties28.FillColor = System.Drawing.Color.White;
-            stateProperties28.ForeColor = System.Drawing.Color.Empty;
-            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNama.OnIdleState = stateProperties28;
+            stateProperties73.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties73.FillColor = System.Drawing.Color.Empty;
+            stateProperties73.ForeColor = System.Drawing.Color.Empty;
+            stateProperties73.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnActiveState = stateProperties73;
+            stateProperties74.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties74.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties74.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNama.OnDisabledState = stateProperties74;
+            stateProperties75.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties75.FillColor = System.Drawing.Color.Empty;
+            stateProperties75.ForeColor = System.Drawing.Color.Empty;
+            stateProperties75.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnHoverState = stateProperties75;
+            stateProperties76.BorderColor = System.Drawing.Color.Silver;
+            stateProperties76.FillColor = System.Drawing.Color.White;
+            stateProperties76.ForeColor = System.Drawing.Color.Empty;
+            stateProperties76.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNama.OnIdleState = stateProperties76;
             this.txtNama.Padding = new System.Windows.Forms.Padding(3);
             this.txtNama.PasswordChar = '\0';
             this.txtNama.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -439,26 +440,26 @@ namespace FizzBuzz_tugas_1
             this.txtNomorTelepon.Modified = false;
             this.txtNomorTelepon.Multiline = false;
             this.txtNomorTelepon.Name = "txtNomorTelepon";
-            stateProperties29.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties29.FillColor = System.Drawing.Color.Empty;
-            stateProperties29.ForeColor = System.Drawing.Color.Empty;
-            stateProperties29.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnActiveState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties30.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNomorTelepon.OnDisabledState = stateProperties30;
-            stateProperties31.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties31.FillColor = System.Drawing.Color.Empty;
-            stateProperties31.ForeColor = System.Drawing.Color.Empty;
-            stateProperties31.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnHoverState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.Silver;
-            stateProperties32.FillColor = System.Drawing.Color.White;
-            stateProperties32.ForeColor = System.Drawing.Color.Empty;
-            stateProperties32.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNomorTelepon.OnIdleState = stateProperties32;
+            stateProperties77.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties77.FillColor = System.Drawing.Color.Empty;
+            stateProperties77.ForeColor = System.Drawing.Color.Empty;
+            stateProperties77.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnActiveState = stateProperties77;
+            stateProperties78.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties78.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties78.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNomorTelepon.OnDisabledState = stateProperties78;
+            stateProperties79.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties79.FillColor = System.Drawing.Color.Empty;
+            stateProperties79.ForeColor = System.Drawing.Color.Empty;
+            stateProperties79.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnHoverState = stateProperties79;
+            stateProperties80.BorderColor = System.Drawing.Color.Silver;
+            stateProperties80.FillColor = System.Drawing.Color.White;
+            stateProperties80.ForeColor = System.Drawing.Color.Empty;
+            stateProperties80.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNomorTelepon.OnIdleState = stateProperties80;
             this.txtNomorTelepon.Padding = new System.Windows.Forms.Padding(3);
             this.txtNomorTelepon.PasswordChar = '\0';
             this.txtNomorTelepon.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -513,26 +514,26 @@ namespace FizzBuzz_tugas_1
             this.txtAlamat.Modified = false;
             this.txtAlamat.Multiline = true;
             this.txtAlamat.Name = "txtAlamat";
-            stateProperties33.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties33.FillColor = System.Drawing.Color.Empty;
-            stateProperties33.ForeColor = System.Drawing.Color.Empty;
-            stateProperties33.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnActiveState = stateProperties33;
-            stateProperties34.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties34.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtAlamat.OnDisabledState = stateProperties34;
-            stateProperties35.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties35.FillColor = System.Drawing.Color.Empty;
-            stateProperties35.ForeColor = System.Drawing.Color.Empty;
-            stateProperties35.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnHoverState = stateProperties35;
-            stateProperties36.BorderColor = System.Drawing.Color.Silver;
-            stateProperties36.FillColor = System.Drawing.Color.White;
-            stateProperties36.ForeColor = System.Drawing.Color.Empty;
-            stateProperties36.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamat.OnIdleState = stateProperties36;
+            stateProperties81.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties81.FillColor = System.Drawing.Color.Empty;
+            stateProperties81.ForeColor = System.Drawing.Color.Empty;
+            stateProperties81.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnActiveState = stateProperties81;
+            stateProperties82.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties82.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties82.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtAlamat.OnDisabledState = stateProperties82;
+            stateProperties83.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties83.FillColor = System.Drawing.Color.Empty;
+            stateProperties83.ForeColor = System.Drawing.Color.Empty;
+            stateProperties83.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnHoverState = stateProperties83;
+            stateProperties84.BorderColor = System.Drawing.Color.Silver;
+            stateProperties84.FillColor = System.Drawing.Color.White;
+            stateProperties84.ForeColor = System.Drawing.Color.Empty;
+            stateProperties84.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamat.OnIdleState = stateProperties84;
             this.txtAlamat.Padding = new System.Windows.Forms.Padding(3);
             this.txtAlamat.PasswordChar = '\0';
             this.txtAlamat.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -564,23 +565,6 @@ namespace FizzBuzz_tugas_1
             this.label19.Size = new System.Drawing.Size(53, 18);
             this.label19.TabIndex = 102;
             // 
-            // miniToolStrip
-            // 
-            this.miniToolStrip.AccessibleName = "New item selection";
-            this.miniToolStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.ComboBox;
-            this.miniToolStrip.AutoSize = false;
-            this.miniToolStrip.BackColor = System.Drawing.Color.AliceBlue;
-            this.miniToolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.miniToolStrip.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.miniToolStrip.GripMargin = new System.Windows.Forms.Padding(2, 10, 0, 2);
-            this.miniToolStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.miniToolStrip.Location = new System.Drawing.Point(40, 88);
-            this.miniToolStrip.Name = "miniToolStrip";
-            this.miniToolStrip.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
-            this.miniToolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.miniToolStrip.Size = new System.Drawing.Size(180, 689);
-            this.miniToolStrip.TabIndex = 76;
-            // 
             // btnProfile
             // 
             this.btnProfile.BackColor = System.Drawing.Color.White;
@@ -589,7 +573,7 @@ namespace FizzBuzz_tugas_1
             this.btnProfile.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnProfile.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(157, 68);
+            this.btnProfile.Size = new System.Drawing.Size(210, 68);
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // keluarToolStripMenuItem
@@ -599,8 +583,9 @@ namespace FizzBuzz_tugas_1
             this.keluarToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 0, 0, 30);
             this.keluarToolStripMenuItem.Name = "keluarToolStripMenuItem";
             this.keluarToolStripMenuItem.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(157, 29);
+            this.keluarToolStripMenuItem.Size = new System.Drawing.Size(210, 36);
             this.keluarToolStripMenuItem.Text = "Keluar";
+            this.keluarToolStripMenuItem.Click += new System.EventHandler(this.keluarToolStripMenuItem_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -612,10 +597,11 @@ namespace FizzBuzz_tugas_1
             this.tableLayoutPanel1.Controls.Add(this.mnuMain, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1123, 689);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1497, 848);
             this.tableLayoutPanel1.TabIndex = 79;
             // 
             // tabNavigasi
@@ -624,7 +610,8 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.AllowTransitions = true;
             this.tabNavigasi.Controls.Add(this.tabProfile);
             this.tabNavigasi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabNavigasi.Location = new System.Drawing.Point(183, 3);
+            this.tabNavigasi.Location = new System.Drawing.Point(244, 4);
+            this.tabNavigasi.Margin = new System.Windows.Forms.Padding(4);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
             this.tabNavigasi.Page = this.tabProfile;
@@ -632,7 +619,7 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.PageName = "tabProfile";
             this.tabNavigasi.PageTitle = "Tab Profile";
             this.tabNavigasi.SelectedIndex = 0;
-            this.tabNavigasi.Size = new System.Drawing.Size(937, 683);
+            this.tabNavigasi.Size = new System.Drawing.Size(1249, 840);
             this.tabNavigasi.TabIndex = 78;
             animation2.AnimateOnlyDifferences = true;
             animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
@@ -664,8 +651,9 @@ namespace FizzBuzz_tugas_1
             this.tabProfile.Controls.Add(this.chkPassword);
             this.tabProfile.Controls.Add(this.label13);
             this.tabProfile.Location = new System.Drawing.Point(4, 4);
+            this.tabProfile.Margin = new System.Windows.Forms.Padding(4);
             this.tabProfile.Name = "tabProfile";
-            this.tabProfile.Size = new System.Drawing.Size(929, 657);
+            this.tabProfile.Size = new System.Drawing.Size(1241, 811);
             this.tabProfile.TabIndex = 1;
             this.tabProfile.Text = "Tab Profile";
             // 
@@ -674,9 +662,10 @@ namespace FizzBuzz_tugas_1
             this.lblIDCabang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblIDCabang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblIDCabang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIDCabang.Location = new System.Drawing.Point(26, 78);
+            this.lblIDCabang.Location = new System.Drawing.Point(35, 96);
+            this.lblIDCabang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIDCabang.Name = "lblIDCabang";
-            this.lblIDCabang.Size = new System.Drawing.Size(322, 23);
+            this.lblIDCabang.Size = new System.Drawing.Size(429, 28);
             this.lblIDCabang.TabIndex = 126;
             this.lblIDCabang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -684,10 +673,9 @@ namespace FizzBuzz_tugas_1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(24, 55);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(32, 68);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 18);
+            this.label7.Size = new System.Drawing.Size(98, 24);
             this.label7.TabIndex = 125;
             this.label7.Text = "ID Cabang";
             // 
@@ -718,33 +706,34 @@ namespace FizzBuzz_tugas_1
             this.txtPass.IconRight = null;
             this.txtPass.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPass.Lines = new string[0];
-            this.txtPass.Location = new System.Drawing.Point(26, 134);
+            this.txtPass.Location = new System.Drawing.Point(35, 165);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.MaxLength = 10;
             this.txtPass.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtPass.Modified = false;
             this.txtPass.Multiline = false;
             this.txtPass.Name = "txtPass";
-            stateProperties37.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties37.FillColor = System.Drawing.Color.Empty;
-            stateProperties37.ForeColor = System.Drawing.Color.Empty;
-            stateProperties37.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPass.OnActiveState = stateProperties37;
-            stateProperties38.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties38.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties38.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPass.OnDisabledState = stateProperties38;
-            stateProperties39.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties39.FillColor = System.Drawing.Color.Empty;
-            stateProperties39.ForeColor = System.Drawing.Color.Empty;
-            stateProperties39.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPass.OnHoverState = stateProperties39;
-            stateProperties40.BorderColor = System.Drawing.Color.Silver;
-            stateProperties40.FillColor = System.Drawing.Color.White;
-            stateProperties40.ForeColor = System.Drawing.Color.Empty;
-            stateProperties40.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPass.OnIdleState = stateProperties40;
-            this.txtPass.Padding = new System.Windows.Forms.Padding(3);
+            stateProperties85.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties85.FillColor = System.Drawing.Color.Empty;
+            stateProperties85.ForeColor = System.Drawing.Color.Empty;
+            stateProperties85.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPass.OnActiveState = stateProperties85;
+            stateProperties86.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties86.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties86.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties86.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPass.OnDisabledState = stateProperties86;
+            stateProperties87.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties87.FillColor = System.Drawing.Color.Empty;
+            stateProperties87.ForeColor = System.Drawing.Color.Empty;
+            stateProperties87.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPass.OnHoverState = stateProperties87;
+            stateProperties88.BorderColor = System.Drawing.Color.Silver;
+            stateProperties88.FillColor = System.Drawing.Color.White;
+            stateProperties88.ForeColor = System.Drawing.Color.Empty;
+            stateProperties88.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPass.OnIdleState = stateProperties88;
+            this.txtPass.Padding = new System.Windows.Forms.Padding(4);
             this.txtPass.PasswordChar = '*';
             this.txtPass.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPass.PlaceholderText = "Enter text";
@@ -754,7 +743,7 @@ namespace FizzBuzz_tugas_1
             this.txtPass.SelectionLength = 0;
             this.txtPass.SelectionStart = 0;
             this.txtPass.ShortcutsEnabled = true;
-            this.txtPass.Size = new System.Drawing.Size(323, 37);
+            this.txtPass.Size = new System.Drawing.Size(431, 46);
             this.txtPass.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtPass.TabIndex = 124;
             this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -770,10 +759,10 @@ namespace FizzBuzz_tugas_1
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(22, 604);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnUpdate.Location = new System.Drawing.Point(29, 743);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(327, 29);
+            this.btnUpdate.Size = new System.Drawing.Size(436, 36);
             this.btnUpdate.TabIndex = 123;
             this.btnUpdate.Text = "Simpan Data";
             this.btnUpdate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -786,9 +775,11 @@ namespace FizzBuzz_tugas_1
             this.groupBox3.Controls.Add(this.txtAlamatCabang);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.txtNamaCabang);
-            this.groupBox3.Location = new System.Drawing.Point(20, 217);
+            this.groupBox3.Location = new System.Drawing.Point(27, 267);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(329, 256);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(439, 315);
             this.groupBox3.TabIndex = 122;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Informasi Cabang";
@@ -797,10 +788,9 @@ namespace FizzBuzz_tugas_1
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 98);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(16, 121);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 18);
+            this.label8.Size = new System.Drawing.Size(67, 24);
             this.label8.TabIndex = 102;
             this.label8.Text = "Alamat";
             // 
@@ -831,33 +821,34 @@ namespace FizzBuzz_tugas_1
             this.txtAlamatCabang.IconRight = null;
             this.txtAlamatCabang.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAlamatCabang.Lines = new string[0];
-            this.txtAlamatCabang.Location = new System.Drawing.Point(15, 119);
+            this.txtAlamatCabang.Location = new System.Drawing.Point(20, 146);
+            this.txtAlamatCabang.Margin = new System.Windows.Forms.Padding(4);
             this.txtAlamatCabang.MaxLength = 200;
             this.txtAlamatCabang.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtAlamatCabang.Modified = false;
             this.txtAlamatCabang.Multiline = true;
             this.txtAlamatCabang.Name = "txtAlamatCabang";
-            stateProperties41.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties41.FillColor = System.Drawing.Color.Empty;
-            stateProperties41.ForeColor = System.Drawing.Color.Empty;
-            stateProperties41.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamatCabang.OnActiveState = stateProperties41;
-            stateProperties42.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties42.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties42.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtAlamatCabang.OnDisabledState = stateProperties42;
-            stateProperties43.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties43.FillColor = System.Drawing.Color.Empty;
-            stateProperties43.ForeColor = System.Drawing.Color.Empty;
-            stateProperties43.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamatCabang.OnHoverState = stateProperties43;
-            stateProperties44.BorderColor = System.Drawing.Color.Silver;
-            stateProperties44.FillColor = System.Drawing.Color.White;
-            stateProperties44.ForeColor = System.Drawing.Color.Empty;
-            stateProperties44.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlamatCabang.OnIdleState = stateProperties44;
-            this.txtAlamatCabang.Padding = new System.Windows.Forms.Padding(3);
+            stateProperties89.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties89.FillColor = System.Drawing.Color.Empty;
+            stateProperties89.ForeColor = System.Drawing.Color.Empty;
+            stateProperties89.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamatCabang.OnActiveState = stateProperties89;
+            stateProperties90.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties90.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties90.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties90.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtAlamatCabang.OnDisabledState = stateProperties90;
+            stateProperties91.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties91.FillColor = System.Drawing.Color.Empty;
+            stateProperties91.ForeColor = System.Drawing.Color.Empty;
+            stateProperties91.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamatCabang.OnHoverState = stateProperties91;
+            stateProperties92.BorderColor = System.Drawing.Color.Silver;
+            stateProperties92.FillColor = System.Drawing.Color.White;
+            stateProperties92.ForeColor = System.Drawing.Color.Empty;
+            stateProperties92.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlamatCabang.OnIdleState = stateProperties92;
+            this.txtAlamatCabang.Padding = new System.Windows.Forms.Padding(4);
             this.txtAlamatCabang.PasswordChar = '\0';
             this.txtAlamatCabang.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtAlamatCabang.PlaceholderText = "Enter text";
@@ -867,7 +858,7 @@ namespace FizzBuzz_tugas_1
             this.txtAlamatCabang.SelectionLength = 0;
             this.txtAlamatCabang.SelectionStart = 0;
             this.txtAlamatCabang.ShortcutsEnabled = true;
-            this.txtAlamatCabang.Size = new System.Drawing.Size(297, 120);
+            this.txtAlamatCabang.Size = new System.Drawing.Size(396, 148);
             this.txtAlamatCabang.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtAlamatCabang.TabIndex = 106;
             this.txtAlamatCabang.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -882,10 +873,9 @@ namespace FizzBuzz_tugas_1
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 28);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(16, 34);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 18);
+            this.label9.Size = new System.Drawing.Size(138, 24);
             this.label9.TabIndex = 103;
             this.label9.Text = "Nama Lengkap";
             // 
@@ -916,33 +906,34 @@ namespace FizzBuzz_tugas_1
             this.txtNamaCabang.IconRight = null;
             this.txtNamaCabang.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNamaCabang.Lines = new string[0];
-            this.txtNamaCabang.Location = new System.Drawing.Point(15, 51);
+            this.txtNamaCabang.Location = new System.Drawing.Point(20, 63);
+            this.txtNamaCabang.Margin = new System.Windows.Forms.Padding(4);
             this.txtNamaCabang.MaxLength = 50;
             this.txtNamaCabang.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNamaCabang.Modified = false;
             this.txtNamaCabang.Multiline = false;
             this.txtNamaCabang.Name = "txtNamaCabang";
-            stateProperties45.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties45.FillColor = System.Drawing.Color.Empty;
-            stateProperties45.ForeColor = System.Drawing.Color.Empty;
-            stateProperties45.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNamaCabang.OnActiveState = stateProperties45;
-            stateProperties46.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties46.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties46.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtNamaCabang.OnDisabledState = stateProperties46;
-            stateProperties47.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties47.FillColor = System.Drawing.Color.Empty;
-            stateProperties47.ForeColor = System.Drawing.Color.Empty;
-            stateProperties47.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNamaCabang.OnHoverState = stateProperties47;
-            stateProperties48.BorderColor = System.Drawing.Color.Silver;
-            stateProperties48.FillColor = System.Drawing.Color.White;
-            stateProperties48.ForeColor = System.Drawing.Color.Empty;
-            stateProperties48.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtNamaCabang.OnIdleState = stateProperties48;
-            this.txtNamaCabang.Padding = new System.Windows.Forms.Padding(3);
+            stateProperties93.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties93.FillColor = System.Drawing.Color.Empty;
+            stateProperties93.ForeColor = System.Drawing.Color.Empty;
+            stateProperties93.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNamaCabang.OnActiveState = stateProperties93;
+            stateProperties94.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties94.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties94.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties94.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtNamaCabang.OnDisabledState = stateProperties94;
+            stateProperties95.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties95.FillColor = System.Drawing.Color.Empty;
+            stateProperties95.ForeColor = System.Drawing.Color.Empty;
+            stateProperties95.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNamaCabang.OnHoverState = stateProperties95;
+            stateProperties96.BorderColor = System.Drawing.Color.Silver;
+            stateProperties96.FillColor = System.Drawing.Color.White;
+            stateProperties96.ForeColor = System.Drawing.Color.Empty;
+            stateProperties96.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtNamaCabang.OnIdleState = stateProperties96;
+            this.txtNamaCabang.Padding = new System.Windows.Forms.Padding(4);
             this.txtNamaCabang.PasswordChar = '\0';
             this.txtNamaCabang.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtNamaCabang.PlaceholderText = "Enter text";
@@ -952,7 +943,7 @@ namespace FizzBuzz_tugas_1
             this.txtNamaCabang.SelectionLength = 0;
             this.txtNamaCabang.SelectionStart = 0;
             this.txtNamaCabang.ShortcutsEnabled = true;
-            this.txtNamaCabang.Size = new System.Drawing.Size(297, 37);
+            this.txtNamaCabang.Size = new System.Drawing.Size(396, 46);
             this.txtNamaCabang.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtNamaCabang.TabIndex = 104;
             this.txtNamaCabang.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -967,19 +958,19 @@ namespace FizzBuzz_tugas_1
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(23, 113);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(31, 139);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 18);
+            this.label12.Size = new System.Drawing.Size(92, 24);
             this.label12.TabIndex = 121;
             this.label12.Text = "Password";
             // 
             // chkPassword
             // 
             this.chkPassword.AutoSize = true;
-            this.chkPassword.Location = new System.Drawing.Point(248, 181);
+            this.chkPassword.Location = new System.Drawing.Point(331, 223);
+            this.chkPassword.Margin = new System.Windows.Forms.Padding(4);
             this.chkPassword.Name = "chkPassword";
-            this.chkPassword.Size = new System.Drawing.Size(102, 17);
+            this.chkPassword.Size = new System.Drawing.Size(129, 21);
             this.chkPassword.TabIndex = 120;
             this.chkPassword.Text = "Show Password";
             this.chkPassword.UseVisualStyleBackColor = true;
@@ -990,9 +981,10 @@ namespace FizzBuzz_tugas_1
             this.label13.AutoSize = true;
             this.label13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(16, 14);
+            this.label13.Location = new System.Drawing.Point(21, 17);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 32);
+            this.label13.Size = new System.Drawing.Size(112, 41);
             this.label13.TabIndex = 119;
             this.label13.Text = "Profile";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1003,24 +995,22 @@ namespace FizzBuzz_tugas_1
             this.mnuMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mnuMain.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuMain.GripMargin = new System.Windows.Forms.Padding(2, 10, 0, 2);
+            this.mnuMain.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnProfile,
             this.keluarToolStripMenuItem,
             this.toolStripMenuItem3,
-            this.menuSaldo});
+            this.menuSaldo,
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2});
             this.mnuMain.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.mnuMain.Padding = new System.Windows.Forms.Padding(29, 0, 0, 0);
             this.mnuMain.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.mnuMain.Size = new System.Drawing.Size(180, 689);
+            this.mnuMain.Size = new System.Drawing.Size(240, 848);
             this.mnuMain.TabIndex = 76;
             this.mnuMain.Text = "mnuMain";
-            // 
-            // menuSaldo
-            // 
-            this.menuSaldo.Name = "menuSaldo";
-            this.menuSaldo.Size = new System.Drawing.Size(157, 4);
             // 
             // toolStripMenuItem3
             // 
@@ -1029,18 +1019,40 @@ namespace FizzBuzz_tugas_1
             this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(157, 85);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(210, 92);
             this.toolStripMenuItem3.Text = " ";
             this.toolStripMenuItem3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripMenuItem3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
+            // menuSaldo
+            // 
+            this.menuSaldo.Name = "menuSaldo";
+            this.menuSaldo.Size = new System.Drawing.Size(210, 4);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(210, 4);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.AutoToolTip = true;
+            this.toolStripMenuItem2.Margin = new System.Windows.Forms.Padding(0, 30, 0, 20);
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(10, 0, 4, 0);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(210, 36);
+            this.toolStripMenuItem2.Text = "Laporan";
+            this.toolStripMenuItem2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
             // Cabang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1123, 689);
+            this.ClientSize = new System.Drawing.Size(1497, 848);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Cabang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Cabang";
@@ -1088,8 +1100,9 @@ namespace FizzBuzz_tugas_1
         public System.Windows.Forms.MenuStrip mnuMain;
         public System.Windows.Forms.ToolStripMenuItem btnProfile;
         public System.Windows.Forms.ToolStripMenuItem keluarToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip miniToolStrip;
         public System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem menuSaldo;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        public System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }

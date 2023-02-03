@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Linq;
 namespace FizzBuzz_tugas_1
 {
     public partial class Pelanggan : Form
@@ -192,6 +191,26 @@ namespace FizzBuzz_tugas_1
             foreach (DataRow dr in ds.Tables["tblDelivery"].Rows)
             {
                 dgvRiwayatPesanan.Rows.Add(dr[1], dr[2], dr[3], dr[4], dr[5], dr[6]);
+
+                foreach (DataGridViewRow row in dgvRiwayatPesanan.Rows)
+                {
+                    if (row.Cells[3].Value.ToString() == "Pending")
+                    {
+                        row.DefaultCellStyle.BackColor = Color.LightCoral;
+                    }
+                    else if (row.Cells[3].Value.ToString() == "Selesai")
+                    {
+                        row.DefaultCellStyle.BackColor = Color.LightGreen;
+                    }
+                    else if (row.Cells[3].Value.ToString() == "Diproses")
+                    {
+                        row.DefaultCellStyle.BackColor = Color.LemonChiffon;
+                    }
+                    else if (row.Cells[3].Value.ToString() == "Dikirim")
+                    {
+                        row.DefaultCellStyle.BackColor = Color.SkyBlue;
+                    }
+                }
             }
         }
         private void TampilDataCabang()
@@ -277,81 +296,92 @@ namespace FizzBuzz_tugas_1
 
         private void btnBuatPesanan_Click(object sender, EventArgs e)
         {
-
-
-            if (int.Parse(dr[5].ToString()) - harga>=0)
+            if ( cboCabang.SelectedIndex!=-1)
             {
-                LoadDataDelivery();
-
-                int row = ds.Tables["tblDelivery"].Rows.Count + 1;
-                dr = ds.Tables["tblDelivery"].Rows.Find("TR" + row);
-
-                drCabang = dsSearch.Tables["tblBranch"].Rows[0];
-
-                if (dr == null)
+                if (int.Parse(dr[5].ToString()) - harga >= 0)
                 {
-                    dr = ds.Tables["tblDelivery"].NewRow();
-                    dr[0] = "TR" + row;
-                    dr[1] = datePengambilan.Value.ToString();
-                    if (rdoNextDays.Checked)
-                    {
-                        dr[2] = datePengambilan.Value.AddDays(1);
-                    }
-                    else
-                    {
-                        dr[2] = datePengambilan.Value.AddDays(3);
-                    }
-                    dr[3] = "Pending";
-                }
-                ds.Tables["tblDelivery"].Rows.Add(dr);
-                UpdateDataDelivery();
 
-                LoadDataTrans();
-                dr = ds.Tables["tblTransaction"].Rows.Find("TR" + row);
-                if (dr == null)
+
+                    searchCabang();
+                    drCabang = dsSearch.Tables["tblBranch"].Rows[0];
+
+                    LoadDataDelivery();
+
+                    int row = ds.Tables["tblDelivery"].Rows.Count + 1;
+                    dr = ds.Tables["tblDelivery"].Rows.Find("TR" + row);
+
+
+                    if (dr == null)
+                    {
+                        dr = ds.Tables["tblDelivery"].NewRow();
+                        dr[0] = "TR" + row;
+                        dr[1] = datePengambilan.Value.ToString();
+                        if (rdoNextDays.Checked)
+                        {
+                            dr[2] = datePengambilan.Value.AddDays(1);
+                        }
+                        else
+                        {
+                            dr[2] = datePengambilan.Value.AddDays(3);
+                        }
+                        dr[3] = "Pending";
+                    }
+                    ds.Tables["tblDelivery"].Rows.Add(dr);
+                    UpdateDataDelivery();
+
+                    LoadDataTrans();
+                    dr = ds.Tables["tblTransaction"].Rows.Find("TR" + row);
+                    if (dr == null)
+                    {
+                        dr = ds.Tables["tblTransaction"].NewRow();
+                        dr[0] = "TR" + row;
+                        dr[1] = lblCustID.Text;
+                        if (lblPilihanLaundry.Text.Contains("Kiloan"))
+                        {
+                            dr[2] = "Laundry_Kiloan";
+                        }
+                        else
+                        {
+                            dr[2] = "Laundry_Satuan";
+                        }
+                        dr[3] = lblPilihanLaundry.Text;
+                        dr[4] = sliderJumlahLaundry.Value.ToString();
+                        dr[5] = harga;
+                        dr[6] = txtCatatanPesanan.Text;
+                        dr[7] = drCabang[0];
+                        dr[8] = DateTime.Now;
+                    }
+                    ds.Tables["tblTransaction"].Rows.Add(dr);
+                    UpdateDataTrans();
+
+                    LoadDataCustomer();
+                    dr = ds.Tables["tblCustomer"].Rows.Find(lblCustID.Text);
+                    if (dr != null)
+                    {
+                        dr[5] = int.Parse(dr[5].ToString()) - harga;
+                    }
+
+
+
+                    snackBarBuatPesanan.Show(this, "Pesanan berhasil dibuat", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
+                    tabNavigasi.PageIndex = 1;
+                    UpdateDataCustomer();
+                    tampilDataCustomer();
+                    KosongDetail();
+                    LoadDataRiwayat();
+                    tampilDataRiwayat();
+                }
+
+                else
                 {
-                    dr = ds.Tables["tblTransaction"].NewRow();
-                    dr[0] = "TR" + row;
-                    dr[1] = lblCustID.Text;
-                    if (lblPilihanLaundry.Text.Contains("Kiloan"))
-                    {
-                        dr[2] = "Laundry_Kiloan";
-                    }
-                    else
-                    {
-                        dr[2] = "Laundry_Satuan";
-                    }
-                    dr[3] = lblPilihanLaundry.Text;
-                    dr[4] = sliderJumlahLaundry.Value.ToString();
-                    dr[5] = harga;
-                    dr[6] = txtCatatanPesanan.Text;
-                    dr[7] = drCabang[0];
+                    snackBarBuatPesanan.Show(this, "Maaf saldo anda tidak cukup", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
                 }
-                ds.Tables["tblTransaction"].Rows.Add(dr);
-                UpdateDataTrans();
-
-                LoadDataCustomer();
-                dr = ds.Tables["tblCustomer"].Rows.Find(lblCustID.Text);
-                if (dr != null)
-                {
-                    dr[5] = int.Parse(dr[5].ToString()) - harga;
-                }
-
-
-
-                snackBarBuatPesanan.Show(this, "Pesanan berhasil dibuat", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
-                tabNavigasi.PageIndex = 1;
-                UpdateDataCustomer();
-                tampilDataCustomer();
-                KosongDetail();
-                LoadDataRiwayat();
-                tampilDataRiwayat();
             }
-
             else
             {
-                snackBarBuatPesanan.Show(this, "Maaf saldo anda tidak cukup", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
+                snackBarBuatPesanan.Show(this, "Silahkan pilih cabang", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Warning);
             }
+
         }
 
         private void KosongDetail()
@@ -431,7 +461,7 @@ namespace FizzBuzz_tugas_1
      
         }
 
-        private void menuSaldo_Click(object sender, EventArgs e)
+        private void menuSaldo_Click(object sender, EventArgs e)c
         {
             tabNavigasi.PageIndex = 3;
         }
