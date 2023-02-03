@@ -181,7 +181,7 @@ namespace FizzBuzz_tugas_1
             txtNama.Text = dr[1].ToString();
             txtAlamat.Text = dr[3].ToString();
             txtNomorTelepon.Text = dr[4].ToString();
-            menuSaldo.Text = "Rp." + dr[5].ToString();
+            mnuSaldo.Text = "Rp." + dr[5].ToString();
         }
 
         private void tampilDataRiwayat()
@@ -461,7 +461,7 @@ namespace FizzBuzz_tugas_1
      
         }
 
-        private void menuSaldo_Click(object sender, EventArgs e)c
+        private void menuSaldo_Click(object sender, EventArgs e)
         {
             tabNavigasi.PageIndex = 3;
         }

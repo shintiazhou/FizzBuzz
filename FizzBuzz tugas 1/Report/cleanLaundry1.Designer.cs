@@ -459,7 +459,7 @@ namespace FizzBuzz_tugas_1.Report {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TransactionRow AddTransactionRow(string Transaction_Id, string Title, long Total, decimal Total_Price, string Category_Id, string Category_Name, decimal Price, string Customer_Id, string Name, string Created_Date, string Branch_ID) {
+            public TransactionRow AddTransactionRow(string Transaction_Id, string Title, long Total, decimal Total_Price, string Category_Id, string Category_Name, decimal Price, string Customer_Id, string Name, System.DateTime Created_Date, string Branch_ID) {
                 TransactionRow rowTransactionRow = ((TransactionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Transaction_Id,
@@ -536,7 +536,7 @@ namespace FizzBuzz_tugas_1.Report {
                 base.Columns.Add(this.columnCustomer_Id);
                 this.columnName = new global::System.Data.DataColumn("Name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnName);
-                this.columnCreated_Date = new global::System.Data.DataColumn("Created_Date", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnCreated_Date = new global::System.Data.DataColumn("Created_Date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCreated_Date);
                 this.columnBranch_ID = new global::System.Data.DataColumn("Branch_ID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBranch_ID);
@@ -825,10 +825,10 @@ namespace FizzBuzz_tugas_1.Report {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Created_Date {
+            public System.DateTime Created_Date {
                 get {
                     try {
-                        return ((string)(this[this.tableTransaction.Created_DateColumn]));
+                        return ((global::System.DateTime)(this[this.tableTransaction.Created_DateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Created_Date\' in table \'Transaction\' is DBNull.", e);

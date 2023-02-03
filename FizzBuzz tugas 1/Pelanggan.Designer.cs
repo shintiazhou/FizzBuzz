@@ -142,7 +142,7 @@ namespace FizzBuzz_tugas_1
             this.txtJlhTopUp = new Bunifu.UI.WinForms.BunifuTextBox();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.btnProfile = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuSaldo = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSaldo = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPesananBaru = new System.Windows.Forms.ToolStripMenuItem();
             this.btnRiwayatPesanan = new System.Windows.Forms.ToolStripMenuItem();
             this.keluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -301,10 +301,10 @@ namespace FizzBuzz_tugas_1
             this.tabNavigasi.Location = new System.Drawing.Point(184, 3);
             this.tabNavigasi.Multiline = true;
             this.tabNavigasi.Name = "tabNavigasi";
-            this.tabNavigasi.Page = this.tabPesanan;
-            this.tabNavigasi.PageIndex = 0;
-            this.tabNavigasi.PageName = "tabPesanan";
-            this.tabNavigasi.PageTitle = "Pesanan";
+            this.tabNavigasi.Page = this.tabProfile;
+            this.tabNavigasi.PageIndex = 2;
+            this.tabNavigasi.PageName = "tabProfile";
+            this.tabNavigasi.PageTitle = "tab profile";
             this.tabNavigasi.SelectedIndex = 0;
             this.tabNavigasi.Size = new System.Drawing.Size(944, 748);
             this.tabNavigasi.TabIndex = 79;
@@ -661,7 +661,7 @@ namespace FizzBuzz_tugas_1
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuLabel1.Location = new System.Drawing.Point(25, 545);
+            this.bunifuLabel1.Location = new System.Drawing.Point(24, 486);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(151, 21);
@@ -673,7 +673,7 @@ namespace FizzBuzz_tugas_1
             // cboCabang
             // 
             this.cboCabang.FormattingEnabled = true;
-            this.cboCabang.Location = new System.Drawing.Point(25, 573);
+            this.cboCabang.Location = new System.Drawing.Point(24, 514);
             this.cboCabang.Name = "cboCabang";
             this.cboCabang.Size = new System.Drawing.Size(321, 21);
             this.cboCabang.TabIndex = 66;
@@ -683,7 +683,7 @@ namespace FizzBuzz_tugas_1
             this.label14.AutoSize = true;
             this.label14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(293, 226);
+            this.label14.Location = new System.Drawing.Point(292, 167);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(138, 20);
             this.label14.TabIndex = 65;
@@ -695,7 +695,7 @@ namespace FizzBuzz_tugas_1
             this.label12.AutoSize = true;
             this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(21, 356);
+            this.label12.Location = new System.Drawing.Point(20, 297);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(133, 20);
             this.label12.TabIndex = 64;
@@ -707,7 +707,7 @@ namespace FizzBuzz_tugas_1
             this.label10.AutoSize = true;
             this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(21, 226);
+            this.label10.Location = new System.Drawing.Point(20, 167);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(151, 20);
             this.label10.TabIndex = 62;
@@ -717,7 +717,7 @@ namespace FizzBuzz_tugas_1
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(21, 501);
+            this.label21.Location = new System.Drawing.Point(20, 442);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(31, 13);
             this.label21.TabIndex = 61;
@@ -732,7 +732,7 @@ namespace FizzBuzz_tugas_1
             this.lblHarga.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblHarga.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblHarga.ForeColor = System.Drawing.Color.Black;
-            this.lblHarga.Location = new System.Drawing.Point(70, 490);
+            this.lblHarga.Location = new System.Drawing.Point(69, 431);
             this.lblHarga.Name = "lblHarga";
             this.lblHarga.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblHarga.Size = new System.Drawing.Size(177, 34);
@@ -751,7 +751,7 @@ namespace FizzBuzz_tugas_1
             this.lblJumlahLaundry.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblJumlahLaundry.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblJumlahLaundry.ForeColor = System.Drawing.Color.Black;
-            this.lblJumlahLaundry.Location = new System.Drawing.Point(377, 151);
+            this.lblJumlahLaundry.Location = new System.Drawing.Point(376, 92);
             this.lblJumlahLaundry.Name = "lblJumlahLaundry";
             this.lblJumlahLaundry.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblJumlahLaundry.Size = new System.Drawing.Size(58, 33);
@@ -785,7 +785,7 @@ namespace FizzBuzz_tugas_1
             this.lblPakaian.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblPakaian.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.lblPakaian.ForeColor = System.Drawing.Color.Black;
-            this.lblPakaian.Location = new System.Drawing.Point(21, 122);
+            this.lblPakaian.Location = new System.Drawing.Point(20, 63);
             this.lblPakaian.Name = "lblPakaian";
             this.lblPakaian.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblPakaian.Size = new System.Drawing.Size(97, 21);
@@ -799,7 +799,7 @@ namespace FizzBuzz_tugas_1
             this.rdoNextDay.AccessibleRole = System.Windows.Forms.AccessibleRole.CheckButton;
             this.rdoNextDay.AutoSize = true;
             this.rdoNextDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNextDay.Location = new System.Drawing.Point(321, 267);
+            this.rdoNextDay.Location = new System.Drawing.Point(320, 208);
             this.rdoNextDay.Name = "rdoNextDay";
             this.rdoNextDay.Size = new System.Drawing.Size(71, 16);
             this.rdoNextDay.TabIndex = 50;
@@ -813,7 +813,7 @@ namespace FizzBuzz_tugas_1
             this.rdoNextDays.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.rdoNextDays.BorderThickness = 1;
             this.rdoNextDays.Checked = false;
-            this.rdoNextDays.Location = new System.Drawing.Point(293, 265);
+            this.rdoNextDays.Location = new System.Drawing.Point(292, 206);
             this.rdoNextDays.Name = "rdoNextDays";
             this.rdoNextDays.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.rdoNextDays.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -830,7 +830,7 @@ namespace FizzBuzz_tugas_1
             this.rdoHariKerja.AutoSize = true;
             this.rdoHariKerja.Cursor = System.Windows.Forms.Cursors.Default;
             this.rdoHariKerja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoHariKerja.Location = new System.Drawing.Point(321, 298);
+            this.rdoHariKerja.Location = new System.Drawing.Point(320, 239);
             this.rdoHariKerja.Name = "rdoHariKerja";
             this.rdoHariKerja.Size = new System.Drawing.Size(98, 16);
             this.rdoHariKerja.TabIndex = 48;
@@ -844,7 +844,7 @@ namespace FizzBuzz_tugas_1
             this.bunifuRadioButton1.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.bunifuRadioButton1.BorderThickness = 1;
             this.bunifuRadioButton1.Checked = true;
-            this.bunifuRadioButton1.Location = new System.Drawing.Point(293, 298);
+            this.bunifuRadioButton1.Location = new System.Drawing.Point(292, 239);
             this.bunifuRadioButton1.Name = "bunifuRadioButton1";
             this.bunifuRadioButton1.OutlineColor = System.Drawing.Color.DodgerBlue;
             this.bunifuRadioButton1.OutlineColorTabFocused = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
@@ -858,7 +858,7 @@ namespace FizzBuzz_tugas_1
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(305, 174);
+            this.label8.Location = new System.Drawing.Point(304, 115);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(19, 13);
             this.label8.TabIndex = 42;
@@ -876,7 +876,7 @@ namespace FizzBuzz_tugas_1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FizzBuzz_tugas_1.Properties.Resources.weight;
-            this.pictureBox1.Location = new System.Drawing.Point(441, 136);
+            this.pictureBox1.Location = new System.Drawing.Point(440, 77);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 61);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -892,7 +892,7 @@ namespace FizzBuzz_tugas_1
             this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
             this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(21, 326);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(20, 267);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
@@ -908,7 +908,7 @@ namespace FizzBuzz_tugas_1
             this.bunifuSeparator2.LineColor = System.Drawing.Color.Silver;
             this.bunifuSeparator2.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(21, 196);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(20, 137);
             this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
@@ -962,7 +962,7 @@ namespace FizzBuzz_tugas_1
             this.btnBuatPesanan.IdleIconLeftImage = null;
             this.btnBuatPesanan.IdleIconRightImage = null;
             this.btnBuatPesanan.IndicateFocus = false;
-            this.btnBuatPesanan.Location = new System.Drawing.Point(25, 610);
+            this.btnBuatPesanan.Location = new System.Drawing.Point(24, 551);
             this.btnBuatPesanan.Name = "btnBuatPesanan";
             this.btnBuatPesanan.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBuatPesanan.OnDisabledState.BorderRadius = 20;
@@ -1032,7 +1032,7 @@ namespace FizzBuzz_tugas_1
             this.txtCatatanPesanan.IconRight = null;
             this.txtCatatanPesanan.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCatatanPesanan.Lines = new string[0];
-            this.txtCatatanPesanan.Location = new System.Drawing.Point(21, 382);
+            this.txtCatatanPesanan.Location = new System.Drawing.Point(20, 323);
             this.txtCatatanPesanan.MaxLength = 32767;
             this.txtCatatanPesanan.MinimumSize = new System.Drawing.Size(2, 2);
             this.txtCatatanPesanan.Modified = false;
@@ -1100,7 +1100,7 @@ namespace FizzBuzz_tugas_1
             this.datePengambilan.IconColor = System.Drawing.Color.Gray;
             this.datePengambilan.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
             this.datePengambilan.LeftTextMargin = 5;
-            this.datePengambilan.Location = new System.Drawing.Point(21, 261);
+            this.datePengambilan.Location = new System.Drawing.Point(20, 202);
             this.datePengambilan.MinDate = new System.DateTime(2023, 2, 3, 0, 0, 0, 0);
             this.datePengambilan.MinimumSize = new System.Drawing.Size(4, 32);
             this.datePengambilan.Name = "datePengambilan";
@@ -1129,7 +1129,7 @@ namespace FizzBuzz_tugas_1
             this.sliderJumlahLaundry.DurationBeforeShrink = 2000;
             this.sliderJumlahLaundry.ElapsedColor = System.Drawing.Color.DodgerBlue;
             this.sliderJumlahLaundry.LargeChange = 10;
-            this.sliderJumlahLaundry.Location = new System.Drawing.Point(21, 148);
+            this.sliderJumlahLaundry.Location = new System.Drawing.Point(20, 89);
             this.sliderJumlahLaundry.Margin = new System.Windows.Forms.Padding(4);
             this.sliderJumlahLaundry.Maximum = 20;
             this.sliderJumlahLaundry.Minimum = 1;
@@ -1896,7 +1896,7 @@ namespace FizzBuzz_tugas_1
             this.mnuMain.GripMargin = new System.Windows.Forms.Padding(2, 10, 0, 2);
             this.mnuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnProfile,
-            this.menuSaldo,
+            this.mnuSaldo,
             this.btnPesananBaru,
             this.btnRiwayatPesanan,
             this.keluarToolStripMenuItem});
@@ -1922,12 +1922,11 @@ namespace FizzBuzz_tugas_1
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
-            // menuSaldo
+            // mnuSaldo
             // 
-            this.menuSaldo.Name = "menuSaldo";
-            this.menuSaldo.Size = new System.Drawing.Size(180, 29);
-            this.menuSaldo.Text = "as";
-            this.menuSaldo.Click += new System.EventHandler(this.menuSaldo_Click);
+            this.mnuSaldo.Name = "mnuSaldo";
+            this.mnuSaldo.Size = new System.Drawing.Size(180, 4);
+            this.mnuSaldo.Click += new System.EventHandler(this.menuSaldo_Click);
             // 
             // btnPesananBaru
             // 
@@ -2149,7 +2148,7 @@ namespace FizzBuzz_tugas_1
         public Bunifu.UI.WinForms.BunifuSnackbar snackbar;
         public Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private System.Windows.Forms.ComboBox cboCabang;
-        private System.Windows.Forms.ToolStripMenuItem menuSaldo;
+        private System.Windows.Forms.ToolStripMenuItem mnuSaldo;
         private System.Windows.Forms.TabPage tabTopUp;
         public System.Windows.Forms.Label label23;
         public Bunifu.UI.WinForms.BunifuTextBox txtJlhTopUp;
